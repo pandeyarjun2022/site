@@ -9,7 +9,7 @@ baseurl: "/nepal-site"
 # The next line should be the URL of your data repository published site. To find this,
 # go to your data repository in Github, and click "Settings", then scroll down to the
 # "Github Pages" section. Copy/paste the link in the green section.
-remote_data_prefix: "https://open-sdg-nepal.github.io/nepal-data/"
+remote_data_prefix: "https://open-sdg-nepal.github.io/nepal-data"
 # In the next few items, replace "open-sdg" with the name of your GitHub
 # organization, and "open-sdg-data-starter" with the name of your data repository.
 # URL for the "Edit Data" button on indicators.
@@ -20,7 +20,7 @@ metadata_edit_url: http://prose.io/#open-sdg-nepal/nepal-data/edit/develop/meta/
 # The list of languages that are translated. The first one is the default.
 languages:
   - en
-  - es
+
 #
 # That's enough for the Quick Start! The remaining settings can be configured later.
 
