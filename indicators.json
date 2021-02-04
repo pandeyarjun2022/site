@@ -7,7 +7,7 @@
         
         {
           "id": "1-1-1",
-          "title": "Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)",
+          "title": "Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/1-1-1",
@@ -46,14 +46,6 @@
           "status": "complete"
         },
         {
-          "id": "1-4-2",
-          "title": "Proportion of total adult population with secure tenure rights to land, with legally recognized documentation, and who perceive their rights to land as secure, by sex and by type of tenure",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/1-4-2",
-          "status": "notstarted"
-        },
-        {
           "id": "1-5-1",
           "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
           "description": "",
@@ -87,7 +79,7 @@
         },
         {
           "id": "1-a-1",
-          "title": "Proportion of domestically generated resources allocated by the government directly to poverty reduction programmes",
+          "title": "Total official development assistance grants from all donors that focus on poverty reduction as a share of the recipient country’s gross national income",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/1-a-1",
@@ -100,22 +92,6 @@
           "keywords": "",
           "href": "/nepal-site/1-a-2",
           "status": "complete"
-        },
-        {
-          "id": "1-a-3",
-          "title": "Sum of total grants and non-debt-creating inflows directly allocated to poverty reduction programmes as a proportion of GDP",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/1-a-3",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-b-1",
-          "title": "Proportion of government recurrent and capital spending to sectors that disproportionately benefit women, the poor and vulnerable groups",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/1-b-1",
-          "status": "notstarted"
         }]
     }
   },
@@ -143,7 +119,7 @@
         },
         {
           "id": "2-2-1",
-          "title": "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age",
+          "title": "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/2-2-1",
@@ -151,19 +127,11 @@
         },
         {
           "id": "2-2-2",
-          "title": "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)",
+          "title": "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/2-2-2",
           "status": "complete"
-        },
-        {
-          "id": "2-3-1",
-          "title": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/2-3-1",
-          "status": "notstarted"
         },
         {
           "id": "2-3-2",
@@ -174,28 +142,12 @@
           "status": "complete"
         },
         {
-          "id": "2-4-1",
-          "title": "Proportion of agricultural area under productive and sustainable agriculture",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/2-4-1",
-          "status": "notstarted"
-        },
-        {
           "id": "2-5-1",
           "title": "Number of plant and animal genetic resources for food and agriculture secured in either medium- or long-term conservation facilities",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/2-5-1",
           "status": "complete"
-        },
-        {
-          "id": "2-5-2",
-          "title": "Proportion of local breeds classified as being at risk, not at risk or at unknown level of risk of extinction",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/2-5-2",
-          "status": "notstarted"
         },
         {
           "id": "2-a-1",
@@ -212,14 +164,6 @@
           "keywords": "",
           "href": "/nepal-site/2-a-2",
           "status": "complete"
-        },
-        {
-          "id": "2-b-1",
-          "title": "Agricultural export subsidies",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/2-b-1",
-          "status": "notstarted"
         },
         {
           "id": "2-c-1",
@@ -255,7 +199,7 @@
         },
         {
           "id": "3-2-1",
-          "title": "Under‐five mortality rate",
+          "title": "Under‑5 mortality rate",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/3-2-1",
@@ -335,7 +279,7 @@
         },
         {
           "id": "3-5-2",
-          "title": "Harmful use of alcohol, defined according to the national context as alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol",
+          "title": "Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/3-5-2",
@@ -351,7 +295,7 @@
         },
         {
           "id": "3-7-1",
-          "title": "Proportion of women of reproductive age (aged 15–49 years) who have their need for family planning satisfied with modern methods",
+          "title": "Proportion of women of reproductive age (aged 15–49 years) who have their need for family planning satisfied with modern methods",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/3-7-1",
@@ -359,7 +303,7 @@
         },
         {
           "id": "3-7-2",
-          "title": "Adolescent birth rate (aged 10–14 years; aged 15–19 years) per 1,000 women in that age group",
+          "title": "Adolescent birth rate (aged 10–14 years; aged 15–19 years) per 1,000 women in that age group",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/3-7-2",
@@ -367,7 +311,7 @@
         },
         {
           "id": "3-8-1",
-          "title": "Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable diseases and service capacity and access, among the general and the most disadvantaged population)",
+          "title": "Coverage of essential health services",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/3-8-1",
@@ -407,7 +351,7 @@
         },
         {
           "id": "3-a-1",
-          "title": "Age-standardized prevalence of current tobacco use among persons aged 15 years and older",
+          "title": "Age-standardized prevalence of current tobacco use among persons aged 15 years and older",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/3-a-1",
@@ -428,14 +372,6 @@
           "keywords": "",
           "href": "/nepal-site/3-b-2",
           "status": "complete"
-        },
-        {
-          "id": "3-b-3",
-          "title": "Proportion of health facilities that have a core set of relevant essential medicines available and affordable on a sustainable basis",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/3-b-3",
-          "status": "notstarted"
         },
         {
           "id": "3-c-1",
@@ -470,14 +406,6 @@
       "indicators": [
         
         {
-          "id": "4-1-1",
-          "title": "Proportion of children and young people (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/4-1-1",
-          "status": "notstarted"
-        },
-        {
           "id": "4-1-2",
           "title": "Completion rate (primary education, lower secondary education, upper secondary education)",
           "description": "",
@@ -487,7 +415,7 @@
         },
         {
           "id": "4-2-1",
-          "title": "Proportion of children under 5 years of age who are developmentally on track in health, learning and psychosocial well-being, by sex",
+          "title": "Proportion of children aged 24-59 months who are developmentally on track in health, learning and psychosocial well-being, by sexi",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/4-2-1",
@@ -503,19 +431,11 @@
         },
         {
           "id": "4-3-1",
-          "title": "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex",
+          "title": "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/4-3-1",
           "status": "complete"
-        },
-        {
-          "id": "4-4-1",
-          "title": "Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/4-4-1",
-          "status": "notstarted"
         },
         {
           "id": "4-5-1",
@@ -526,24 +446,8 @@
           "status": "complete"
         },
         {
-          "id": "4-6-1",
-          "title": "Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/4-6-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "4-7-1",
-          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development, including gender equality and human rights, are mainstreamed at all levels in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/4-7-1",
-          "status": "notstarted"
-        },
-        {
           "id": "4-a-1",
-          "title": "Proportion of schools with access to (a) electricity; (b) the Internet for pedagogical purposes; (c) computers for pedagogical purposes; (d) adapted infrastructure and materials for students with disabilities; (e) basic drinking water; (f) single-sex basic sanitation facilities; and (g) basic handwashing facilities (as per the WASH indicator definitions)",
+          "title": "Proportion of schools offering basic services, by type of service",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/4-a-1",
@@ -559,7 +463,7 @@
         },
         {
           "id": "4-c-1",
-          "title": "Proportion of teachers in: (a) pre-primary; (b) primary; (c) lower secondary; and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country",
+          "title": "Proportion of teachers with the minimum required qualifications, by education leveli",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/4-c-1",
@@ -574,52 +478,20 @@
       "indicators": [
         
         {
-          "id": "5-1-1",
-          "title": "Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‐discrimination on the basis of sex",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/5-1-1",
-          "status": "notstarted"
-        },
-        {
           "id": "5-2-1",
-          "title": "Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age",
+          "title": "Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/5-2-1",
           "status": "complete"
         },
         {
-          "id": "5-2-2",
-          "title": "Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/5-2-2",
-          "status": "notstarted"
-        },
-        {
           "id": "5-3-1",
-          "title": "Proportion of women aged 20–24 years who were married or in a union before age 15 and before age 18",
+          "title": "Proportion of women aged 20–24 years who were married or in a union before age 15 and before age 18",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/5-3-1",
           "status": "complete"
-        },
-        {
-          "id": "5-3-2",
-          "title": "Proportion of girls and women aged 15–49 years who have undergone female genital mutilation/cutting, by age",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/5-3-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "5-4-1",
-          "title": "Proportion of time spent on unpaid domestic and care work, by sex, age and location",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/5-4-1",
-          "status": "notstarted"
         },
         {
           "id": "5-5-1",
@@ -639,7 +511,7 @@
         },
         {
           "id": "5-6-1",
-          "title": "Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care",
+          "title": "Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/5-6-1",
@@ -647,35 +519,11 @@
         },
         {
           "id": "5-6-2",
-          "title": "Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education",
+          "title": "Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/5-6-2",
           "status": "complete"
-        },
-        {
-          "id": "5-a-1",
-          "title": "(a) Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex; and (b) share of women among owners or rights-bearers of agricultural land, by type of tenure",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/5-a-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "5-a-2",
-          "title": "Proportion of countries where the legal framework (including customary law) guarantees women’s equal rights to land ownership and/or control",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/5-a-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "5-b-1",
-          "title": "Proportion of individuals who own a mobile telephone, by sex",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/5-b-1",
-          "status": "notstarted"
         },
         {
           "id": "5-c-1",
@@ -703,27 +551,11 @@
         },
         {
           "id": "6-2-1",
-          "title": "Proportion of population using safely managed sanitation services, including a handwashing facility with soap and water",
+          "title": "Proportion of population using (a) safely managed sanitation services and (b) a hand-washing facility with soap and water",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/6-2-1",
           "status": "complete"
-        },
-        {
-          "id": "6-3-1",
-          "title": "Proportion of wastewater safely treated",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/6-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "6-3-2",
-          "title": "Proportion of bodies of water with good ambient water quality",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/6-3-2",
-          "status": "notstarted"
         },
         {
           "id": "6-4-1",
@@ -743,19 +575,11 @@
         },
         {
           "id": "6-5-1",
-          "title": "Degree of integrated water resources management implementation (0 to 100)",
+          "title": "Degree of integrated water resources management",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/6-5-1",
           "status": "complete"
-        },
-        {
-          "id": "6-5-2",
-          "title": "Proportion of transboundary basin area with an operational arrangement for water cooperation",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/6-5-2",
-          "status": "notstarted"
         },
         {
           "id": "6-6-1",
@@ -831,7 +655,7 @@
         },
         {
           "id": "7-b-1",
-          "title": "Investments in energy efficiency as a proportion of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services",
+          "title": "Installed renewable energy-generating capacity in developing countries (in watts per capita)",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/7-b-1",
@@ -863,19 +687,11 @@
         },
         {
           "id": "8-3-1",
-          "title": "Proportion of informal employment in non‐agriculture employment, by sex",
+          "title": "Proportion of informal employment in total employment, by sector and sex",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/8-3-1",
           "status": "complete"
-        },
-        {
-          "id": "8-4-1",
-          "title": "Material footprint, material footprint per capita, and material footprint per GDP",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/8-4-1",
-          "status": "notstarted"
         },
         {
           "id": "8-4-2",
@@ -884,14 +700,6 @@
           "keywords": "",
           "href": "/nepal-site/8-4-2",
           "status": "complete"
-        },
-        {
-          "id": "8-5-1",
-          "title": "Average hourly earnings of female and male employees, by occupation, age and persons with disabilities",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/8-5-1",
-          "status": "notstarted"
         },
         {
           "id": "8-5-2",
@@ -903,7 +711,7 @@
         },
         {
           "id": "8-6-1",
-          "title": "Proportion of youth (aged 15–24 years) not in education, employment or training",
+          "title": "Proportion of youth (aged 15–24 years) not in education, employment or training",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/8-6-1",
@@ -911,43 +719,11 @@
         },
         {
           "id": "8-7-1",
-          "title": "Proportion and number of children aged 5–17 years engaged in child labour, by sex and age",
+          "title": "Proportion and number of children aged 5–17 years engaged in child labour, by sex and age",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/8-7-1",
           "status": "complete"
-        },
-        {
-          "id": "8-8-1",
-          "title": "Frequency rates of fatal and non-fatal occupational injuries, by sex and migrant status",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/8-8-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "8-8-2",
-          "title": "Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/8-8-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "8-9-1",
-          "title": "Tourism direct GDP as a proportion of total GDP and in growth rate",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/8-9-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "8-9-2",
-          "title": "Proportion of jobs in sustainable tourism industries out of total tourism jobs",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/8-9-2",
-          "status": "notstarted"
         },
         {
           "id": "8-a-1",
@@ -956,14 +732,6 @@
           "keywords": "",
           "href": "/nepal-site/8-a-1",
           "status": "complete"
-        },
-        {
-          "id": "8-b-1",
-          "title": "Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/8-b-1",
-          "status": "notstarted"
         },
         {
           "id": "8-10-1",
@@ -975,7 +743,7 @@
         },
         {
           "id": "8-10-2",
-          "title": "Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider",
+          "title": "Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/8-10-2",
@@ -991,7 +759,7 @@
         
         {
           "id": "9-1-1",
-          "title": "Proportion of the rural population who live within 2 km of an all-season road",
+          "title": "Proportion of the rural population who live within 2 km of an all-season road",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/9-1-1",
@@ -1094,32 +862,16 @@
       "indicators": [
         
         {
-          "id": "10-1-1",
-          "title": "Growth rates of household expenditure or income per capita among the bottom 40 per cent of the population and the total population",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/10-1-1",
-          "status": "notstarted"
-        },
-        {
           "id": "10-2-1",
-          "title": "Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities",
+          "title": "Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/10-2-1",
           "status": "complete"
         },
         {
-          "id": "10-3-1",
-          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/10-3-1",
-          "status": "notstarted"
-        },
-        {
           "id": "10-4-1",
-          "title": "Labour share of GDP, comprising wages and social protection transfers",
+          "title": "Labour share of GDP",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/10-4-1",
@@ -1127,7 +879,7 @@
         },
         {
           "id": "10-5-1",
-          "title": "Financial Soundness Indicators (FSIs)",
+          "title": "Financial Soundness Indicators",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/10-5-1",
@@ -1142,16 +894,8 @@
           "status": "complete"
         },
         {
-          "id": "10-7-1",
-          "title": "Recruitment cost borne by employee as a proportion of yearly income earned in country of destination",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/10-7-1",
-          "status": "notstarted"
-        },
-        {
           "id": "10-7-2",
-          "title": "Number of countries that have implemented well-managed migration policies",
+          "title": "Number of countries with migration policies that facilitate orderly, safe, regular and responsible migration and mobility of people",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/10-7-2",
@@ -1214,38 +958,6 @@
           "status": "complete"
         },
         {
-          "id": "11-2-1",
-          "title": "Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/11-2-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "11-3-1",
-          "title": "Ratio of land consumption rate to population growth rate",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/11-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "11-3-2",
-          "title": "Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/11-3-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "11-4-1",
-          "title": "Total expenditure (public and private) per capita spent on the preservation, protection and conservation of all cultural and natural heritage, by type of heritage (cultural, natural, mixed and World Heritage Centre designation), level of government (national, regional and local/municipal), type of expenditure (operating expenditure/investment) and type of private funding (donations in kind, private non-profit sector and sponsorship)",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/11-4-1",
-          "status": "notstarted"
-        },
-        {
           "id": "11-5-1",
           "title": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
           "description": "",
@@ -1255,7 +967,7 @@
         },
         {
           "id": "11-5-2",
-          "title": "Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters",
+          "title": "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/11-5-2",
@@ -1263,7 +975,7 @@
         },
         {
           "id": "11-6-1",
-          "title": "Proportion of urban solid waste regularly collected and with adequate final discharge out of total urban solid waste generated, by cities",
+          "title": "Proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/11-6-1",
@@ -1271,31 +983,15 @@
         },
         {
           "id": "11-6-2",
-          "title": "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)",
+          "title": "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/11-6-2",
           "status": "complete"
         },
         {
-          "id": "11-7-1",
-          "title": "Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/11-7-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "11-7-2",
-          "title": "Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/11-7-2",
-          "status": "notstarted"
-        },
-        {
           "id": "11-a-1",
-          "title": "Proportion of population living in cities that implement urban and regional development plans integrating population projections and resource needs, by size of city",
+          "title": "Number of countries that have national urban policies or regional development plans that (a) respond to population dynamics; (b) ensure balanced territorial development; and (c) increase local fiscal space",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/11-a-1",
@@ -1316,14 +1012,6 @@
           "keywords": "",
           "href": "/nepal-site/11-b-2",
           "status": "complete"
-        },
-        {
-          "id": "11-c-1",
-          "title": "Proportion of financial support to the least developed countries that is allocated to the construction and retrofitting of sustainable, resilient and resource-efficient buildings utilizing local materials",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/11-c-1",
-          "status": "notstarted"
         }]
     }
   },
@@ -1334,38 +1022,6 @@
       "indicators": [
         
         {
-          "id": "12-1-1",
-          "title": "Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/12-1-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "12-2-1",
-          "title": "Material footprint, material footprint per capita, and material footprint per GDP",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/12-2-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "12-2-2",
-          "title": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/12-2-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "12-3-1",
-          "title": "Global food loss index",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/12-3-1",
-          "status": "notstarted"
-        },
-        {
           "id": "12-4-1",
           "title": "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement",
           "description": "",
@@ -1375,47 +1031,15 @@
         },
         {
           "id": "12-4-2",
-          "title": "Hazardous waste generated per capita and proportion of hazardous waste treated, by type of treatment",
+          "title": "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/12-4-2",
           "status": "complete"
         },
         {
-          "id": "12-5-1",
-          "title": "National recycling rate, tons of material recycled",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/12-5-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "12-6-1",
-          "title": "Number of companies publishing sustainability reports",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/12-6-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "12-7-1",
-          "title": "Number of countries implementing sustainable public procurement policies and action plans",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/12-7-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "12-8-1",
-          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development (including climate change education) are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/12-8-1",
-          "status": "notstarted"
-        },
-        {
           "id": "12-a-1",
-          "title": "Amount of support to developing countries on research and development for sustainable consumption and production and environmentally sound technologies",
+          "title": "Installed renewable energy-generating capacity in developing countries (in watts per capita)",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/12-a-1",
@@ -1423,19 +1047,11 @@
         },
         {
           "id": "12-b-1",
-          "title": "Number of sustainable tourism strategies or policies and implemented action plans with agreed monitoring and evaluation tools",
+          "title": "Implementation of standard accounting tools to monitor the economic and environmental aspects of tourism sustainability",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/12-b-1",
           "status": "complete"
-        },
-        {
-          "id": "12-c-1",
-          "title": "Amount of fossil-fuel subsidies per unit of GDP (production and consumption) and as a proportion of total national expenditure on fossil fuels",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/12-c-1",
-          "status": "notstarted"
         }]
     }
   },
@@ -1470,52 +1086,12 @@
           "status": "complete"
         },
         {
-          "id": "13-2-1",
-          "title": "Number of countries that have communicated the establishment or operationalization of an integrated policy/strategy/plan which increases their ability to adapt to the adverse impacts of climate change, and foster climate resilience and low greenhouse gas emissions development in a manner that does not threaten food production (including a national adaptation plan, nationally determined contribution, national communication, biennial update report or other)",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/13-2-1",
-          "status": "notstarted"
-        },
-        {
           "id": "13-2-2",
           "title": "Total greenhouse gas emissions per year",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/13-2-2",
           "status": "complete"
-        },
-        {
-          "id": "13-3-1",
-          "title": "Number of countries that have integrated mitigation, adaptation, impact reduction and early warning into primary, secondary and tertiary curricula",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/13-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "13-3-2",
-          "title": "Number of countries that have communicated the strengthening of institutional, systemic and individual capacity-building to implement adaptation, mitigation and technology transfer, and development actions",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/13-3-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "13-a-1",
-          "title": "Mobilized amount of United States dollars per year between 2020 and 2025 accountable towards the $100 billion commitment",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/13-a-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "13-b-1",
-          "title": "Number of least developed countries and small island developing States that are receiving specialized support, and amount of support, including finance, technology and capacity-building, for mechanisms for raising capacities for effective climate change-related planning and management, including focusing on women, youth and local and marginalized communities",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/13-b-1",
-          "status": "notstarted"
         }]
     }
   },
@@ -1526,84 +1102,12 @@
       "indicators": [
         
         {
-          "id": "14-1-1",
-          "title": "Index of coastal eutrophication and floating plastic debris density",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/14-1-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "14-2-1",
-          "title": "Proportion of national exclusive economic zones managed using ecosystem-based approaches",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/14-2-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "14-3-1",
-          "title": "Average marine acidity (pH) measured at agreed suite of representative sampling stations",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/14-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "14-4-1",
-          "title": "Proportion of fish stocks within biologically sustainable levels",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/14-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "14-5-1",
-          "title": "Coverage of protected areas in relation to marine areas",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/14-5-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "14-6-1",
-          "title": "Progress by countries in the degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/14-6-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "14-7-1",
-          "title": "Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/14-7-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "14-a-1",
-          "title": "Proportion of total research budget allocated to research in the field of marine technology",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/14-a-1",
-          "status": "notstarted"
-        },
-        {
           "id": "14-b-1",
-          "title": "Progress by countries in the degree of application of a legal/regulatory/policy/institutional framework which recognizes and protects access rights for small-scale fisheries",
+          "title": "Degree of application of a legal/regulatory/ policy/institutional framework which recognizes and protects access rights for small-scale fisheries",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/14-b-1",
           "status": "complete"
-        },
-        {
-          "id": "14-c-1",
-          "title": "Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nations Convention on the Law of the Sea, for the conservation and sustainable use of the oceans and their resources",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/14-c-1",
-          "status": "notstarted"
         }]
     }
   },
@@ -1638,14 +1142,6 @@
           "status": "complete"
         },
         {
-          "id": "15-3-1",
-          "title": "Proportion of land that is degraded over total land area",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/15-3-1",
-          "status": "notstarted"
-        },
-        {
           "id": "15-4-1",
           "title": "Coverage by protected areas of important sites for mountain biodiversity",
           "description": "",
@@ -1678,14 +1174,6 @@
           "status": "complete"
         },
         {
-          "id": "15-7-1",
-          "title": "Proportion of traded wildlife that was poached or illicitly trafficked",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/15-7-1",
-          "status": "notstarted"
-        },
-        {
           "id": "15-8-1",
           "title": "Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species",
           "description": "",
@@ -1695,7 +1183,7 @@
         },
         {
           "id": "15-9-1",
-          "title": "Progress towards national targets established in accordance with Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020",
+          "title": "(a) Number of countries that have established national targets in accordance with or similar to Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020 in their national biodiversity strategy and action plans and the progress r",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/15-9-1",
@@ -1703,7 +1191,7 @@
         },
         {
           "id": "15-a-1",
-          "title": "Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems",
+          "title": "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/15-a-1",
@@ -1711,19 +1199,11 @@
         },
         {
           "id": "15-b-1",
-          "title": "Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems",
+          "title": "(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/15-b-1",
           "status": "complete"
-        },
-        {
-          "id": "15-c-1",
-          "title": "Proportion of traded wildlife that was poached or illicitly trafficked",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/15-c-1",
-          "status": "notstarted"
         }]
     }
   },
@@ -1734,40 +1214,8 @@
       "indicators": [
         
         {
-          "id": "16-1-1",
-          "title": "Number of victims of intentional homicide per 100,000 population, by sex and age",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-1-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-1-2",
-          "title": "Conflict-related deaths per 100,000 population, by sex, age and cause",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-1-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-1-3",
-          "title": "Proportion of population subjected to (a) physical violence, (b) psychological violence and (c) sexual violence in the previous 12 months",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-1-3",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-1-4",
-          "title": "Proportion of population that feel safe walking alone around the area they live",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-1-4",
-          "status": "notstarted"
-        },
-        {
           "id": "16-2-1",
-          "title": "Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month",
+          "title": "Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/16-2-1",
@@ -1783,55 +1231,15 @@
         },
         {
           "id": "16-2-3",
-          "title": "Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18",
+          "title": "Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/16-2-3",
           "status": "complete"
         },
         {
-          "id": "16-3-1",
-          "title": "Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-3-2",
-          "title": "Unsentenced detainees as a proportion of overall prison population",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-3-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-4-1",
-          "title": "Total value of inward and outward illicit financial flows (in current United States dollars)",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-4-2",
-          "title": "Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-4-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-5-1",
-          "title": "Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-5-1",
-          "status": "notstarted"
-        },
-        {
           "id": "16-5-2",
-          "title": "Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months",
+          "title": "Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/16-5-2",
@@ -1846,28 +1254,12 @@
           "status": "complete"
         },
         {
-          "id": "16-6-2",
-          "title": "Proportion of population satisfied with their last experience of public services",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-6-2",
-          "status": "notstarted"
-        },
-        {
           "id": "16-7-1",
-          "title": "Proportions of positions (by sex, age, persons with disabilities and population groups) in public institutions (national and local legislatures, public service, and judiciary) compared to national distributions",
+          "title": "Proportions of positions in national and local institutions, including (a) the legislatures; (b) the public service; and (c) the judiciary, compared to national distributions, by sex, age, persons with disabilities and population groups",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/16-7-1",
           "status": "complete"
-        },
-        {
-          "id": "16-7-2",
-          "title": "Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-7-2",
-          "status": "notstarted"
         },
         {
           "id": "16-8-1",
@@ -1879,7 +1271,7 @@
         },
         {
           "id": "16-9-1",
-          "title": "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age",
+          "title": "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/16-9-1",
@@ -1892,22 +1284,6 @@
           "keywords": "",
           "href": "/nepal-site/16-a-1",
           "status": "complete"
-        },
-        {
-          "id": "16-b-1",
-          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-b-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-10-1",
-          "title": "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/16-10-1",
-          "status": "notstarted"
         },
         {
           "id": "16-10-2",
@@ -1942,16 +1318,8 @@
           "status": "complete"
         },
         {
-          "id": "17-2-1",
-          "title": "Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/17-2-1",
-          "status": "notstarted"
-        },
-        {
           "id": "17-3-1",
-          "title": "Foreign direct investment (FDI), official development assistance and South-South cooperation as a proportion of total domestic budget",
+          "title": "Foreign direct investment, official development assistance and South-South cooperation as a proportion of gross national income",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/17-3-1",
@@ -1974,36 +1342,12 @@
           "status": "complete"
         },
         {
-          "id": "17-5-1",
-          "title": "Number of countries that adopt and implement investment promotion regimes for least developed countries",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/17-5-1",
-          "status": "notstarted"
-        },
-        {
           "id": "17-6-1",
-          "title": "Number of science and/or technology cooperation agreements and programmes between countries, by type of cooperation",
+          "title": "Fixed Internet broadband subscriptions per 100 inhabitants, by speed",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/17-6-1",
           "status": "complete"
-        },
-        {
-          "id": "17-6-2",
-          "title": "Fixed Internet broadband subscriptions per 100 inhabitants, by speed",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/17-6-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-7-1",
-          "title": "Total amount of approved funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/17-7-1",
-          "status": "notstarted"
         },
         {
           "id": "17-8-1",
@@ -2015,7 +1359,7 @@
         },
         {
           "id": "17-9-1",
-          "title": "Dollar value of financial and technical assistance (including through North-South, South‐South and triangular cooperation) committed to developing countries",
+          "title": "Dollar value of financial and technical assistance (including through North-South, South‑South and triangular cooperation) committed to developing countries",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/17-9-1",
@@ -2030,36 +1374,12 @@
           "status": "complete"
         },
         {
-          "id": "17-11-1",
-          "title": "Developing countries’ and least developed countries’ share of global exports",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/17-11-1",
-          "status": "notstarted"
-        },
-        {
           "id": "17-12-1",
-          "title": "Average tariffs faced by developing countries, least developed countries and small island developing States",
+          "title": "Weighted average tariffs faced by developing countries, least developed countries and small island developing States",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/17-12-1",
           "status": "complete"
-        },
-        {
-          "id": "17-13-1",
-          "title": "Macroeconomic Dashboard",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/17-13-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-14-1",
-          "title": "Number of countries with mechanisms in place to enhance policy coherence of sustainable development",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/17-14-1",
-          "status": "notstarted"
         },
         {
           "id": "17-15-1",
@@ -2079,19 +1399,11 @@
         },
         {
           "id": "17-17-1",
-          "title": "Amount of United States dollars committed to public-private and civil society partnerships",
+          "title": "Amount in United States dollars committed to public-private partnerships for infrastructure",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/17-17-1",
           "status": "complete"
-        },
-        {
-          "id": "17-18-1",
-          "title": "Proportion of sustainable development indicators produced at the national level with full disaggregation when relevant to the target, in accordance with the Fundamental Principles of Official Statistics",
-          "description": "",
-          "keywords": "",
-          "href": "/nepal-site/17-18-1",
-          "status": "notstarted"
         },
         {
           "id": "17-18-2",
@@ -2119,7 +1431,7 @@
         },
         {
           "id": "17-19-2",
-          "title": "Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration",
+          "title": "Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration",
           "description": "",
           "keywords": "",
           "href": "/nepal-site/17-19-2",
