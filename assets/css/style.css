@@ -344,14 +344,18 @@ h5 + .btn-download {
 .image-download-in-progress, .image-download-in-progress * {
   padding: 0;
   margin: 0; }
-.image-download-in-progress #chart-canvas {
-  margin-top: -30px; }
 .image-download-in-progress #selectionChartFooter {
   padding-left: 20px; }
   .image-download-in-progress #selectionChartFooter p {
     margin-bottom: 10px; }
 .image-download-in-progress .hide-during-image-download {
   display: none; }
+.image-download-in-progress.contrast-high #indicator-main {
+  width: 120%; }
+.image-download-in-progress.contrast-high #chart-canvas {
+  background-color: black !important; }
+.image-download-in-progress.contrast-high #chart-heading, .image-download-in-progress.contrast-high #selectionChartFooter {
+  max-width: 90%; }
 
 .zip-download-container {
   margin-top: 20px; }
@@ -1987,6 +1991,9 @@ body.contrast-high #legend li {
 .goal-banner h1 .lead-copy {
   display: block;
   margin-top: 10px; }
+
+#sources .row > div:nth-child(odd) {
+  clear: left; }
 
 .layout-goal #page-content, .layout-goal-by-target #page-content, .layout-goal-by-target-vertical #page-content {
   margin-top: -20px;
