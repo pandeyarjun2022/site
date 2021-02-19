@@ -94,6 +94,9 @@ h3 {
 .lead-copy {
   font-size: 22px; }
 
+.small-text {
+  font-size: 85%; }
+
 .goal-banner a {
   background: transparent;
   display: block; }
@@ -2016,32 +2019,19 @@ body.contrast-high .goal-indicators .indicator-cards span.status.notstarted {
 body.contrast-high #main-content.goal-indicators.goal-by-target .indicator-cards a {
   color: yellow; }
 
-.post-categories {
-  padding: 0;
-  margin: 15px 10px 0 0;
-  list-style-type: none; }
-  .post-categories li {
-    margin-right: 6px;
-    padding: 4px 6px;
-    display: inline;
-    border-radius: 10px; }
-  .post-categories li a {
-    color: #0b0c0c; }
-
-.post-title {
-  margin-top: 0; }
-
-.newslist article {
-  margin-bottom: 20px; }
-  .newslist article p {
-    margin: 0; }
-    .newslist article p:first {
-      font-size: 90%; }
-  .newslist article h5 {
-    margin: 3px 0;
-    font-size: 120%; }
-  .newslist article time {
-    margin: 0; }
+.layout-news .post-listing {
+  clear: both; }
+  .layout-news .post-listing .post-categories {
+    list-style-type: none; }
+    .layout-news .post-listing .post-categories li {
+      display: inline-block;
+      margin-right: 20px; }
+  .layout-news .post-listing .post-title {
+    font-size: 16px;
+    margin-bottom: 7px !important; }
+  .layout-news .post-listing .post-date {
+    float: left;
+    margin-right: 40px; }
 
 .layout-reportingstatus .reporting-status-description {
   margin-bottom: 25px; }
