@@ -1319,9 +1319,10 @@ function getChildFieldNames(edges) {
  * @param {boolean} dataHasSeriesSpecificFields
  * @param {Array} selectedFields Field items
  * @param {Array} edges
- * @return {Array} Field item states
+ * @param {string} compositeBreakdownLabel Alternate label for COMPOSITE_BREAKDOWN fields
+ * @return {Array} Field item states (with additional "label" properties)
  */
-function fieldItemStatesForView(fieldItemStates, fieldsByUnit, selectedUnit, dataHasUnitSpecificFields, fieldsBySeries, selectedSeries, dataHasSeriesSpecificFields, selectedFields, edges) {
+function fieldItemStatesForView(fieldItemStates, fieldsByUnit, selectedUnit, dataHasUnitSpecificFields, fieldsBySeries, selectedSeries, dataHasSeriesSpecificFields, selectedFields, edges, compositeBreakdownLabel) {
   var states = fieldItemStates.map(function(item) { return item; });
   if (dataHasUnitSpecificFields && dataHasSeriesSpecificFields) {
     states = fieldItemStatesForSeries(fieldItemStates, fieldsBySeries, selectedSeries);
@@ -1350,7 +1351,13 @@ function fieldItemStatesForView(fieldItemStates, fieldsByUnit, selectedUnit, dat
     });
   }
   sortFieldsForView(states, edges);
-  return states;
+  return states.map(function(item) {
+    item.label = item.field;
+    if (item.field === 'COMPOSITE_BREAKDOWN' && compositeBreakdownLabel !== '') {
+      item.label = compositeBreakdownLabel;
+    }
+    return item;
+  });
 }
 
 /**
@@ -2185,6 +2192,7 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
   this.stackedDisaggregation = options.stackedDisaggregation;
   this.graphAnnotations = options.graphAnnotations;
   this.indicatorDownloads = options.indicatorDownloads;
+  this.compositeBreakdownLabel = options.compositeBreakdownLabel;
   this.precision = options.precision;
 
   this.initialiseUnits = function() {
@@ -2393,7 +2401,8 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
           this.selectedSeries,
           this.dataHasSeriesSpecificFields,
           this.selectedFields,
-          this.edgesData
+          this.edgesData,
+          this.compositeBreakdownLabel,
         ),
         allowedFields: this.allowedFields,
         edges: this.edgesData,
