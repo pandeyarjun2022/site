@@ -182,7 +182,8 @@ div[tabindex]:focus {
 body.contrast-high div[tabindex]:focus {
   background-color: black !important;
   box-shadow: none !important;
-  outline: 3px solid #ffdd00 !important; }
+  outline: 3px solid #ffdd00 !important;
+  color: white !important; }
 
 a,
 a:hover {
