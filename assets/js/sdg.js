@@ -981,35 +981,61 @@ function nonFieldColumns() {
  * @return {object|false} The first match given the selected unit/series, or false
  */
 function getMatchByUnitSeries(items, selectedUnit, selectedSeries) {
-  if (!items || items.length < 0) {
-    return false;
+  var matches = getMatchesByUnitSeries(items, selectedUnit, selectedSeries);
+  return (matches.length > 0) ? matches[0] : false;
+}
+
+/**
+ * @param {Array} items Objects optionally containing 'unit' and/or 'series'
+ * @param {String} selectedUnit
+ * @param {String} selectedSeries
+ * @return {Array} All matches given the selected unit/series, if any.
+ */
+function getMatchesByUnitSeries(items, selectedUnit, selectedSeries) {
+  if (!items || items.length === 0) {
+    return [];
   }
   if (!selectedUnit && !selectedSeries) {
-    return items[0];
+    return items;
   }
-  var match = items.find(function(item) {
+  // First pass to find any exact matches.
+  var matches = items.filter(function(item) {
+    var seriesMatch = item.series === selectedSeries,
+        unitMatch = item.unit === selectedUnit;
     if (selectedUnit && selectedSeries) {
-      return item.unit === selectedUnit && item.series === selectedSeries;
+      return seriesMatch && unitMatch;
     }
     else if (selectedUnit) {
-      return item.unit === selectedUnit;
+      return unitMatch;
     }
     else if (selectedSeries) {
-      return item.series === selectedSeries;
+      return seriesMatch;
     }
   });
-  if (!match) {
-    // If no match was found, allow for a partial match (eg, unit only).
-    match = items.find(function(item) {
-      if (selectedUnit) {
-        return item.unit === selectedUnit;
+  // Second pass to find any partial matches with unspecified unit/series.
+  if (matches.length === 0) {
+    matches = items.filter(function(item) {
+      var seriesMatch = item.series === selectedSeries && item.series && !item.unit,
+          unitMatch = item.unit === selectedUnit && item.unit && !item.series;
+      if (selectedUnit && selectedSeries) {
+        return seriesMatch || unitMatch;
+      }
+      else if (selectedUnit) {
+        return unitMatch;
       }
       else if (selectedSeries) {
-        return item.series === selectedSeries;
+        return seriesMatch;
       }
     });
   }
-  return match || false;
+  // Third pass to catch cases where nothing at all was specified.
+  if (matches.length === 0) {
+    matches = items.filter(function(item) {
+      var nothingSpecified = !item.unit && !item.series;
+      return nothingSpecified;
+    });
+  }
+  return matches;
 }
 
 /**
@@ -1659,8 +1685,17 @@ function getChartTitle(currentTitle, allTitles, selectedUnit, selectedSeries) {
  * @return {Object|false} Graph limit object, if any
  */
 function getGraphLimits(graphLimits, selectedUnit, selectedSeries) {
-  var match = getMatchByUnitSeries(graphLimits, selectedUnit, selectedSeries);
-  return (match) ? match : false;
+  return getMatchByUnitSeries(graphLimits, selectedUnit, selectedSeries);
+}
+
+/**
+ * @param {Array} graphAnnotations Objects containing 'unit' or 'series' or more
+ * @param {String} selectedUnit
+ * @param {String} selectedSeries
+ * @return {Array} Graph annotations objects, if any
+ */
+function getGraphAnnotations(graphAnnotations, selectedUnit, selectedSeries) {
+  return getMatchesByUnitSeries(graphAnnotations, selectedUnit, selectedSeries);
 }
 
 /**
@@ -2161,6 +2196,7 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
     tableDataFromDatasets: tableDataFromDatasets,
     getPrecision: getPrecision,
     getGraphLimits: getGraphLimits,
+    getGraphAnnotations: getGraphAnnotations,
     getColumnsFromData: getColumnsFromData,
     // Backwards compatibility.
     footerFields: deprecated('helpers.footerFields'),
@@ -2419,7 +2455,7 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
           this.dataHasSeriesSpecificFields,
           this.selectedFields,
           this.edgesData,
-          this.compositeBreakdownLabel,
+          this.compositeBreakdownLabel
         ),
         allowedFields: this.allowedFields,
         edges: this.edgesData,
@@ -2474,7 +2510,7 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
       selectedSeries: this.selectedSeries,
       graphLimits: helpers.getGraphLimits(this.graphLimits, this.selectedUnit, this.selectedSeries),
       stackedDisaggregation: this.stackedDisaggregation,
-      graphAnnotations: this.graphAnnotations,
+      graphAnnotations: helpers.getGraphAnnotations(this.graphAnnotations, this.selectedUnit, this.selectedSeries),
       chartTitle: this.chartTitle,
       indicatorDownloads: this.indicatorDownloads,
       precision: helpers.getPrecision(this.precision, this.selectedUnit, this.selectedSeries),
@@ -2857,7 +2893,7 @@ var indicatorView = function (model, options) {
       altered = Number(value);
     }
     // If that gave us a non-number, return original.
-    if (Number.isNaN(altered)) {
+    if (isNaN(altered)) {
       return value;
     }
     // Now go ahead with user-defined alterations.
@@ -2981,18 +3017,14 @@ var indicatorView = function (model, options) {
         title: {
           display: false
         },
-        tooltips: {
-          callbacks: {
-            label: function(tooltipItems, data) {
-              return tooltipItems.label + ': ' + view_obj.alterDataDisplay(tooltipItems.yLabel, data, 'chart tooltip');
-            },
-          },
-        },
         plugins: {
           scaler: {}
         },
         tooltips: {
           callbacks: {
+            label: function(tooltipItems, data) {
+              return tooltipItems.label + ': ' + view_obj.alterDataDisplay(tooltipItems.yLabel, data, 'chart tooltip');
+            },
             afterBody: function() {
               var unit = view_obj._model.selectedUnit ? translations.t(view_obj._model.selectedUnit) : view_obj._model.measurementUnit;
               if (typeof unit !== 'undefined' && unit !== '') {
@@ -4073,8 +4105,9 @@ $(function() {
       }
       // Otherwise we get the year from the beginning of the string.
       else {
-        for (var delimiter of ['-', '.', ' ', '/']) {
-          var parts = year.split(delimiter);
+        var delimiters = ['-', '.', ' ', '/'];
+        for (var i = 0; i < delimiters.length; i++) {
+          var parts = year.split(delimiters[i]);
           if (parts.length > 1 && isYear(parts[0])) {
             mapped.time = parts[0] + '-01-0' + day;
             day += 1;
