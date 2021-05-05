@@ -1,4 +1,4 @@
-﻿accessible_charts: false
+accessible_charts: false
 accessible_tabs: false
 analytics:
   ga_prod: ''
@@ -113,7 +113,10 @@ header:
 header_language_toggle: none
 hide_empty_metadata: false
 indicator_config_form:
+  enabled: true
   dropdowns: []
+  repository_link: 'https://github.com/open-sdg-nepal/nepal-data/tree/develop/indicator-config'
+  translation_link: ''
 languages:
   - en
   - ne
@@ -181,6 +184,9 @@ search_index_extra_fields: []
 series_toggle: true
 sharethis_property: ''
 site_config_form:
+  enabled: true
   dropdowns: []
+  repository_link: 'https://github.com/open-sdg-nepal/nepal-site/tree/develop/_data'
+  translation_link: ''
 validate_indicator_config: false
 validate_site_config: false
