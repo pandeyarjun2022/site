@@ -116,6 +116,7 @@ indicator_config_form:
   dropdowns: []
 languages:
   - en
+  - ne
 languages_public: []
 map_layers: []
 map_options:
