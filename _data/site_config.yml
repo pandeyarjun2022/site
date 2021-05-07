@@ -110,7 +110,7 @@ graph_color_list: []
 graph_color_number: 0
 header:
   include: header-default.html
-header_language_toggle: none
+header_language_toggle: dropdown
 hide_empty_metadata: false
 indicator_config_form:
   enabled: true
