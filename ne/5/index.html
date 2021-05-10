@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/nepal-data/ne',
+  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/data/ne',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -117,13 +117,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/nepal-site/assets/js/lib/classList.js"></script>
+        <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/nepal-site/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/nepal-site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/site/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/nepal-site/assets/css/style.css?v=20210510012631">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210510125537">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -166,8 +166,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/nepal-site/ne/" id="home">
-    <img src="/nepal-site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
+      <a class="navbar-brand" href="/site/ne/" id="home">
+    <img src="/site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
@@ -178,7 +178,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/5/">
+            <a href="/site/5/">
               English
             </a>
           </li></ul>
@@ -195,17 +195,17 @@ var translations = {
         aria-haspopup="true">
         <button data-target="menu-mobile" aria-expanded="false">मेनू</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/nepal-site/ne/goals">गोलहरू</a>
+    <a href="/site/ne/goals">गोलहरू</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/about">यसको बारे</a>
+    <a href="/site/ne/about">यसको बारे</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/guidance">मार्गदर्शन</a>
+    <a href="/site/ne/guidance">मार्गदर्शन</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/faq">FAQ</a>
+    <a href="/site/ne/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/news">अपडेट</a>
+    <a href="/site/ne/news">अपडेट</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -220,7 +220,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/5/">
+            <a href="/site/5/">
               English
             </a>
           </li></ul>
@@ -238,7 +238,7 @@ var translations = {
         aria-haspopup="true">
         <button data-target="search-mobile" aria-expanded="false">खोज</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/nepal-site/ne/search">
+  <form action="/site/ne/search">
     <label class="sr-only" for="indicator_search-mobile">खोज</label>
     <input type="text" name="q" id="indicator_search-mobile" title="खोज" /><!--
     --><button aria-label="खोज" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -248,7 +248,7 @@ var translations = {
     </li>
 </ul>
       <div id="search" class="menu-target">
-  <form action="/nepal-site/ne/search">
+  <form action="/site/ne/search">
     <label class="sr-only" for="indicator_search">खोज</label>
     <input type="text" name="q" id="indicator_search" title="खोज" /><!--
     --><button aria-label="खोज" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -256,17 +256,17 @@ var translations = {
 </div>
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/nepal-site/ne/goals">गोलहरू</a>
+    <a href="/site/ne/goals">गोलहरू</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/about">यसको बारे</a>
+    <a href="/site/ne/about">यसको बारे</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/guidance">मार्गदर्शन</a>
+    <a href="/site/ne/guidance">मार्गदर्शन</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/faq">FAQ</a>
+    <a href="/site/ne/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/news">अपडेट</a>
+    <a href="/site/ne/news">अपडेट</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -281,7 +281,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/5/">
+            <a href="/site/5/">
               English
             </a>
           </li></ul>
@@ -355,7 +355,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-1-1">यौन कानूनी आधारमा समानता र गैर भेदभावलाई बढावा दिन, लागु गर्न र अनुगमन गर्न कानूनी फ्रेमवर्क स्थानमा छन् वा छैन</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-1-1">यौन कानूनी आधारमा समानता र गैर भेदभावलाई बढावा दिन, लागु गर्न र अनुगमन गर्न कानूनी फ्रेमवर्क स्थानमा छन् वा छैन</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -391,7 +391,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-2-1">१ ever बर्ष भन्दा बढि उमेरका साझेदार महिला र केटीहरूको अनुपात पिछले वा १२ महिनामा हिंसाको रूपमा र उमेर द्वारा हालको वा पूर्व घनिष्ठ साथीले शारीरिक, यौन वा मनोवैज्ञानिक हिंसाको सिकार भएको थियो।</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-2-1">१ ever बर्ष भन्दा बढि उमेरका साझेदार महिला र केटीहरूको अनुपात पिछले वा १२ महिनामा हिंसाको रूपमा र उमेर द्वारा हालको वा पूर्व घनिष्ठ साथीले शारीरिक, यौन वा मनोवैज्ञानिक हिंसाको सिकार भएको थियो।</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -418,7 +418,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.2.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-2-2">१ 15 बर्ष भन्दा माथिका महिला र केटीहरूको अनुपात १ older बर्ष भन्दा बढि उमेर र घटनाको ठाउँमा अघिल्लो १२ महिनामा एक घनिष्ठ साझेदार बाहेक अन्य व्यक्तिद्वारा यौन हिंसाको सिकार हुन्छ।</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-2-2">१ 15 बर्ष भन्दा माथिका महिला र केटीहरूको अनुपात १ older बर्ष भन्दा बढि उमेर र घटनाको ठाउँमा अघिल्लो १२ महिनामा एक घनिष्ठ साझेदार बाहेक अन्य व्यक्तिद्वारा यौन हिंसाको सिकार हुन्छ।</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -454,7 +454,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-3-1">२०-२– वर्ष उमेरका महिलाहरूको अनुपात जो विवाहित थिए वा १ union वर्ष उमेर भन्दा पहिले र उमेर १ before भन्दा अघि एक संघमा थिए</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-3-1">२०-२– वर्ष उमेरका महिलाहरूको अनुपात जो विवाहित थिए वा १ union वर्ष उमेर भन्दा पहिले र उमेर १ before भन्दा अघि एक संघमा थिए</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -481,7 +481,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.3.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-3-2">१ gen-–– वर्ष उमेरका केटीहरू र महिलाहरूको अनुपात जो उमेर अनुसार महिला जननांग विकृति / काटिएको छ</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-3-2">१ gen-–– वर्ष उमेरका केटीहरू र महिलाहरूको अनुपात जो उमेर अनुसार महिला जननांग विकृति / काटिएको छ</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -517,7 +517,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-4-1">सेक्सन, उमेर र स्थान द्वारा, भुक्तानी गरिएको घरेलु र देखभाल कार्यमा खर्च गरिएको समयको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-4-1">सेक्सन, उमेर र स्थान द्वारा, भुक्तानी गरिएको घरेलु र देखभाल कार्यमा खर्च गरिएको समयको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -553,7 +553,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-5-1">(क) राष्ट्रिय संसद र (ख) स्थानीय सरकारमा महिलाले राखेका सिटहरूको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-5-1">(क) राष्ट्रिय संसद र (ख) स्थानीय सरकारमा महिलाले राखेका सिटहरूको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -580,7 +580,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.5.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-5-2">व्यवस्थापकीय पदहरूमा महिलाहरूको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-5-2">व्यवस्थापकीय पदहरूमा महिलाहरूको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -616,7 +616,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.6.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-6-1">यौन सम्बन्ध, गर्भनिरोधक प्रयोग र प्रजनन स्वास्थ्य सेवाको बारेमा आफ्नै सूचित निर्णय गर्ने १–-–– वर्ष उमेर महिलाको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-6-1">यौन सम्बन्ध, गर्भनिरोधक प्रयोग र प्रजनन स्वास्थ्य सेवाको बारेमा आफ्नै सूचित निर्णय गर्ने १–-–– वर्ष उमेर महिलाको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -643,7 +643,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.6.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-6-2">कानून र नियमहरूको साथ देशहरूको संख्या जसले यौन र प्रजनन स्वास्थ्य सेवा, सूचना र शिक्षामा १ 15 बर्ष भन्दा माथिका महिला र पुरुषहरूको पूर्ण र समान पहुँचको ग्यारेन्टी गर्दछ।</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-6-2">कानून र नियमहरूको साथ देशहरूको संख्या जसले यौन र प्रजनन स्वास्थ्य सेवा, सूचना र शिक्षामा १ 15 बर्ष भन्दा माथिका महिला र पुरुषहरूको पूर्ण र समान पहुँचको ग्यारेन्टी गर्दछ।</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -679,7 +679,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-a-1">(क) कुल जग्गाको स्वामित्व वा कृषि जग्गामा सुरक्षित अधिकार सहित कुल जनसंख्याको अनुपात, सेक्स द्वारा; र (ख) कार्यकालको प्रकारले कृषि भूमिका मालिक वा अधिकारदाता बीचमा महिलाहरूको अंश</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-a-1">(क) कुल जग्गाको स्वामित्व वा कृषि जग्गामा सुरक्षित अधिकार सहित कुल जनसंख्याको अनुपात, सेक्स द्वारा; र (ख) कार्यकालको प्रकारले कृषि भूमिका मालिक वा अधिकारदाता बीचमा महिलाहरूको अंश</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -706,7 +706,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.a.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-a-2">देशहरूको अनुपात जहाँ कानूनी रूपरेखा (परम्परागत कानून सहित) महिलाको जग्गा स्वामित्व र / वा नियन्त्रणको समान अधिकारको ग्यारेन्टी गर्दछ</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-a-2">देशहरूको अनुपात जहाँ कानूनी रूपरेखा (परम्परागत कानून सहित) महिलाको जग्गा स्वामित्व र / वा नियन्त्रणको समान अधिकारको ग्यारेन्टी गर्दछ</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -742,7 +742,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.b.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-b-1">सेक्सन द्वारा मोबाइल टेलिफोन स्वामित्व पाएका व्यक्तिहरूको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-b-1">सेक्सन द्वारा मोबाइल टेलिफोन स्वामित्व पाएका व्यक्तिहरूको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -778,7 +778,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 5.c.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/5-c-1">लै gender्गिक समानता र महिला सशक्तिकरणको लागि सार्वजनिक विनियोजन ट्र्याक गर्न र प्रणाली बनाउनका लागि देशहरूको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/5-c-1">लै gender्गिक समानता र महिला सशक्तिकरणको लागि सार्वजनिक विनियोजन ट्र्याक गर्न र प्रणाली बनाउनका लागि देशहरूको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -825,13 +825,13 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/nepal-site/ne/about/cookies-and-privacy/">कुकिज</a>
+                <a href="/site/ne/about/cookies-and-privacy/">कुकिज</a>
                 
                 </li>
               
             
             
-            <li><a href="/nepal-site/ne/config">Configuration</a></li>
+            <li><a href="/site/ne/config">Configuration</a></li>
             </ul>
         </div>
       </div>
@@ -864,7 +864,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/nepal-site/assets/js/sdg.js?v=20210510012631'></script>
+<script src='/site/assets/js/sdg.js?v=20210510125537'></script>
 
 <script>
 $(function() {

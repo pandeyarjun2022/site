@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/nepal-data/ne',
+  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/data/ne',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -117,13 +117,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/nepal-site/assets/js/lib/classList.js"></script>
+        <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/nepal-site/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/nepal-site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/site/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/nepal-site/assets/css/style.css?v=20210510012631">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210510125537">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -166,8 +166,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/nepal-site/ne/" id="home">
-    <img src="/nepal-site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
+      <a class="navbar-brand" href="/site/ne/" id="home">
+    <img src="/site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
@@ -178,7 +178,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/14/">
+            <a href="/site/14/">
               English
             </a>
           </li></ul>
@@ -195,17 +195,17 @@ var translations = {
         aria-haspopup="true">
         <button data-target="menu-mobile" aria-expanded="false">मेनू</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/nepal-site/ne/goals">गोलहरू</a>
+    <a href="/site/ne/goals">गोलहरू</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/about">यसको बारे</a>
+    <a href="/site/ne/about">यसको बारे</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/guidance">मार्गदर्शन</a>
+    <a href="/site/ne/guidance">मार्गदर्शन</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/faq">FAQ</a>
+    <a href="/site/ne/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/news">अपडेट</a>
+    <a href="/site/ne/news">अपडेट</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -220,7 +220,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/14/">
+            <a href="/site/14/">
               English
             </a>
           </li></ul>
@@ -238,7 +238,7 @@ var translations = {
         aria-haspopup="true">
         <button data-target="search-mobile" aria-expanded="false">खोज</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/nepal-site/ne/search">
+  <form action="/site/ne/search">
     <label class="sr-only" for="indicator_search-mobile">खोज</label>
     <input type="text" name="q" id="indicator_search-mobile" title="खोज" /><!--
     --><button aria-label="खोज" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -248,7 +248,7 @@ var translations = {
     </li>
 </ul>
       <div id="search" class="menu-target">
-  <form action="/nepal-site/ne/search">
+  <form action="/site/ne/search">
     <label class="sr-only" for="indicator_search">खोज</label>
     <input type="text" name="q" id="indicator_search" title="खोज" /><!--
     --><button aria-label="खोज" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -256,17 +256,17 @@ var translations = {
 </div>
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/nepal-site/ne/goals">गोलहरू</a>
+    <a href="/site/ne/goals">गोलहरू</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/about">यसको बारे</a>
+    <a href="/site/ne/about">यसको बारे</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/guidance">मार्गदर्शन</a>
+    <a href="/site/ne/guidance">मार्गदर्शन</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/faq">FAQ</a>
+    <a href="/site/ne/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/news">अपडेट</a>
+    <a href="/site/ne/news">अपडेट</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -281,7 +281,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/14/">
+            <a href="/site/14/">
               English
             </a>
           </li></ul>
@@ -355,7 +355,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 14.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/14-1-1">तटीय eutrophication र फ्लोटिंग प्लास्टिक मलबे घनत्व को सूचकांक</a></span>
+            <span class="indicator-name"><a href="/site/ne/14-1-1">तटीय eutrophication र फ्लोटिंग प्लास्टिक मलबे घनत्व को सूचकांक</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -391,7 +391,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 14.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/14-2-1">राष्ट्रिय विशेष आर्थिक क्षेत्रहरूको अनुपात इकोसिस्टम आधारित दृष्टिकोण प्रयोग गरेर व्यवस्थित गरियो</a></span>
+            <span class="indicator-name"><a href="/site/ne/14-2-1">राष्ट्रिय विशेष आर्थिक क्षेत्रहरूको अनुपात इकोसिस्टम आधारित दृष्टिकोण प्रयोग गरेर व्यवस्थित गरियो</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -427,7 +427,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 14.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/14-3-1">औसत समुद्री अम्लता (pH) प्रतिनिधि नमूना स्टेशनहरूको स्वीकृत सूटमा मापन गरियो</a></span>
+            <span class="indicator-name"><a href="/site/ne/14-3-1">औसत समुद्री अम्लता (pH) प्रतिनिधि नमूना स्टेशनहरूको स्वीकृत सूटमा मापन गरियो</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -463,7 +463,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 14.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/14-4-1">जैविक दृष्टिले टिकाऊ स्तर भित्र माछाको शेयरको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/14-4-1">जैविक दृष्टिले टिकाऊ स्तर भित्र माछाको शेयरको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -499,7 +499,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 14.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/14-5-1">समुद्री क्षेत्रको सम्बन्धमा संरक्षित क्षेत्रको कभरेज</a></span>
+            <span class="indicator-name"><a href="/site/ne/14-5-1">समुद्री क्षेत्रको सम्बन्धमा संरक्षित क्षेत्रको कभरेज</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -535,7 +535,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 14.6.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/14-6-1">गैरकानुनी, रिपोर्ट नगरिएको र अनियमित माछा मार्ने उद्देश्यले अन्तर्राष्ट्रिय उपकरणहरूको कार्यान्वयनको डिग्रीमा देशहरू द्वारा प्रगति</a></span>
+            <span class="indicator-name"><a href="/site/ne/14-6-1">गैरकानुनी, रिपोर्ट नगरिएको र अनियमित माछा मार्ने उद्देश्यले अन्तर्राष्ट्रिय उपकरणहरूको कार्यान्वयनको डिग्रीमा देशहरू द्वारा प्रगति</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -571,7 +571,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 14.7.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/14-7-1">सानो टापुका विकासशील राज्यहरू, कम विकसित देशहरू र सबै देशहरूमा जीडीपीको अनुपातको रूपमा दिगो माछा पालन</a></span>
+            <span class="indicator-name"><a href="/site/ne/14-7-1">सानो टापुका विकासशील राज्यहरू, कम विकसित देशहरू र सबै देशहरूमा जीडीपीको अनुपातको रूपमा दिगो माछा पालन</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -607,7 +607,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 14.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/14-a-1">समुद्री टेक्नोलोजीको क्षेत्रमा अनुसन्धानका लागि कुल अनुसन्धान बजेटको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/14-a-1">समुद्री टेक्नोलोजीको क्षेत्रमा अनुसन्धानका लागि कुल अनुसन्धान बजेटको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -643,7 +643,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 14.b.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/14-b-1">कानूनी / नियामक / नीति / संस्थागत रूपरेखाको आवेदन डिग्रीको डिग्रीमा देशहरू द्वारा प्रगति जुन सानो माछा पालन व्यवसायको लागि पहुँच अधिकारहरूलाई मान्यता र सुरक्षा दिन्छ।</a></span>
+            <span class="indicator-name"><a href="/site/ne/14-b-1">कानूनी / नियामक / नीति / संस्थागत रूपरेखाको आवेदन डिग्रीको डिग्रीमा देशहरू द्वारा प्रगति जुन सानो माछा पालन व्यवसायको लागि पहुँच अधिकारहरूलाई मान्यता र सुरक्षा दिन्छ।</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -679,7 +679,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 14.c.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/14-c-1">कानुनी, नीति र संस्थागत रूपरेखामार्फत अनुमोदन, स्वीकार र कार्यान्वयनमा प्रगति गरिरहेका देशहरूको संख्या, अन्तर्राष्ट्रिय कानून लागू गर्ने समुद्री सम्बन्धी उपकरणहरू, जसको संरक्षण र दिगो उपयोगको लागि संयुक्त राष्ट्रसंघीय महासvention्घको समुद्रको कानूनमा प्रतिबिम्बित छ। सागरहरू र उनीहरूका श्रोतहरू</a></span>
+            <span class="indicator-name"><a href="/site/ne/14-c-1">कानुनी, नीति र संस्थागत रूपरेखामार्फत अनुमोदन, स्वीकार र कार्यान्वयनमा प्रगति गरिरहेका देशहरूको संख्या, अन्तर्राष्ट्रिय कानून लागू गर्ने समुद्री सम्बन्धी उपकरणहरू, जसको संरक्षण र दिगो उपयोगको लागि संयुक्त राष्ट्रसंघीय महासvention्घको समुद्रको कानूनमा प्रतिबिम्बित छ। सागरहरू र उनीहरूका श्रोतहरू</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -726,13 +726,13 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/nepal-site/ne/about/cookies-and-privacy/">कुकिज</a>
+                <a href="/site/ne/about/cookies-and-privacy/">कुकिज</a>
                 
                 </li>
               
             
             
-            <li><a href="/nepal-site/ne/config">Configuration</a></li>
+            <li><a href="/site/ne/config">Configuration</a></li>
             </ul>
         </div>
       </div>
@@ -765,7 +765,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/nepal-site/assets/js/sdg.js?v=20210510012631'></script>
+<script src='/site/assets/js/sdg.js?v=20210510125537'></script>
 
 <script>
 $(function() {

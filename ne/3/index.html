@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/nepal-data/ne',
+  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/data/ne',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -117,13 +117,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/nepal-site/assets/js/lib/classList.js"></script>
+        <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/nepal-site/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/nepal-site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/site/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/nepal-site/assets/css/style.css?v=20210510012631">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210510125537">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -166,8 +166,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/nepal-site/ne/" id="home">
-    <img src="/nepal-site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
+      <a class="navbar-brand" href="/site/ne/" id="home">
+    <img src="/site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
@@ -178,7 +178,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/3/">
+            <a href="/site/3/">
               English
             </a>
           </li></ul>
@@ -195,17 +195,17 @@ var translations = {
         aria-haspopup="true">
         <button data-target="menu-mobile" aria-expanded="false">मेनू</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/nepal-site/ne/goals">गोलहरू</a>
+    <a href="/site/ne/goals">गोलहरू</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/about">यसको बारे</a>
+    <a href="/site/ne/about">यसको बारे</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/guidance">मार्गदर्शन</a>
+    <a href="/site/ne/guidance">मार्गदर्शन</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/faq">FAQ</a>
+    <a href="/site/ne/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/news">अपडेट</a>
+    <a href="/site/ne/news">अपडेट</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -220,7 +220,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/3/">
+            <a href="/site/3/">
               English
             </a>
           </li></ul>
@@ -238,7 +238,7 @@ var translations = {
         aria-haspopup="true">
         <button data-target="search-mobile" aria-expanded="false">खोज</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/nepal-site/ne/search">
+  <form action="/site/ne/search">
     <label class="sr-only" for="indicator_search-mobile">खोज</label>
     <input type="text" name="q" id="indicator_search-mobile" title="खोज" /><!--
     --><button aria-label="खोज" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -248,7 +248,7 @@ var translations = {
     </li>
 </ul>
       <div id="search" class="menu-target">
-  <form action="/nepal-site/ne/search">
+  <form action="/site/ne/search">
     <label class="sr-only" for="indicator_search">खोज</label>
     <input type="text" name="q" id="indicator_search" title="खोज" /><!--
     --><button aria-label="खोज" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -256,17 +256,17 @@ var translations = {
 </div>
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/nepal-site/ne/goals">गोलहरू</a>
+    <a href="/site/ne/goals">गोलहरू</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/about">यसको बारे</a>
+    <a href="/site/ne/about">यसको बारे</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/guidance">मार्गदर्शन</a>
+    <a href="/site/ne/guidance">मार्गदर्शन</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/faq">FAQ</a>
+    <a href="/site/ne/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/news">अपडेट</a>
+    <a href="/site/ne/news">अपडेट</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -281,7 +281,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/3/">
+            <a href="/site/3/">
               English
             </a>
           </li></ul>
@@ -355,7 +355,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-1-1">मातृ मृत्युदर अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-1-1">मातृ मृत्युदर अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -382,7 +382,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.1.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-1-2">कुशल स्वास्थ्यकर्मीले भाग लिएको जन्मको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-1-2">कुशल स्वास्थ्यकर्मीले भाग लिएको जन्मको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -418,7 +418,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-2-1">‐ पाँच मृत्यु दर मुनि</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-2-1">‐ पाँच मृत्यु दर मुनि</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -445,7 +445,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.2.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-2-2">नवजात मृत्यु दर</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-2-2">नवजात मृत्यु दर</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -481,7 +481,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-3-1">लिंग, उमेर र कुञ्जी जनसंख्या द्वारा प्रति १०,००० अप्रमाणित जनसंख्यामा नयाँ एचआईभी संक्रमणको संख्या</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-3-1">लिंग, उमेर र कुञ्जी जनसंख्या द्वारा प्रति १०,००० अप्रमाणित जनसंख्यामा नयाँ एचआईभी संक्रमणको संख्या</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -508,7 +508,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.3.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-3-2">१००,००० जनसंख्या प्रति क्षयरोगको घटना</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-3-2">१००,००० जनसंख्या प्रति क्षयरोगको घटना</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -535,7 +535,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.3.3</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-3-3">प्रति १००० जनसंख्या मालेरिया घटना</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-3-3">प्रति १००० जनसंख्या मालेरिया घटना</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -562,7 +562,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.3.4</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-3-4">100,000 जनसंख्या प्रति हेपेटाइटिस बी घटना</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-3-4">100,000 जनसंख्या प्रति हेपेटाइटिस बी घटना</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -589,7 +589,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.3.5</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-3-5">उपेक्षित उष्णकटिबंधीय रोगहरूको बिरूद्ध हस्तक्षेप आवश्यक व्यक्तिहरूको संख्या</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-3-5">उपेक्षित उष्णकटिबंधीय रोगहरूको बिरूद्ध हस्तक्षेप आवश्यक व्यक्तिहरूको संख्या</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -625,7 +625,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-4-1">मृत्यु दर हृदय रोग, क्यान्सर, मधुमेह वा दीर्घकालीन श्वसन रोगका लागि जिम्मेदार छ</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-4-1">मृत्यु दर हृदय रोग, क्यान्सर, मधुमेह वा दीर्घकालीन श्वसन रोगका लागि जिम्मेदार छ</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -652,7 +652,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.4.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-4-2">आत्महत्या मृत्यु दर</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-4-2">आत्महत्या मृत्यु दर</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -688,7 +688,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-5-1">पदार्थ हस्तक्षेप विकारहरूको लागि उपचार हस्तक्षेप (औषधि, मनोसामाजिक र पुनर्वास र देखभाल सेवाहरू) को कभरेज</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-5-1">पदार्थ हस्तक्षेप विकारहरूको लागि उपचार हस्तक्षेप (औषधि, मनोसामाजिक र पुनर्वास र देखभाल सेवाहरू) को कभरेज</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -715,7 +715,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.5.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-5-2">रक्सीको हानिकारक प्रयोग, राष्ट्रिय सन्दर्भमा परिभाषित प्रति व्यक्ति मदिरा (१ 15 बर्ष र माथि उमेर) क्यालेन्डर वर्ष भित्र लिटर शुद्ध मदिराको रूपमा।</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-5-2">रक्सीको हानिकारक प्रयोग, राष्ट्रिय सन्दर्भमा परिभाषित प्रति व्यक्ति मदिरा (१ 15 बर्ष र माथि उमेर) क्यालेन्डर वर्ष भित्र लिटर शुद्ध मदिराको रूपमा।</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -751,7 +751,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.6.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-6-1">सडक यातायात चोटका कारण मृत्यु दर</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-6-1">सडक यातायात चोटका कारण मृत्यु दर</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -787,7 +787,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.7.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-7-1">प्रजनन उमेरका महिलाहरूको अनुपात (१ aged-–– बर्ष उमेरका) जसलाई परिवार विधि योजनाको आवश्यकता छ जुन आधुनिक विधिहरूद्वारा सन्तुष्ट छन्</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-7-1">प्रजनन उमेरका महिलाहरूको अनुपात (१ aged-–– बर्ष उमेरका) जसलाई परिवार विधि योजनाको आवश्यकता छ जुन आधुनिक विधिहरूद्वारा सन्तुष्ट छन्</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -814,7 +814,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.7.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-7-2">किशोरावस्थाको जन्म दर (१०-१– वर्ष उमेर; १–-१– बर्ष उमेर) प्रति उमेर १,००० महिलामा</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-7-2">किशोरावस्थाको जन्म दर (१०-१– वर्ष उमेर; १–-१– बर्ष उमेर) प्रति उमेर १,००० महिलामा</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -850,7 +850,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.8.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-8-1">आवश्यक स्वास्थ्य सेवाको कभरेज (सामान्य र सबैभन्दा वञ्चित जनसंख्या बीच प्रजनन, मातृ, नवजात र बच्चा स्वास्थ्य, संक्रामक रोग, गैर-संचार रोग र सेवा क्षमता र पहुँच समावेश ट्रेसर हस्तक्षेपको आधारमा आवश्यक सेवाहरूको औसत कभरेजको रूपमा परिभाषित) )</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-8-1">आवश्यक स्वास्थ्य सेवाको कभरेज (सामान्य र सबैभन्दा वञ्चित जनसंख्या बीच प्रजनन, मातृ, नवजात र बच्चा स्वास्थ्य, संक्रामक रोग, गैर-संचार रोग र सेवा क्षमता र पहुँच समावेश ट्रेसर हस्तक्षेपको आधारमा आवश्यक सेवाहरूको औसत कभरेजको रूपमा परिभाषित) )</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -877,7 +877,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.8.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-8-2">कुल परिवार खर्च वा आयको एक हिस्साको रूपमा स्वास्थ्यमा ठूलो पारिवारिक खर्चको साथ जनसंख्याको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-8-2">कुल परिवार खर्च वा आयको एक हिस्साको रूपमा स्वास्थ्यमा ठूलो पारिवारिक खर्चको साथ जनसंख्याको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -913,7 +913,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.9.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-9-1">मृत्यु दर घर र वातावरणीय वायु प्रदूषणको लागि जिम्मेवार छ</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-9-1">मृत्यु दर घर र वातावरणीय वायु प्रदूषणको लागि जिम्मेवार छ</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -940,7 +940,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.9.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-9-2">असुरक्षित पानी, असुरक्षित सरसफाइ र सरसफाइको अभाव (असुरक्षित पानी, स्वच्छता र सबैका लागि स्वच्छता (WASH) सेवाहरूको लागि जोखिम) लाई जिम्मेवार मृत्यु दर</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-9-2">असुरक्षित पानी, असुरक्षित सरसफाइ र सरसफाइको अभाव (असुरक्षित पानी, स्वच्छता र सबैका लागि स्वच्छता (WASH) सेवाहरूको लागि जोखिम) लाई जिम्मेवार मृत्यु दर</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -967,7 +967,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.9.3</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-9-3">मृत्युदर अन्जान विषाक्तता को जिम्मेदार छ</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-9-3">मृत्युदर अन्जान विषाक्तता को जिम्मेदार छ</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -1003,7 +1003,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-a-1">१ tobacco बर्ष वा माथि उमेरका बीच उमेर मापदण्डको प्रचलन</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-a-1">१ tobacco बर्ष वा माथि उमेरका बीच उमेर मापदण्डको प्रचलन</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -1039,7 +1039,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.b.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-b-1">राष्ट्रिय कार्यक्रममा समावेश सबै खोपहरूले ओगटेको लक्षित जनसंख्याको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-b-1">राष्ट्रिय कार्यक्रममा समावेश सबै खोपहरूले ओगटेको लक्षित जनसंख्याको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -1066,7 +1066,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.b.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-b-2">चिकित्सा अनुसन्धान र आधारभूत स्वास्थ्य क्षेत्रहरूमा कुल शुद्ध आधिकारिक विकास सहायता</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-b-2">चिकित्सा अनुसन्धान र आधारभूत स्वास्थ्य क्षेत्रहरूमा कुल शुद्ध आधिकारिक विकास सहायता</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -1093,7 +1093,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.b.3</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-b-3">दिगो आधारमा उपलब्ध र किफायती सान्दर्भिक आवश्यक औषधिहरूको कोर सेट भएका स्वास्थ्य सुविधाहरूको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-b-3">दिगो आधारमा उपलब्ध र किफायती सान्दर्भिक आवश्यक औषधिहरूको कोर सेट भएका स्वास्थ्य सुविधाहरूको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -1129,7 +1129,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.c.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-c-1">स्वास्थ्य कार्यकर्ता घनत्व र वितरण</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-c-1">स्वास्थ्य कार्यकर्ता घनत्व र वितरण</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -1165,7 +1165,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.d.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-d-1">अन्तर्राष्ट्रिय स्वास्थ्य नियमहरु (IHR) क्षमता र स्वास्थ्य आपतकालीन तयारी</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-d-1">अन्तर्राष्ट्रिय स्वास्थ्य नियमहरु (IHR) क्षमता र स्वास्थ्य आपतकालीन तयारी</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -1192,7 +1192,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 3.d.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/3-d-2">global_indicators.3-d-2-title</a></span>
+            <span class="indicator-name"><a href="/site/ne/3-d-2">global_indicators.3-d-2-title</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -1239,13 +1239,13 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/nepal-site/ne/about/cookies-and-privacy/">कुकिज</a>
+                <a href="/site/ne/about/cookies-and-privacy/">कुकिज</a>
                 
                 </li>
               
             
             
-            <li><a href="/nepal-site/ne/config">Configuration</a></li>
+            <li><a href="/site/ne/config">Configuration</a></li>
             </ul>
         </div>
       </div>
@@ -1278,7 +1278,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/nepal-site/assets/js/sdg.js?v=20210510012631'></script>
+<script src='/site/assets/js/sdg.js?v=20210510125537'></script>
 
 <script>
 $(function() {

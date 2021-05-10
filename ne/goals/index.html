@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/nepal-data/ne',
+  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/data/ne',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -117,13 +117,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/nepal-site/assets/js/lib/classList.js"></script>
+        <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/nepal-site/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/nepal-site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/site/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/nepal-site/assets/css/style.css?v=20210510012631">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210510125537">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -166,8 +166,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/nepal-site/ne/" id="home">
-    <img src="/nepal-site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
+      <a class="navbar-brand" href="/site/ne/" id="home">
+    <img src="/site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
@@ -178,7 +178,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/goals/">
+            <a href="/site/goals/">
               English
             </a>
           </li></ul>
@@ -195,17 +195,17 @@ var translations = {
         aria-haspopup="true">
         <button data-target="menu-mobile" aria-expanded="false">मेनू</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/nepal-site/ne/goals">गोलहरू</a>
+    <a href="/site/ne/goals">गोलहरू</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/about">यसको बारे</a>
+    <a href="/site/ne/about">यसको बारे</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/guidance">मार्गदर्शन</a>
+    <a href="/site/ne/guidance">मार्गदर्शन</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/faq">FAQ</a>
+    <a href="/site/ne/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/news">अपडेट</a>
+    <a href="/site/ne/news">अपडेट</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -220,7 +220,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/goals/">
+            <a href="/site/goals/">
               English
             </a>
           </li></ul>
@@ -238,7 +238,7 @@ var translations = {
         aria-haspopup="true">
         <button data-target="search-mobile" aria-expanded="false">खोज</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/nepal-site/ne/search">
+  <form action="/site/ne/search">
     <label class="sr-only" for="indicator_search-mobile">खोज</label>
     <input type="text" name="q" id="indicator_search-mobile" title="खोज" /><!--
     --><button aria-label="खोज" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -248,7 +248,7 @@ var translations = {
     </li>
 </ul>
       <div id="search" class="menu-target">
-  <form action="/nepal-site/ne/search">
+  <form action="/site/ne/search">
     <label class="sr-only" for="indicator_search">खोज</label>
     <input type="text" name="q" id="indicator_search" title="खोज" /><!--
     --><button aria-label="खोज" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -256,17 +256,17 @@ var translations = {
 </div>
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/nepal-site/ne/goals">गोलहरू</a>
+    <a href="/site/ne/goals">गोलहरू</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/about">यसको बारे</a>
+    <a href="/site/ne/about">यसको बारे</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/guidance">मार्गदर्शन</a>
+    <a href="/site/ne/guidance">मार्गदर्शन</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/faq">FAQ</a>
+    <a href="/site/ne/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/news">अपडेट</a>
+    <a href="/site/ne/news">अपडेट</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -281,7 +281,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/goals/">
+            <a href="/site/goals/">
               English
             </a>
           </li></ul>
@@ -321,103 +321,103 @@ var translations = {
         <div class="row no-gutters">
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/1">
+                <a href="/site/ne/1">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/1.png" id="goal-1" alt="कुनै गरीबी छैन - गोल 1" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/2">
+                <a href="/site/ne/2">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/2.png" id="goal-2" alt="शून्य भोक - गोल 2" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/3">
+                <a href="/site/ne/3">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/3.png" id="goal-3" alt="राम्रो स्वास्थ्य र कल्याणकारी - गोल 3" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/4">
+                <a href="/site/ne/4">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/4.png" id="goal-4" alt="गुणस्तरीय शिक्षा - गोल 4" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/5">
+                <a href="/site/ne/5">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/5.png" id="goal-5" alt="लैङ्गिक समानता - गोल 5" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/6">
+                <a href="/site/ne/6">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/6.png" id="goal-6" alt="सफा पानी र सरसफाइ - गोल 6" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/7">
+                <a href="/site/ne/7">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/7.png" id="goal-7" alt="किफायती र स्वच्छ उर्जा - गोल 7" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/8">
+                <a href="/site/ne/8">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/8.png" id="goal-8" alt="सभ्य रोजगार र आर्थिक बृद्धि - गोल 8" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/9">
+                <a href="/site/ne/9">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/9.png" id="goal-9" alt="उद्योग, नवीनता र पूर्वाधार - गोल 9" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/10">
+                <a href="/site/ne/10">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/10.png" id="goal-10" alt="असमानता कम भयो - गोल 10" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/11">
+                <a href="/site/ne/11">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/11.png" id="goal-11" alt="दिगो शहरहरू र समुदायहरू - गोल 11" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/12">
+                <a href="/site/ne/12">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/12.png" id="goal-12" alt="जिम्मेवार खपत र उत्पादन - गोल 12" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/13">
+                <a href="/site/ne/13">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/13.png" id="goal-13" alt="मौसम कार्य - गोल 13" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/14">
+                <a href="/site/ne/14">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/14.png" id="goal-14" alt="पानीमुनिको जीवन - गोल 14" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/15">
+                <a href="/site/ne/15">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/15.png" id="goal-15" alt="भूमिमा जीवन - गोल 15" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/16">
+                <a href="/site/ne/16">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/16.png" id="goal-16" alt="शान्ति र न्याय - मजबूत संस्था - गोल 16" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
             
             <div class="col-xs-4 col-md-2 goal-tile">
-                <a href="/nepal-site/ne/17">
+                <a href="/site/ne/17">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/17.png" id="goal-17" alt="लक्ष्यका लागि साझेदारी - गोल 17" class="goal-icon-image goal-icon-image-" />
                 </a>
             </div>
@@ -455,13 +455,13 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/nepal-site/ne/about/cookies-and-privacy/">कुकिज</a>
+                <a href="/site/ne/about/cookies-and-privacy/">कुकिज</a>
                 
                 </li>
               
             
             
-            <li><a href="/nepal-site/ne/config">Configuration</a></li>
+            <li><a href="/site/ne/config">Configuration</a></li>
             </ul>
         </div>
       </div>
@@ -494,7 +494,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/nepal-site/assets/js/sdg.js?v=20210510012631'></script>
+<script src='/site/assets/js/sdg.js?v=20210510125537'></script>
 
 <script>
 $(function() {

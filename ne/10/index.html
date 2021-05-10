@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/nepal-data/ne',
+  remoteDataBaseUrl: 'https://open-sdg-nepal.github.io/data/ne',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -117,13 +117,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/nepal-site/assets/js/lib/classList.js"></script>
+        <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/nepal-site/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/nepal-site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/site/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/nepal-site/assets/css/style.css?v=20210510012631">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210510125537">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -166,8 +166,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/nepal-site/ne/" id="home">
-    <img src="/nepal-site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
+      <a class="navbar-brand" href="/site/ne/" id="home">
+    <img src="/site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
@@ -178,7 +178,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/10/">
+            <a href="/site/10/">
               English
             </a>
           </li></ul>
@@ -195,17 +195,17 @@ var translations = {
         aria-haspopup="true">
         <button data-target="menu-mobile" aria-expanded="false">मेनू</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/nepal-site/ne/goals">गोलहरू</a>
+    <a href="/site/ne/goals">गोलहरू</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/about">यसको बारे</a>
+    <a href="/site/ne/about">यसको बारे</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/guidance">मार्गदर्शन</a>
+    <a href="/site/ne/guidance">मार्गदर्शन</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/faq">FAQ</a>
+    <a href="/site/ne/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/news">अपडेट</a>
+    <a href="/site/ne/news">अपडेट</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -220,7 +220,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/10/">
+            <a href="/site/10/">
               English
             </a>
           </li></ul>
@@ -238,7 +238,7 @@ var translations = {
         aria-haspopup="true">
         <button data-target="search-mobile" aria-expanded="false">खोज</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/nepal-site/ne/search">
+  <form action="/site/ne/search">
     <label class="sr-only" for="indicator_search-mobile">खोज</label>
     <input type="text" name="q" id="indicator_search-mobile" title="खोज" /><!--
     --><button aria-label="खोज" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -248,7 +248,7 @@ var translations = {
     </li>
 </ul>
       <div id="search" class="menu-target">
-  <form action="/nepal-site/ne/search">
+  <form action="/site/ne/search">
     <label class="sr-only" for="indicator_search">खोज</label>
     <input type="text" name="q" id="indicator_search" title="खोज" /><!--
     --><button aria-label="खोज" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -256,17 +256,17 @@ var translations = {
 </div>
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/nepal-site/ne/goals">गोलहरू</a>
+    <a href="/site/ne/goals">गोलहरू</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/about">यसको बारे</a>
+    <a href="/site/ne/about">यसको बारे</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/guidance">मार्गदर्शन</a>
+    <a href="/site/ne/guidance">मार्गदर्शन</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/faq">FAQ</a>
+    <a href="/site/ne/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/nepal-site/ne/news">अपडेट</a>
+    <a href="/site/ne/news">अपडेट</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -281,7 +281,7 @@ var translations = {
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
       <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/nepal-site/10/">
+            <a href="/site/10/">
               English
             </a>
           </li></ul>
@@ -355,7 +355,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-1-1">जनसंख्याको कुल cent० प्रतिशत र कुल जनसंख्या बीचमा घर खर्च वा प्रति व्यक्ति आयको बृद्धि दर</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-1-1">जनसंख्याको कुल cent० प्रतिशत र कुल जनसंख्या बीचमा घर खर्च वा प्रति व्यक्ति आयको बृद्धि दर</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -391,7 +391,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-2-1">,० प्रतिशत भन्दा कम औसत आय, लिंग, उमेर र अशक्त व्यक्तिको व्यक्तिहरूको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-2-1">,० प्रतिशत भन्दा कम औसत आय, लिंग, उमेर र अशक्त व्यक्तिको व्यक्तिहरूको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -427,7 +427,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-3-1">गत १२ महिनामा अन्तर्राष्ट्रिय मानव अधिकार कानून अन्तर्गत निषेध गरिएको भेदभावको आधारमा व्यक्तिगत रूपमा भेदभाव वा उत्पीडन भएको जनसंख्या रिपोर्टिंगको अनुपात</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-3-1">गत १२ महिनामा अन्तर्राष्ट्रिय मानव अधिकार कानून अन्तर्गत निषेध गरिएको भेदभावको आधारमा व्यक्तिगत रूपमा भेदभाव वा उत्पीडन भएको जनसंख्या रिपोर्टिंगको अनुपात</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -463,7 +463,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-4-1">ज्याडीपी र सामाजिक सुरक्षा स्थानान्तरण सहित जीडीपी को श्रम हिस्सा</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-4-1">ज्याडीपी र सामाजिक सुरक्षा स्थानान्तरण सहित जीडीपी को श्रम हिस्सा</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -490,7 +490,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.4.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-4-2">global_indicators.10-4-2-title</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-4-2">global_indicators.10-4-2-title</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -526,7 +526,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-5-1">वित्तीय ध्वनि सूचक (एफएसआई)</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-5-1">वित्तीय ध्वनि सूचक (एफएसआई)</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -562,7 +562,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.6.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-6-1">अन्तर्राष्ट्रिय संस्थाहरूमा विकासशील देशहरूका सदस्यहरूको संख्या र मतदान अधिकार</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-6-1">अन्तर्राष्ट्रिय संस्थाहरूमा विकासशील देशहरूका सदस्यहरूको संख्या र मतदान अधिकार</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -598,7 +598,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.7.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-7-1">गन्तव्यको देशमा कमाएको वार्षिक आयको अनुपातको रूपमा कर्मचारी द्वारा भर्ती लागत</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-7-1">गन्तव्यको देशमा कमाएको वार्षिक आयको अनुपातको रूपमा कर्मचारी द्वारा भर्ती लागत</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -625,7 +625,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.7.2</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-7-2">देशहरू संख्या जसले राम्रोसँग व्यवस्थित प्रवास नीतिहरू लागू गर्‍यो</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-7-2">देशहरू संख्या जसले राम्रोसँग व्यवस्थित प्रवास नीतिहरू लागू गर्‍यो</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -652,7 +652,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.7.3</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-7-3">global_indicators.10-7-3-title</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-7-3">global_indicators.10-7-3-title</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -679,7 +679,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.7.4</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-7-4">global_indicators.10-7-4-title</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-7-4">global_indicators.10-7-4-title</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -715,7 +715,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-a-1">कम विकसित देशहरू र शून्य-ट्यारिफ भएका विकासशील देशहरूको आयातमा ट्यारिफ लाइनहरूको अनुपात लागू हुन्छ</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-a-1">कम विकसित देशहरू र शून्य-ट्यारिफ भएका विकासशील देशहरूको आयातमा ट्यारिफ लाइनहरूको अनुपात लागू हुन्छ</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -751,7 +751,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.b.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-b-1">विकासकर्ताहरूको लागि कुल स्रोत प्रवाह, प्राप्तकर्ता र दाता देशहरू र प्रकारको प्रवाह (उदाहरणका लागि सरकारी विकास सहायता, विदेशी प्रत्यक्ष लगानी र अन्य प्रवाहहरू)</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-b-1">विकासकर्ताहरूको लागि कुल स्रोत प्रवाह, प्राप्तकर्ता र दाता देशहरू र प्रकारको प्रवाह (उदाहरणका लागि सरकारी विकास सहायता, विदेशी प्रत्यक्ष लगानी र अन्य प्रवाहहरू)</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -787,7 +787,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">सूचक</span> 10.c.1</span>
             </h4>
-            <span class="indicator-name"><a href="/nepal-site/ne/10-c-1">पठाइएको रकमको अनुपातको रूपमा रेमिट्यान्स लागत</a></span>
+            <span class="indicator-name"><a href="/site/ne/10-c-1">पठाइएको रकमको अनुपातको रूपमा रेमिट्यान्स लागत</a></span>
             <span class="sr-only">सूचक स्थिति</span>
             
 
@@ -834,13 +834,13 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/nepal-site/ne/about/cookies-and-privacy/">कुकिज</a>
+                <a href="/site/ne/about/cookies-and-privacy/">कुकिज</a>
                 
                 </li>
               
             
             
-            <li><a href="/nepal-site/ne/config">Configuration</a></li>
+            <li><a href="/site/ne/config">Configuration</a></li>
             </ul>
         </div>
       </div>
@@ -873,7 +873,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/nepal-site/assets/js/sdg.js?v=20210510012631'></script>
+<script src='/site/assets/js/sdg.js?v=20210510125537'></script>
 
 <script>
 $(function() {
