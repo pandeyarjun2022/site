@@ -42,7 +42,7 @@ create_pages:
 custom_css: []
 custom_js: []
 data_edit_url: >-
-  http://prose.io/#open-sdg-nepal/nepal-data/edit/develop/data/indicator_[id].csv
+  http://prose.io/#open-sdg-nepal/data/edit/develop/data/indicator_[id].csv
 data_fields:
   units: ''
   series: ''
@@ -115,7 +115,7 @@ hide_empty_metadata: false
 indicator_config_form:
   enabled: true
   dropdowns: []
-  repository_link: 'https://github.com/open-sdg-nepal/nepal-data/tree/develop/indicator-config'
+  repository_link: 'https://github.com/open-sdg-nepal/data/tree/develop/indicator-config'
   translation_link: ''
 languages:
   - en
@@ -169,12 +169,12 @@ menu:
   - path: /news
     translation_key: menu.updates
     dropdown: []
-metadata_edit_url: 'http://prose.io/#open-sdg-nepal/nepal-data/edit/develop/meta/[id].md'
+metadata_edit_url: 'http://prose.io/#open-sdg-nepal/data/edit/develop/meta/[id].md'
 metadata_tabs: []
 news:
   category_links: false
 non_global_metadata: indicator.national_metadata
-remote_data_prefix: 'https://open-sdg-nepal.github.io/nepal-data'
+remote_data_prefix: 'https://open-sdg-nepal.github.io/data'
 reporting_status:
   title: ''
   description: ''
@@ -186,7 +186,7 @@ sharethis_property: ''
 site_config_form:
   enabled: true
   dropdowns: []
-  repository_link: 'https://github.com/open-sdg-nepal/nepal-site/tree/develop/_data'
+  repository_link: 'https://github.com/open-sdg-nepal/site/tree/develop/_data'
   translation_link: ''
 validate_indicator_config: false
 validate_site_config: false
