@@ -1,5 +1,5 @@
-accessible_charts: false
-accessible_tabs: false
+accessible_charts: true
+accessible_tabs: true
 analytics:
   ga_prod: ''
 breadcrumbs:
