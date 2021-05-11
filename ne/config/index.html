@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210511162733">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210511164458">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -547,7 +547,31 @@ var translations = {
       }
     }
 
-    // Set values according to this site's configuration.propertyEditorAccessibilityFixes(editor.getEditor('root.accessible_charts'));propertyEditorAccessibilityFixes(editor.getEditor('root.accessible_tabs'));
+    // Set values according to this site's configuration.
+      try {
+        var currentValue = normalizeCurrentValue('accessible_charts', true);
+        var propertyEditor = editor.getEditor('root.accessible_charts');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: accessible_charts');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.accessible_charts'));
+      try {
+        var currentValue = normalizeCurrentValue('accessible_tabs', true);
+        var propertyEditor = editor.getEditor('root.accessible_tabs');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: accessible_tabs');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.accessible_tabs'));
       try {
         var currentValue = normalizeCurrentValue('analytics', {"ga_prod":""});
         var propertyEditor = editor.getEditor('root.analytics');
@@ -1336,7 +1360,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/site/assets/js/sdg.js?v=20210511162733'></script>
+<script src='/site/assets/js/sdg.js?v=20210511164458'></script>
 
 <script>
 $(function() {
