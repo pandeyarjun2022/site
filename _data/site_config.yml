@@ -103,9 +103,9 @@ goal_image_extension: ''
 goals_page:
   title: ''
   description: ''
-graph_color_headline: '#000000'
-graph_color_headline_high_contrast: '#000000'
-graph_color_set: default
+graph_color_headline: '#004466'
+graph_color_headline_high_contrast: '#55a6e5'
+graph_color_set: accessible
 graph_color_list: []
 graph_color_number: 0
 header:
@@ -188,5 +188,5 @@ site_config_form:
   dropdowns: []
   repository_link: 'https://github.com/open-sdg-nepal/site/tree/develop/_data'
   translation_link: ''
-validate_indicator_config: false
-validate_site_config: false
+validate_indicator_config: true
+validate_site_config: true
