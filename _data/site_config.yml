@@ -1,4 +1,4 @@
-﻿accessible_charts: true
+accessible_charts: true
 accessible_tabs: true
 analytics:
   ga_prod: ''
@@ -39,7 +39,7 @@ create_pages:
     title: ''
 custom_css: []
 custom_js: []
-data_edit_url: data
+data_edit_url: 'http://prose.io/#open-sdg-nepal/data/edit/develop/data/indicator_[id].csv'
 data_fields:
   units: UNIT_MEASURE
   series: SERIES
