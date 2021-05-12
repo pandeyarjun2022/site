@@ -124,6 +124,17 @@ indicator_config_form:
         - REF_AREA.NP7
         - REF_AREA.NP101
         - REF_AREA.NP201
+      labels:
+        - REF_AREA.NP
+        - REF_AREA.NP1
+        - REF_AREA.NP2
+        - REF_AREA.NP3
+        - REF_AREA.NP4
+        - REF_AREA.NP5
+        - REF_AREA.NP6
+        - REF_AREA.NP7
+        - REF_AREA.NP101
+        - REF_AREA.NP201
   repository_link: 'https://github.com/open-sdg-nepal/data/tree/develop/indicator-config'
   translation_link: >-
    https://github.com/open-sdg-nepal/data/tree/develop/translations/[language]/[group].yml
