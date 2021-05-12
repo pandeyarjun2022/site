@@ -117,7 +117,7 @@ indicator_config_form:
   enabled: true
   dropdowns: []
   repository_link: 'https://github.com/open-sdg-nepal/data/tree/develop/indicator-config'
-  translation_link: ''
+  translation_link: 'https://github.com/open-sdg-nepal/data/tree/develop/translations/en/[group].yml'
 languages:
   - en
   - ne
