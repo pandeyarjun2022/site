@@ -108,7 +108,7 @@ graph_color_number: 0
 header:
   include: header-default.html
 header_language_toggle: dropdown
-hide_empty_metadata: false
+hide_empty_metadata: true
 indicator_config_form:
   enabled: true
   dropdowns:
