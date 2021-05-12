@@ -1005,7 +1005,7 @@ var accessibilitySwitcher = function() {
 
 };
 opensdg.chartColors = function(indicatorId) {
-  var colorSet = "default";
+  var colorSet = "accessible";
   var numberOfColors = 0;
   var customColorList = [];
 
@@ -3309,7 +3309,7 @@ var indicatorView = function (model, options) {
   };
 
   this.getHeadlineColor = function(contrast) {
-    return this.isHighContrast(contrast) ? '#000000' : '#000000';
+    return this.isHighContrast(contrast) ? '#55a6e5' : '#004466';
   }
 
   this.getGridColor = function(contrast) {
