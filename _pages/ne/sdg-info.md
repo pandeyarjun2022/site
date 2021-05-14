@@ -1,7 +1,7 @@
 ---
 title: SDG information
 language: ne
-permalink: /sdg-info/
+permalink: /ne/sdg-info/
 layout: page
 ---
 
