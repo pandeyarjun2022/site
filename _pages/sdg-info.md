@@ -7,7 +7,7 @@ layout: page
 
 The Sustainable Development Goals are a UN initiative made up of 17 goals.
 
-## Goal 1
+## [Goal 1]({{ site.baseurl }}/1/)
 Goal 1 considers poverty... 
 
 ## Goal 2
