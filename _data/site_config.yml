@@ -65,8 +65,6 @@ footer_menu:
     translation_key: general.facebook
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
-  - path: /sdg-info
-    translation_key: SDG info
 frontpage_cards:
   - title: frontpage.download_all
     content: ''
@@ -184,9 +182,6 @@ menu:
     dropdown: []
   - path: /news
     translation_key: menu.updates
-    dropdown: []
-  - path: /sdg-info
-    translation_key: SDG info
     dropdown: []
 metadata_edit_url: 'http://prose.io/#open-sdg-nepal/data/edit/develop/meta/[id].md'
 metadata_tabs: []
