@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210521013604">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210521113404">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -325,10 +325,10 @@ var translations = {
       </div>
       <div class="variable-options">
         <fieldset>
-          <legend class="sr-only">उप-कोटीहरू - <%=translations.t(fieldItem.field)%></legend>
+          <legend class="sr-only">उपवर्ग - <%=translations.t(fieldItem.field)%></legend>
           <div>
-            <button data-type="select">सबै चयन गर्नुहोस</button>
-            <button data-type="clear">सबै हटाउनुहोस्</button>
+            <button data-type="select">सबै चयन गर्नुहोस्</button>
+            <button data-type="clear">चयन गरिएको सबै हटाउनुहोस्</button>
           </div>
           <% _.each(fieldItem.values, function(item) { %>
             <label>
@@ -352,9 +352,9 @@ var translations = {
 
 <script type="text/template" id="units_template">
   <% if(units.length) { %>
-    <h4>मापन एकाई</h4>
+    <h4>मापनको एकाइ</h4>
     <fieldset>
-      <legend class="sr-only">मापन एकाई</legend>
+      <legend class="sr-only">मापनको एकाइ</legend>
       <% _.each(units, function(unitsItem, index) { %>
         <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
         <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
@@ -376,7 +376,7 @@ var translations = {
   <% } %>
 </script>
 
-<script>translations['indicator'] = {"annotation_2030_target":"२०30० लक्ष्य","announce_data_added":"चार्ट र तालिका डाटा समावेश गर्न अपडेट गरियो।","announce_data_not_available":"चार्ट र तालिकाले कुनै डाटा देखाउँदैन।","announce_data_removed":"चार्ट र तालिका डाटा बहिष्कार गर्न अपडेट गरियो।","chart":"चार्ट","chart_annotation":"चार्ट एनोटेसन","clear_all":"सबै हटाउनुहोस्","clear_selections":"चयनहरू खाली गर्नुहोस्","data_keyboard_navigation":"बाँया र दाँया एरो कुञ्जीहरूको साथ डाटा पोइन्टहरू ब्राउज गर्न प्रविष्ट थिच्नुहोस्।","data_not_available":"यो डाटा उपलब्ध छैन। प्रदर्शन गर्न वैकल्पिक डेटा छनौट गर्नुहोस्।","data_tabular_alternative":"ट्याबुलर डाटा वैकल्पिकको लागि तालिका ट्याब हेर्नुहोस्।","dataset_size_warning":"चार्टमा देखाउनको लागि त्यहाँ धेरै डाटासेटहरू छन्। सबै देखाइने छैन जब सम्म तपाईं केहि चयनहरू हटाउनुहुन्न।","download_chart":"चार्ट CSV डाउनलोड गर्नुहोस्","download_chart_image":"चार्ट छवि डाउनलोड गर्नुहोस्","download_chart_image_title":"छवि को रूपमा चार्ट डाउनलोड गर्नुहोस्","download_csv":"CSV डाउनलोड गर्नुहोस्","download_csv_title":"CSV को रूपमा डाउनलोड गर्नुहोस्","download_geojson":"GeoJSON डाउनलोड गर्नुहोस्","download_geojson_title":"GeoJSON को रूपमा डाउनलोड गर्नुहोस्","download_headline":"हेडलाईन CSV डाउनलोड गर्नुहोस्","download_headline_title":"CSV को रूपमा हेडलाइन डाटा डाउनलोड गर्नुहोस्","download_source":"स्रोत CSV डाउनलोड गर्नुहोस्","download_source_sdmx":"स्रोत SDMX डाउनलोड गर्नुहोस्","download_source_sdmx_title":"SDMX को रूपमा स्रोत डेटा डाउनलोड गर्नुहोस्","download_source_title":"CSV को रूपमा स्रोत डेटा डाउनलोड गर्नुहोस्","download_table":"तालिका CSV डाउनलोड गर्नुहोस्","edit":"Edit","edit_configuration":"कन्फिगरेसन सम्पादन गर्नुहोस्","edit_data":"डाटा सम्पादन गर्नुहोस्","edit_metadata":"मेटाडाटा सम्पादन गर्नुहोस्","footnote":"फुटनोट","geographical_area":"भौगोलिक क्षेत्र","global_metadata":"ग्लोबल मेटाडाटा","global_metadata_blurb":"यस तालिकाले एसडीजी संकेतकहरूका लागि मेटाडेटामा जानकारी प्रदान गर्दछ जुन संयुक्त राष्ट्र संघीय तथ्या Commission्क आयोगले परिभाषित गरेको थियो। [१०]] पूर्ण ग्लोबल मेटाडेटा [१ 180०] संयुक्त राष्ट्र संघीय तथ्या Division्क प्रभाग द्वारा प्रदान गरिएको हो।","legend_help":"चार्टबाट व्यक्तिगत लाइनहरु हटाउन पौराणिक कथामा क्लिक गर्नुहोस्।","loading":"लोड हुँदै","loading_map":"नक्शा लोड हुँदै","map":"नक्सा","map_search":"खोज","map_search_hide":"खोजी लुकाउनुहोस्","map_search_show":"खोजी देखाउनुहोस्","map_year_slider":"वर्ष स्लाइडर","national_metadata":"राष्ट्रिय मेटाडाटा","national_metadata_blurb":"यस तालिकाले वैश्विक SDG सूचकको नजिकको% देश_नाम तथ्या .्कबाट वास्तविक सूचकको लागि मेटाडेटा प्रदान गर्दछ। कृपया नोट गर्नुहोस् कि जब ग्लोबल एसडीजी सूचक% %_ देशिय सांख्यिकीय तथ्या from्कबाट पूर्ण रूपमा उपलब्ध हुन्छ, तब यस तालिकालाई राष्ट्रिय विधि र अन्य% देश_जेष्ट-विशिष्ट मेटाडेटा जानकारीका बारे जानकारी लिनुपर्दछ।","next":"अर्को सूचक","no_data_hint":"कुनै पनि विकल्पहरू उपलब्ध छैन किनकी माथी फिल्टरहरू छन्","plot_legend_description":"प्लॉट लिजेन्ड: रेखामा रेखाको सूची समावेश छ","previous":"अघिल्लो सूचक","select_all":"सबै चयन गर्नुहोस","series":"श्रृंखला","series_help":"डेटा को बिभिन्न बिदाउन हेर्न तल ड्रपडाउनबाट कोटिहरू छनौट गर्नुहोस्। केहि उपलब्ध हुँदैन जब सम्म एक उच्च स्तर छनौट गरीन्छ।","source":"स्रोत","sources":"स्रोतहरू","status":"सूचक स्थिति","sub_categories":"उप-कोटीहरू","sub_categories_show":"उप कोटीहरू देखाउनुहोस्:","table":"टेबल","table_column_sort":"यस स्तम्भ द्वारा क्रमबद्ध गर्न क्लिक गर्नुहोस्","tags":"ट्यागहरू","unit":"एकाइ","unit_of_measurement":"मापन एकाई","units_type":"एकाइ प्रकार","variable_hint":"उपलब्ध जब '% क्षेत्र' चयन गरिएको छ","view_indicator_list":"यस लक्ष्यको सूचक सूची हेर्नुहोस्"};</script>
+<script>translations['indicator'] = {"annotation_2030_target":"२०30० लक्ष्य","announce_data_added":"चार्ट र तालिका डाटा समावेश गर्न अपडेट गरियो।","announce_data_not_available":"चार्ट र तालिकाले कुनै डाटा देखाउँदैन।","announce_data_removed":"चार्ट र तालिका डाटा बहिष्कार गर्न अपडेट गरियो।","chart":"चार्ट","chart_annotation":"चार्ट एनोटेसन","clear_all":"चयन गरिएको सबै हटाउनुहोस्","clear_selections":"चयनलाई हटाउनुहोस्","data_keyboard_navigation":"बाँया र दाँया एरो कुञ्जीहरूको साथ डाटा पोइन्टहरू ब्राउज गर्न प्रविष्ट थिच्नुहोस्।","data_not_available":"यो डाटा उपलब्ध छैन। प्रदर्शन गर्न वैकल्पिक डेटा छनौट गर्नुहोस्।","data_tabular_alternative":"ट्याबुलर डाटा वैकल्पिकको लागि तालिका ट्याब हेर्नुहोस्।","dataset_size_warning":"चार्टमा देखाउनको लागि त्यहाँ धेरै डाटासेटहरू छन्। सबै देखाइने छैन जब सम्म तपाईं केहि चयनहरू हटाउनुहुन्न।","download_chart":"चार्ट सि.एस.भी.लाई डाउनलोड गर्नुहोस्","download_chart_image":"चार्ट चित्रलाई डाउनलोड गर्नुहोस्","download_chart_image_title":"छवि को रूपमा चार्ट डाउनलोड गर्नुहोस्","download_csv":"CSV डाउनलोड गर्नुहोस्","download_csv_title":"CSV को रूपमा डाउनलोड गर्नुहोस्","download_geojson":"GeoJSON डाउनलोड गर्नुहोस्","download_geojson_title":"GeoJSON को रूपमा डाउनलोड गर्नुहोस्","download_headline":"हेडलाईन CSV डाउनलोड गर्नुहोस्","download_headline_title":"CSV को रूपमा हेडलाइन डाटा डाउनलोड गर्नुहोस्","download_source":"सि.एस.भी. को स्रोतलाई डाउनलोड गर्नुहोस्","download_source_sdmx":"स्रोत SDMX डाउनलोड गर्नुहोस्","download_source_sdmx_title":"SDMX को रूपमा स्रोत डेटा डाउनलोड गर्नुहोस्","download_source_title":"CSV को रूपमा स्रोत डेटा डाउनलोड गर्नुहोस्","download_table":"सि.एस.भी. को तालिकालाई डाउनलोड गर्नुहोस्","edit":"Edit","edit_configuration":"कन्फिगरेसन सम्पादन गर्नुहोस्","edit_data":"डाटा सम्पादन गर्नुहोस्","edit_metadata":"मेटाडाटा सम्पादन गर्नुहोस्","footnote":"फुटनोट","geographical_area":"भौगोलिक क्षेत्र","global_metadata":"ग्लोबल मेटाडाटा","global_metadata_blurb":"यस तालिकाले एसडीजी संकेतकहरूका लागि मेटाडेटामा जानकारी प्रदान गर्दछ जुन संयुक्त राष्ट्र संघीय तथ्या Commission्क आयोगले परिभाषित गरेको थियो। [१०]] पूर्ण ग्लोबल मेटाडेटा [१ 180०] संयुक्त राष्ट्र संघीय तथ्या Division्क प्रभाग द्वारा प्रदान गरिएको हो।","legend_help":"चार्टबाट व्यक्तिगत लाइनहरु हटाउन पौराणिक कथामा क्लिक गर्नुहोस्।","loading":"लोड हुँदै","loading_map":"नक्शा लोड हुँदै","map":"नक्सा","map_search":"खोज","map_search_hide":"खोजी लुकाउनुहोस्","map_search_show":"खोजी देखाउनुहोस्","map_year_slider":"वर्ष स्लाइडर","national_metadata":"राष्ट्रिय मेटाडाटा","national_metadata_blurb":"यस तालिकाले वैश्विक SDG सूचकको नजिकको% देश_नाम तथ्या .्कबाट वास्तविक सूचकको लागि मेटाडेटा प्रदान गर्दछ। कृपया नोट गर्नुहोस् कि जब ग्लोबल एसडीजी सूचक% %_ देशिय सांख्यिकीय तथ्या from्कबाट पूर्ण रूपमा उपलब्ध हुन्छ, तब यस तालिकालाई राष्ट्रिय विधि र अन्य% देश_जेष्ट-विशिष्ट मेटाडेटा जानकारीका बारे जानकारी लिनुपर्दछ।","next":"अर्को सूचक","no_data_hint":"कुनै पनि विकल्पहरू उपलब्ध छैन किनकी माथी फिल्टरहरू छन्","plot_legend_description":"प्लॉट लिजेन्ड: रेखामा रेखाको सूची समावेश छ","previous":"अघिल्लो सूचक","select_all":"सबै चयन गर्नुहोस्","series":"श्रृंखला","series_help":"तथ्याङ्कको विभिन्न खण्डीकरण हेर्नका लागि ड्रपडाउन बाकसबाट उपयुक्त वर्ग चयन गर्नुहोस् । माथिल्लो तह चयन नगरिएसम्म केही तथ्यांक उपलब्ध नहुन सक्छन् ।","source":"स्रोत","sources":"स्रोतहरू","status":"सूचक स्थिति","sub_categories":"उपवर्ग","sub_categories_show":"उप कोटीहरू देखाउनुहोस्:","table":"तालिका","table_column_sort":"यस स्तम्भ द्वारा क्रमबद्ध गर्न क्लिक गर्नुहोस्","tags":"ट्यागहरू","unit":"एकाइ","unit_of_measurement":"मापनको एकाइ","units_type":"एकाइ प्रकार","variable_hint":"उपलब्ध जब '% क्षेत्र' चयन गरिएको छ","view_indicator_list":"यस लक्ष्यको सूचक सूची हेर्नुहोस्"};</script>
 
 <script>translations['data'] = null;</script>
 
@@ -386,7 +386,7 @@ var translations = {
 <ol class="breadcrumb">
   
   
-  <li><a href="/site/ne/15" title="स्थलीय इकोसिस्टमको दिगो प्रयोगको संरक्षण, पुनःस्थापना र प्रबर्धन गर्न, वनको जथाभावी प्रबन्ध गर्नुहोस्, लडाई मरुभूमिकरण, र रोक्नुहोस् र भूमि विफलता र रोक्नुहोस् जैवविविधता नोक्सान">गोल 15</a></li>
+  <li><a href="/site/ne/15" title="स्थलीय इकोसिस्टमको दिगो प्रयोगको संरक्षण, पुनःस्थापना र प्रबर्धन गर्न, वनको जथाभावी प्रबन्ध गर्नुहोस्, लडाई मरुभूमिकरण, र रोक्नुहोस् र भूमि विफलता र रोक्नुहोस् जैवविविधता नोक्सान">लक्ष्य 15</a></li>
   
 </ol>
 
@@ -399,7 +399,7 @@ var translations = {
       
       <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
         <a href="/site/ne/15" title="यस लक्ष्यको सूचक सूची हेर्नुहोस्">
-          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/15.png" alt="भूमिमा जीवन - गोल 15" id="goal-15" class="goal-icon-image goal-icon-image-"/>
+          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/15.png" alt="भूमिमा जीवन - लक्ष्य 15" id="goal-15" class="goal-icon-image goal-icon-image-"/>
         </a>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
@@ -1146,7 +1146,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/site/assets/js/sdg.js?v=20210521013604'></script>
+<script src='/site/assets/js/sdg.js?v=20210521113404'></script>
 
 <script>
 $(function() {
