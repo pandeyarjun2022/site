@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210521131505">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210521132031">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -436,7 +436,7 @@ var translations = {
   data-charttitle="विद्युत पहुँचको साथ जनसंख्याको अनुपात"
   data-charttitles="[]"
   data-measurementunit=""
-  data-showdata="true"
+  data-showdata="false"
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
@@ -449,468 +449,7 @@ var translations = {
   data-precision="[]"
 >
   
-  <span role="status" class="sr-only" id="indicator-data-view-status"></span>
-  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
-    <div id="serieses"></div>
-<div id="units"></div>
-<div id="toolbar">
-  <span id="series-help">
-    <h4>उपवर्ग</h4>
-    <p>तथ्याङ्कको विभिन्न खण्डीकरण हेर्नका लागि ड्रपडाउन बाकसबाट उपयुक्त वर्ग चयन गर्नुहोस् । माथिल्लो तह चयन नगरिएसम्म केही तथ्यांक उपलब्ध नहुन सक्छन् ।</p>
-  </span>
-  <div id="fields">
-    <p class="async-loading" data-img="/site/assets/img/loading-small.gif"></p>
-  </div>
-</div>
-
-  </div>
-  <div id="indicator-main" class="indicator-main col-md-9">
-    
-
-
-<div id="headlineTable">
-
-  <div id="datatables">
-
-    <a href="https://open-sdg-nepal.github.io/data/ne/headline/7-1-1.csv" class="btn btn-primary btn-download" download="indicator_7-1-1.csv" tabindex="0" role="button">हेडलाईन CSV डाउनलोड गर्नुहोस्</a>
-
-    <a href="https://open-sdg-nepal.github.io/data/ne/data/7-1-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_7-1-1.csv' tabindex='0' role='button'>सि.एस.भी. को स्रोतलाई डाउनलोड गर्नुहोस्</a>
-
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>विद्युत पहुँचको साथ जनसंख्याको अनुपात</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col">Value</th>
-        
-        
-        
-        <th scope="col">UNIT_MEASURE</th>
-        
-        
-        
-        <th scope="col" class="table-value">SERIES</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td>84.9</td>
-          
-          
-          
-          <td>PT</td>
-          
-          
-          
-          <td class="table-value">EG_ACS_ELEC</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td>89.9</td>
-          
-          
-          
-          <td>PT</td>
-          
-          
-          
-          <td class="table-value">EG_ACS_ELEC</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
-  </div>
-
-  <div id="datatableFooter">
-    
-    
-    <p>भौगोलिक क्षेत्र: NEPAL</p>
-    
-    
-    <p>मापनको एकाइ: </p>
-    
-    
-    <p>फुटनोट: </p>
-    
-  </div>
-
-</div>
-
-
-<section>
-
-  <p class="async-loading" data-img="/site/assets/img/loading-small.gif"></p>
-
-  <div class="async-loaded spacer medium" style="display:none;">
-
-    <div style="display: none;">
-  <span id="table-alternative">ट्याबुलर डाटा वैकल्पिकको लागि तालिका ट्याब हेर्नुहोस्।</span>
-</div>
-<ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
-  <li role="presentation" class="nav-item active">
-    <a class="nav-link" data-toggle="tab" id="tab-chartview" href="#chartview" aria-controls="chartview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Chart tab"
- aria-describedby="table-alternative">चार्ट</a>
-  </li>
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" id="tab-tableview" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Table tab"
->तालिका</a>
-  </li></ul>
-
-    <div class="tab-content data-view">
-  <div role="tabpanel" class="tab-pane active" id="chartview">
-    
-
-    <div id="dataset-size-warning" style="display:none" role="alert">
-      <i class="fa fa-bolt"><span class="sr-only">चेतावनी:</span></i>
-      चार्टमा देखाउनको लागि त्यहाँ धेरै डाटासेटहरू छन्। सबै देखाइने छैन जब सम्म तपाईं केहि चयनहरू हटाउनुहुन्न।
-    </div>
-
-    
-    
-    <div id="selectionsChart">
-      <figure role="group">
-        <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">विद्युत पहुँचको साथ जनसंख्याको अनुपात</h4>
-          <div id="chart" class="plot-container">
-            
-<canvas
-    role="img"
-    aria-labelledby="chart-heading"
-    aria-describedby="table-alternative chart-annotations"
-    tabindex="0"
- ></canvas>
-
-<script>
-// Add a chart alteration to support the chart_graph_limits metadata field.
-opensdg.chartConfigAlter(function(config, info) {
-  if (info.graphLimits && info.graphLimits.length > 0) {
-    var overrides = {
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              min: info.graphLimits.minimum,
-              max: info.graphLimits.maximum,
-            }
-          }]
-        }
-      }
-    }
-    // Add these overrides onto the normal config.
-    $.extend(true, config, overrides);
-  }
-});
-</script>
-
-<span style="display: none;" id="chart-annotations" role="status"></span>
-<script>
-opensdg.annotationPresets = {
-    common: {
-        // This "common" preset is applied to all annotations automatically.
-        borderColor: '#505a5f',
-        type: 'line',
-        label: {
-            backgroundColor: 'black',
-            fontColor: 'white',
-        },
-        // This "highContrast" overrides colors when in high-contrast mode.
-        highContrast: {
-            label: {
-                backgroundColor: 'white',
-                fontColor: 'black'
-            }
-        },
-        // This callback is used to generate a generic description for screenreaders.
-        // This can be overridden to be a more specific string, eg:
-        //
-        //     description: 'Chart annotation showing a 2030 target of 15%'
-        //
-        description: function() {
-            var descriptionParts = [translations.indicator.chart_annotation];
-            if (this.label && this.label.content) {
-                descriptionParts.push(translations.t(this.label.content));
-            }
-            else {
-                // If there is no label, just specify whether it is a box or line.
-                if (this.type == 'line') {
-                    descriptionParts.push(this.mode + ' line');
-                }
-                if (this.type == 'box') {
-                    descriptionParts.push('box');
-                }
-            }
-            if (typeof this.value !== 'undefined') {
-                descriptionParts.push(this.value);
-            }
-            return descriptionParts.join(': ');
-        },
-    },
-    target_line: {
-        mode: 'horizontal',
-        borderDash: [5, 5],
-        label: {
-            position: 'right',
-            content: translations.indicator.annotation_2030_target,
-        },
-    },
-};
-
-// Add a chart alteration to support the chart_annotations metadata field.
-opensdg.chartConfigAlter(function(config, info) {
-    if (info.graphAnnotations && info.graphAnnotations.length > 0) {
-        // Apply some helpers/fixes to the annotations.
-        var annotations = info.graphAnnotations.map(function(annotation) {
-            // Apply the "common" preset.
-            if (opensdg.annotationPresets.common) {
-                annotation = $.extend(true, {}, opensdg.annotationPresets.common, annotation);
-            }
-            // Apply any specified presets.
-            if (annotation.preset) {
-                var preset = annotation.preset;
-                if (opensdg.annotationPresets[preset]) {
-                    annotation = $.extend(true, {}, opensdg.annotationPresets[preset], annotation);
-                }
-            }
-            // Default to horizontal lines.
-            if (!annotation.mode && annotation.type === 'line') {
-                annotation.mode = 'horizontal';
-            }
-            // Provide the obscure scaleID properties on user's behalf.
-            if (!annotation.scaleID && annotation.type === 'line') {
-                if (annotation.mode === 'horizontal') {
-                    annotation.scaleID = 'y-axis-0';
-                }
-                if (annotation.mode === 'vertical') {
-                    annotation.scaleID = 'x-axis-0';
-                }
-            }
-            if (!annotation.xScaleID && annotation.type === 'box') {
-                annotation.xScaleID = 'x-axis-0';
-            }
-            if (!annotation.yScaleID && annotation.type === 'box') {
-                annotation.yScaleID = 'y-axis-0';
-            }
-            // Provide the "enabled" label property on the user's behalf.
-            if (annotation.label && annotation.label.content) {
-                annotation.label.enabled = true;
-            }
-            // Translate any label content.
-            if (annotation.label && annotation.label.content) {
-                annotation.label.content = translations.t(annotation.label.content);
-            }
-            // Save some original values for later used when contrast mode is switched.
-            if (typeof annotation.defaultContrast === 'undefined') {
-                annotation.defaultContrast = {};
-                if (annotation.borderColor) {
-                    annotation.defaultContrast.borderColor = annotation.borderColor;
-                }
-                if (annotation.backgroundColor) {
-                    annotation.defaultContrast.backgroundColor = annotation.backgroundColor;
-                }
-                if (annotation.label) {
-                    annotation.defaultContrast.label = {};
-                    if (annotation.label.fontColor) {
-                        annotation.defaultContrast.label.fontColor = annotation.label.fontColor;
-                    }
-                    if (annotation.label.backgroundColor) {
-                        annotation.defaultContrast.label.backgroundColor = annotation.label.backgroundColor;
-                    }
-                }
-            }
-            return annotation;
-        });
-        if (annotations.length > 0) {
-            var overrides = {
-                options: {
-                    annotation: {
-                        drawTime: 'afterDatasetsDraw',
-                        annotations: annotations
-                    }
-                }
-            };
-            // Add these overrides onto the normal config.
-            $.extend(true, config, overrides);
-
-            // Update the chart annotations element.
-            var descriptions = annotations.map(function(annotation) {
-                var description = '';
-                if (annotation.description) {
-                    if (typeof annotation.description === 'function') {
-                        description = annotation.description.call(annotation);
-                    }
-                    else {
-                        description = translations.t(annotation.description);
-                    }
-                }
-                return description;
-            }).filter(function(description) { return description != ''; });
-
-            var currentDescription = $('#chart-annotations').text();
-            var newDescription = descriptions.join('. ');
-            if (currentDescription != newDescription) {
-                $('#chart-annotations').text(newDescription);
-            }
-        }
-    }
-    else if (config.options && config.options.annotation) {
-        delete config.options.annotation;
-    }
-});
-</script>
-
-<script>
-// For line charts, add the vertical line hover functionality.
-opensdg.chartConfigAlter(function(config, info) {
-    var overrides = {
-        options: {
-            tooltips: {
-                intersect: false,
-                axis: 'x'
-            },
-        },
-        plugins: [{
-            beforeDatasetsDraw: function(chart) {
-                if (chart.tooltip._active && chart.tooltip._active.length) {
-                    var activePoint = chart.tooltip._active[0],
-                        ctx = chart.ctx,
-                        x = activePoint.tooltipPosition().x,
-                        topY = chart.scales['y-axis-0'].top,
-                        bottomY = chart.scales['y-axis-0'].bottom;
-
-                    // draw line
-                    ctx.save();
-                    ctx.beginPath();
-                    ctx.moveTo(x, topY);
-                    ctx.lineTo(x, bottomY);
-                    ctx.lineWidth = 2;
-                    ctx.strokeStyle = '#757575';
-                    ctx.setLineDash([5, 2]);
-                    ctx.stroke();
-                    ctx.restore();
-                }
-            }
-        }],
-    };
-    // Add these overrides onto the normal config, and return it.
-    $.extend(true, config, overrides);
-});
-</script>
-
-          </div>
-          <div id="plotLegend"></div>
-          
-
-
-
-<div id="selectionChartFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-
-        
-        <dt>भौगोलिक क्षेत्र:</dt>
-        <dd>NEPAL</dd>
-        
-
-        
-
-        
-
-        
-    <dl>
-</div>
-
-        </div>
-      </figure>
-      <div id="chartSelectionDownload" class="clearfix">
-        <button id="btnSave" title="छवि को रूपमा चार्ट डाउनलोड गर्नुहोस्" class='btn btn-primary btn-download'>
-          चार्ट चित्रलाई डाउनलोड गर्नुहोस्
-        </button>
-      </div>
-    </div>
-
-
-
-  </div>
-  <div role="tabpanel" class="tab-pane" id="tableview">
-    <div style="display: none;">
-      <span id="column-sort-info">यस स्तम्भ द्वारा क्रमबद्ध गर्न क्लिक गर्नुहोस्</span>
-    </div>
-    <div id="selectionsTable"></div>
-
-
-
-
-<div id="selectionTableFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-
-        
-        <dt>भौगोलिक क्षेत्र:</dt>
-        <dd>NEPAL</dd>
-        
-
-        
-
-        
-
-        
-    <dl>
-</div>
-
-<div id="tableSelectionDownload" class="clearfix"></div>
-
-  </div>
-  <div role="tabpanel" class="tab-pane" id="embeddedmapview" class="embedded-map">
-    <div class="row">
-  <div class="col-xs-12">
-    
-    
-    
-    <div class="embedded-map" id="embeddedmapframe">
-    
-  </div>
-</div>
-
-  </div>
-  
-</div>
-
-
-  </div>
-
-</section>
-
+  <div id="indicator-main" class="indicator-main col-md-12">
   
   <ul class="nav nav-tabs spacer medium" role="tablist">
 
@@ -1004,578 +543,127 @@ data-event-label="Change to Sources tab"
   
       
         
-      
-      
-      <tr>
-        <th scope="row">सूचक जानकारी </th>
-        <td>
           
-            <p>Access to electricity</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">लक्ष्य </th>
-        <td>
           
-            <p>Goal 7: Ensure access to affordable, reliable, sustainable and modern energy for all</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">लक्ष्य </th>
-        <td>
           
-            <p>Target 7.1: By 2030, ensure universal access to affordable, reliable and modern energy services</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">सूचक </th>
-        <td>
-          
-            <p>Percentage of population with access to electricity</p>
-
           
-        </td>
-        </tr>
-        
       
-  
-      
         
           
       
         
-      
-      
-      <tr>
-        <th scope="row">मेटाडाटा अपडेट </th>
-        <td>
-          
-            <p>2021 May 12</p>
-
           
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">सम्बन्धित संकेतकहरू </th>
-        <td>
-          
-            <p>Indicators of Goal 7</p>
-
           
-        </td>
-        </tr>
-        
       
-  
-      
         
           
       
         
-      
-      
-      <tr>
-        <th scope="row">संगठन </th>
-        <td>
-          
-            <p>Central Bureau of Statistics</p>
-
           
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">सम्पर्क व्यक्ति (हरू) </th>
-        <td>
           
-            <p> Krishna Tuladhar / Suresh Basnyat</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">संगठन एकाई सम्पर्क गर्नुहोस् </th>
-        <td>
           
-            <p>Social Statistics Section</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">सम्पर्क व्यक्ति कार्य </th>
-        <td>
           
-            <p>Directors, Produce social Statistics</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">सम्पर्क फोन </th>
-        <td>
           
-            <p>4229406</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">सम्पर्क मेल </th>
-        <td>
           
-            <p>Thapathali Kathmandu</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">सम्पर्क इमेल </th>
-        <td>
-          
-            <p>info@cbs.gov.np</p>
-
           
-        </td>
-        </tr>
-        
-      
-  
       
         
           
       
         
-      
-      
-      <tr>
-        <th scope="row">परिभाषा र अवधारणाहरू </th>
-        <td>
-          
-            <p>Definition: Proportion of population with access to electricity is the percentage of population with access to electricity.</p>
-<p>SDG7 ensures access to affordable, reliable, sustainable and modern energy for all. Specifically, Indicator 7.1.1 refers to the proportion of population with access to electricity. </p>
-<p>Concepts: Electricity access in this scenario refers to the proportion of population in Nepal and Provinces that has access to consistent sources of electricity. </p>
-
           
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">मापनको एकाई </th>
-        <td>
           
-            <p>This is expressed in percentage figures </p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">वर्गीकरण </th>
-        <td>
           
-            <p>Disaggregated by total, province level of the country.</p>
-<p>Other classifications can be done like income group of population.</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">डाटा स्रोत प्रकार र संग्रह विधि </th>
-        <td>
           
-            <p>Data for access to electricity is collected from household surveys and censuses, tapping into a wide number of different household survey types including: Multi-tier Framework (MTF), Demographic and Health Surveys (DHS) and Living Standards Measurement Surveys (LSMS), Multi-Indicator Cluster Surveys (MICS), the World Health Survey (WHS), other nationally developed and implemented surveys, including those by various government agencies (for example, ministries of energy and utilities).</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">डाटा स्रोतहरू </th>
-        <td>
           
-            <p>Nepal Multiple Indicators Cluster Survey 2018/19</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">डाटा संग्रह विधि </th>
-        <td>
           
-            <p>Household Survey by face to face interview</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">डाटा संग्रह क्यालेन्डर </th>
-        <td>
           
-            <p>2018/19 The next round of data collection is planned for the second half of 2024.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">डाटा रिलिज क्यालेन्डर </th>
-        <td>
-          
-            <p>2020 December Next round data dissemination not fixed.</p>
-
           
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">डाटा प्रदायकहरू </th>
-        <td>
-          
-            <p>Sample Households</p>
-
           
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">डाटा कम्पाइलर </th>
-        <td>
-          
-            <p>CBS</p>
-
           
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">संस्थागत जनादेश </th>
-        <td>
-          
-            <p>Statistical Act 1958 CBS is designated to collect, process, and disseminate data with in relation to the progress in achieving the SDG 7 goals. </p>
-
           
-        </td>
-        </tr>
-        
       
-  
-      
         
           
       
         
-      
-      
-      <tr>
-        <th scope="row">राशनेल </th>
-        <td>
           
-            <p>Access to electricity addresses major critical issues in all the dimensions of sustainable development. The target has a wide range of social and economic impacts, including facilitating development of income generating activities and lightening the burden of household tasks. It represents the living standard status of people. It can be used in deriving multi-dimension poverty. </p>
-<p>Under the national target of equal access to energy, SDG7.1.1 focuses specifically on electricity access available to population. In order to gain a clear picture, access rates are only considered if the primary source of lighting is the electricity, solar systems, mini-grids and stand-alone systems. Sources such as generators, candles, batteries, etc., are not considered due to their limited working capacities and since they are usually kept as backup sources for lighting.</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">टिप्पणी र सीमितता </th>
-        <td>
           
-            <p>Main aim is to estimate demand side access rates in order to better understand the access levels reported by the population. This is different from the supply side access rates usually provided by Nepal Electricity Authority. The data collected is compiled from NMICS as household survey. The population census also gives this kind of data by households. </p>
-<p>The demand side and supply side proportion may differ in statistics.</p>
-<p>The NMICS survey evidence base provides a good starting point for tracking household energy access. There are also some limitations that need to be addressed over time. In many parts of the country, the presence of an electricity connection in the household does not necessarily guarantee that the energy supplied is adequate and consistent and reliability or affordable in cost. It would be desirable to have fuller information about these critical attributes of the service, which have been highlighted in SDG7. The indicator may be further be disaggregated. The more refined measurement of energy access.</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">गणनाको विधि </th>
-        <td>
           
-            <p>Access estimates are weighted by population.</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">मान्यकरण </th>
-        <td>
           
-            <p>The population census has been also collected the access to electricity for lighting since 2001. A trend of data on access can be observed at district level. NMICS data can be validated with such trends and administrative source as well.</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">समायोजनहरू </th>
-        <td>
           
-            <p>The average values are resulted from the sum of total values for proportion of population with access to electricity across all countries. </p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">हराइरहेको मानहरूको उपचार (i) देश स्तरमा र (ii) क्षेत्रीय स्तरमा </th>
-        <td>
-          
-            <p>substituting missing values</p>
-
           
-        </td>
-        </tr>
-        
-      
-  
       
         
           
       
         
-      
-      
-      <tr>
-        <th scope="row">गुणस्तर व्यवस्थापन </th>
-        <td>
-          
-            <p>A multi-level review process in collaboration with experts, CBS, NEA as well as partnering international agencies UNICEF is conducted before finalizing the data.</p>
-
           
-        </td>
-        </tr>
-        
       
-  
-      
         
           
       
         
-      
-      
-      <tr>
-        <th scope="row">गुण निर्धारण </th>
-        <td>
           
-            <p>Good quality data of electricity access should be generally aligned with the trends from the past data at country level or NEA supply side data.</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
-      
-      
-      <tr>
-        <th scope="row">डाटा उपलब्धता र भिन्नता </th>
-        <td>
           
-            <p>Data is available at province level.</p>
-<p>Data have been compiled in 2010 (partially) and 2014 (complete), though there are gaps in accurate data availability. Comparability by province is difficult.</p>
-<p>Disaggregation: Electricity access proportions are disaggregated by province level.</p>
-
-          
-        </td>
-        </tr>
-        
       
-  
-      
         
           
       
         
-      
-      
-      <tr>
-        <th scope="row">सन्दर्भ र कागजात </th>
-        <td>
           
-            <p>NMICS 2019 </p>
-<p>https://cbs.gov.np/nmics-2019-survey-findings-report-final/</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
           
@@ -1596,8 +684,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/open-sdg-nepal/data/commit/195857cb4cb5cd0a5ba59dc1b1c6e923c0788e6e" target="_blank">
-                2021-05-13: see changes on GitHub <span class="visuallyhidden">नयाँ विन्डोमा खुल्छ</span>
+              <a href="https://github.com/open-sdg-nepal/data/commit/fa50155dc36c8be7df00f2bcfdcd865c6090758f" target="_blank">
+                2021-05-14: see changes on GitHub <span class="visuallyhidden">नयाँ विन्डोमा खुल्छ</span>
               </a>
             
 
@@ -2058,7 +1146,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/site/assets/js/sdg.js?v=20210521131505'></script>
+<script src='/site/assets/js/sdg.js?v=20210521132031'></script>
 
 <script>
 $(function() {
