@@ -6,6 +6,7 @@ breadcrumbs:
   goal: []
   indicator: []
   post: []
+contrast_type: default
 country:
   name: Nepal
   adjective: Nepali
@@ -108,6 +109,7 @@ graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: accessible
 graph_color_list: []
 graph_color_number: 0
+graph_title_from_series: true
 header:
   include: header-default.html
 header_language_toggle: dropdown
