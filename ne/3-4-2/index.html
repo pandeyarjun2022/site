@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -119,100 +119,106 @@ var translations = {
         
         <link rel="canonical" href="/">
 
-        
-
         <!--[if IE 9]>
         <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        <!-- Favicons ================================================== -->
-        <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/site/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
-        http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
-        -->
-
         
 
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/site/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/site/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/site/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/site/assets/img/favicons/favicon.ico" />
+
+
         
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220616212742">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220616213154">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
+
+        
 
     </head>
-<body class="language-ne layout-indicator">
+<body class="language-ne
+layout-indicator-bootstrap5
+">
 <!-- <div class="container"> -->
+
 
 
 <script>translations['header'] = {"alpha":"अल्फा","default_contrast":"पूर्वनिर्धारित कन्ट्रास्ट","disable_high_contrast":"उच्च कन्ट्रास्ट असक्षम गर्नुहोस्","disclaimer":"यो एक विकास वेबसाइट हो। हामी तपाईंको [] 47] प्रतिक्रिया [] 87] लाई स्वागत गर्दछौं।","enable_high_contrast":"उच्च कन्ट्रास्ट सक्षम गर्नुहोस्","high_contrast":"उच्च कन्ट्रास्ट","skip_link":"मुख्य सामग्रीमा स्किप गर्नुहोस्","tag_line":"१ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न","toggle_menu":"मेनू टगल। मेनू विस्तार गर्न वा संकुचन गर्न क्लिक गर्नुहोस्।","toggle_search":"टगल खोज्नुहोस्। खोजी पट्टी विस्तार गर्न वा ध्वस्त पार्न क्लिक गर्नुहोस्।"};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">मुख्य सामग्रीमा स्किप गर्नुहोस्</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">मुख्य सामग्रीमा स्किप गर्नुहोस्</a>
 <div id="disclaimer">
-  <div class="container">
+    
+<div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">अल्फा</strong>
     
     यो एक विकास वेबसाइट हो। हामी तपाईंको [] 47] प्रतिक्रिया [] 87] लाई स्वागत गर्दछौं।
+    
   </div>
 </div>
 
 </div>
 
-<header role="banner" class="header-default">
-  <div class="container">
-
-    <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/site/ne/" id="home">
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/site/ne/" id="home">
     <img src="/site/assets/img/SDG_logo.png" alt="दिगो विकास लक्ष्यहरू - १ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न" />
 </a>
-      <div class="mobile-widgets">
-    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
-        <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
-      <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/site/3-4-2/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-    </div></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/site/ne/goals">गोलहरू</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/site/ne/about">यसको बारे</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/site/ne/guidance">मार्गदर्शन</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/site/ne/faq">FAQ</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/site/ne/news">अपडेट</a>
+</li></ul>
+    
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/site/ne/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">खोज</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="खोज">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="खोज" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
     </div>
+</form>
 
-    <nav class="navbar navbar-default" id="main-nav">
-      <ul class="top-level">
-    <li id="menuToggle"
-        aria-label="मेनू टगल। मेनू विस्तार गर्न वा संकुचन गर्न क्लिक गर्नुहोस्।"
-        aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">मेनू</button>
-        <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/site/ne/goals">गोलहरू</a>
-</li><li class="nav-link ">
-    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
-</li><li class="nav-link ">
-    <a href="/site/ne/about">यसको बारे</a>
-</li><li class="nav-link ">
-    <a href="/site/ne/guidance">मार्गदर्शन</a>
-</li><li class="nav-link ">
-    <a href="/site/ne/faq">FAQ</a>
-</li><li class="nav-link ">
-    <a href="/site/ne/news">अपडेट</a>
-</li><li class="language-toggle-menu-header">
-    
+                </div>
+                <div class="header-toggles d-flex">
 
 
 
@@ -220,12 +226,13 @@ var translations = {
 
   <div class="language-toggle-container">
   
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
-      <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+  <div class="btn-group language-toggle-dropdown  dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-globe"></i>
+      नेपाली
+    </button>
     <ul class="dropdown-menu"><li>
-            <a href="/site/3-4-2/">
+            <a class="dropdown-item" href="/site/3-4-2/">
               English
             </a>
           </li></ul>
@@ -233,83 +240,34 @@ var translations = {
 </div>
 
 
-
-</li>
-</ul>
-
-    </li>
-    <li id="searchToggle"
-        aria-label="टगल खोज्नुहोस्। खोजी पट्टी विस्तार गर्न वा ध्वस्त पार्न क्लिक गर्नुहोस्।"
-        aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">खोज</button>
-        <div id="search-mobile" class="menu-target">
-  <form action="/site/ne/search">
-    <label class="sr-only" for="indicator_search-mobile">खोज</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="खोज" /><!--
-    --><button aria-label="खोज" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-    </li>
-</ul>
-      <div id="search" class="menu-target">
-  <form action="/site/ne/search">
-    <label class="sr-only" for="indicator_search">खोज</label>
-    <input type="text" name="q" id="indicator_search" title="खोज" /><!--
-    --><button aria-label="खोज" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/site/ne/goals">गोलहरू</a>
-</li><li class="nav-link ">
-    <a href="/site/ne/reporting-status">रिपोर्टिंग स्थिति</a>
-</li><li class="nav-link ">
-    <a href="/site/ne/about">यसको बारे</a>
-</li><li class="nav-link ">
-    <a href="/site/ne/guidance">मार्गदर्शन</a>
-</li><li class="nav-link ">
-    <a href="/site/ne/faq">FAQ</a>
-</li><li class="nav-link ">
-    <a href="/site/ne/news">अपडेट</a>
-</li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">नेपाली</span>
-      <span class="language-abbreviation">ne</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
-            <a href="/site/3-4-2/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li>
-</ul>
-
-    </nav>
-  </div>
-
+<a title="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्" aria-label="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्"
+    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+>A</a>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
 <div id="top" tabindex=-1></div>
 
 
 
 
+
 <script type="text/template" id="item_template">
   <% _.each(fields, function(fieldItem) { %>
-    <div class="variable-selector<% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed child<% }%>" data-field="<%=fieldItem.field%>">
+    <div class="variable-selector
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed <% }%>
+      <% if (typeof childFields !== 'undefined' && childFields.indexOf(fieldItem.field) !== -1) { %> child <% }%>
+      <% // @deprecated start %>
+      <% if (typeof childFields === 'undefined' && allowedFields.indexOf(fieldItem.field) == -1) { %> child <% }%>
+      <% // @deprecated end %>
+      "
+      data-field="<%=fieldItem.field%>"
+    >
       <button class='accessBtn' tabindex='0' aria-expanded='false'
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
         aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
@@ -320,9 +278,6 @@ var translations = {
           <span class="sr-only">उप कोटीहरू देखाउनुहोस्: <%=translations.t(fieldItem.label)%></span>
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
       </button>
-      <div class="bar">
-        <div class="selected"></div>
-      </div>
       <div class="variable-options">
         <fieldset>
           <legend class="sr-only">उपवर्ग - <%=translations.t(fieldItem.field)%></legend>
@@ -351,7 +306,7 @@ var translations = {
 </script>
 
 <script type="text/template" id="units_template">
-  <% if(units.length) { %>
+  
     <h4>मापनको एकाइ</h4>
     <fieldset>
       <legend class="sr-only">मापनको एकाइ</legend>
@@ -360,11 +315,11 @@ var translations = {
         <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
       <% }); %>
     </fieldset>
-  <% } %>
+  
 </script>
 
 <script type="text/template" id="series_template">
-  <% if(serieses.length) { %>
+  
     <h4>श्रृंखला</h4>
     <fieldset>
       <legend class="sr-only">श्रृंखला</legend>
@@ -373,7 +328,7 @@ var translations = {
         <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
       <% }); %>
     </fieldset>
-  <% } %>
+  
 </script>
 
 <script>translations['indicator'] = {"annotation_2030_target":"२०30० लक्ष्य","announce_data_added":"चार्ट र तालिका डाटा समावेश गर्न अपडेट गरियो।","announce_data_not_available":"चार्ट र तालिकाले कुनै डाटा देखाउँदैन।","announce_data_removed":"चार्ट र तालिका डाटा बहिष्कार गर्न अपडेट गरियो।","chart":"चार्ट","chart_annotation":"चार्ट एनोटेसन","clear_all":"चयन गरिएको सबै हटाउनुहोस्","clear_selections":"चयनलाई हटाउनुहोस्","data_keyboard_navigation":"बाँया र दाँया एरो कुञ्जीहरूको साथ डाटा पोइन्टहरू ब्राउज गर्न प्रविष्ट थिच्नुहोस्।","data_not_available":"यो डाटा उपलब्ध छैन। प्रदर्शन गर्न वैकल्पिक डेटा छनौट गर्नुहोस्।","data_tabular_alternative":"ट्याबुलर डाटा वैकल्पिकको लागि तालिका ट्याब हेर्नुहोस्।","dataset_size_warning":"चार्टमा देखाउनको लागि त्यहाँ धेरै डाटासेटहरू छन्। सबै देखाइने छैन जब सम्म तपाईं केहि चयनहरू हटाउनुहुन्न।","download_chart":"चार्ट सि.एस.भी.लाई डाउनलोड गर्नुहोस्","download_chart_image":"चार्ट चित्रलाई डाउनलोड गर्नुहोस्","download_chart_image_title":"छवि को रूपमा चार्ट डाउनलोड गर्नुहोस्","download_csv":"CSV डाउनलोड गर्नुहोस्","download_csv_title":"CSV को रूपमा डाउनलोड गर्नुहोस्","download_geojson":"GeoJSON डाउनलोड गर्नुहोस्","download_geojson_title":"GeoJSON को रूपमा डाउनलोड गर्नुहोस्","download_headline":"हेडलाईन CSV डाउनलोड गर्नुहोस्","download_headline_title":"CSV को रूपमा हेडलाइन डाटा डाउनलोड गर्नुहोस्","download_source":"सि.एस.भी. को स्रोतलाई डाउनलोड गर्नुहोस्","download_source_sdmx":"स्रोत SDMX डाउनलोड गर्नुहोस्","download_source_sdmx_title":"SDMX को रूपमा स्रोत डेटा डाउनलोड गर्नुहोस्","download_source_title":"CSV को रूपमा स्रोत डेटा डाउनलोड गर्नुहोस्","download_table":"सि.एस.भी. को तालिकालाई डाउनलोड गर्नुहोस्","edit":"Edit","edit_configuration":"कन्फिगरेसन सम्पादन गर्नुहोस्","edit_data":"डाटा सम्पादन गर्नुहोस्","edit_metadata":"मेटाडाटा सम्पादन गर्नुहोस्","footnote":"फुटनोट","geographical_area":"भौगोलिक क्षेत्र","global_metadata":"ग्लोबल मेटाडाटा","global_metadata_blurb":"यस तालिकाले एसडीजी संकेतकहरूका लागि मेटाडेटामा जानकारी प्रदान गर्दछ जुन संयुक्त राष्ट्र संघीय तथ्या Commission्क आयोगले परिभाषित गरेको थियो। [१०]] पूर्ण ग्लोबल मेटाडेटा [१ 180०] संयुक्त राष्ट्र संघीय तथ्या Division्क प्रभाग द्वारा प्रदान गरिएको हो।","legend_help":"चार्टबाट व्यक्तिगत लाइनहरु हटाउन पौराणिक कथामा क्लिक गर्नुहोस्।","loading":"लोड हुँदै","loading_map":"नक्शा लोड हुँदै","map":"नक्सा","map_search":"खोज","map_search_hide":"खोजी लुकाउनुहोस्","map_search_show":"खोजी देखाउनुहोस्","map_year_slider":"वर्ष स्लाइडर","national_metadata":"राष्ट्रिय मेटाडाटा","national_metadata_blurb":"यस तालिकाले वैश्विक SDG सूचकको नजिकको% देश_नाम तथ्या .्कबाट वास्तविक सूचकको लागि मेटाडेटा प्रदान गर्दछ। कृपया नोट गर्नुहोस् कि जब ग्लोबल एसडीजी सूचक% %_ देशिय सांख्यिकीय तथ्या from्कबाट पूर्ण रूपमा उपलब्ध हुन्छ, तब यस तालिकालाई राष्ट्रिय विधि र अन्य% देश_जेष्ट-विशिष्ट मेटाडेटा जानकारीका बारे जानकारी लिनुपर्दछ।","next":"अर्को सूचक","no_data_hint":"कुनै पनि विकल्पहरू उपलब्ध छैन किनकी माथी फिल्टरहरू छन्","plot_legend_description":"प्लॉट लिजेन्ड: रेखामा रेखाको सूची समावेश छ","previous":"अघिल्लो सूचक","select_all":"सबै चयन गर्नुहोस्","series":"श्रृंखला","series_help":"तथ्याङ्कको विभिन्न खण्डीकरण हेर्नका लागि ड्रपडाउन बाकसबाट उपयुक्त वर्ग चयन गर्नुहोस् । माथिल्लो तह चयन नगरिएसम्म केही तथ्यांक उपलब्ध नहुन सक्छन् ।","source":"स्रोत","sources":"स्रोतहरू","status":"सूचक स्थिति","sub_categories":"उपवर्ग","sub_categories_show":"उप कोटीहरू देखाउनुहोस्:","table":"तालिका","table_column_sort":"यस स्तम्भ द्वारा क्रमबद्ध गर्न क्लिक गर्नुहोस्","tags":"ट्यागहरू","unit":"एकाइ","unit_of_measurement":"मापनको एकाइ","units_type":"एकाइ प्रकार","variable_hint":"उपलब्ध जब '% क्षेत्र' चयन गरिएको छ","view_indicator_list":"यस लक्ष्यको सूचक सूची हेर्नुहोस्"};</script>
@@ -383,40 +338,49 @@ var translations = {
 
 <div class="container">
   
-<ol class="breadcrumb">
-  
-  
-  <li><a href="/site/ne/3" title="स्वस्थ जीवन सुनिश्चित र सबै उमेर मा सबैको लागि कल्याण को बढ़ावा">लक्ष्य 3</a></li>
-  
-</ol>
+<nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item">
+            <a href="/site/ne/">गृह</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/site/ne/3" title="स्वस्थ जीवन सुनिश्चित र सबै उमेर मा सबैको लागि कल्याण को बढ़ावा">लक्ष्य 3</a>
+        </li>
+        <li class="breadcrumb-item active">सूचक 3.4.2</li>
+        
+    </ol>
+</nav>
 
 
   
 </div>
 <div class="heading goal-banner indicator goal-3">
-  <div class="container">
-    <div class="row">
-      
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-        <a href="/site/ne/3" title="यस लक्ष्यको सूचक सूची हेर्नुहोस्">
-          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/3.png" alt="राम्रो स्वास्थ्य र कल्याणकारी - लक्ष्य 3" id="goal-3" class="goal-icon-image goal-icon-image-"/>
-        </a>
-      </div>
-      <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
-      
-        <div>
-          <h1>
+    <div class="container">
+        <div class="row">
             
-            सूचक 3.4.2
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <a href="/site/ne/3" title="यस लक्ष्यको सूचक सूची हेर्नुहोस्">
+                    <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/3.png"
+                        alt="राम्रो स्वास्थ्य र कल्याणकारी - लक्ष्य 3"
+                        id="goal-3"
+                        class="goal-icon-image goal-icon-image-" />
+                </a>
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 indicator-details">
             
-            <span class="lead-copy">आत्महत्या मृत्यु दर</span>
-          </h1>
+                <div>
+                    <h1>
+                        
+                        सूचक 3.4.2
+                        
+                        <span class="lead-copy">आत्महत्या मृत्यु दर</span>
+                    </h1>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
-
 <div id="main-content" class="container goal-3" role="main">
   
 
@@ -424,8 +388,11 @@ var translations = {
 
   
 
+  
+
 
   
+
 
 
 <div class="row"
@@ -436,20 +403,25 @@ var translations = {
   data-charttitle="आत्महत्या मृत्यु दर"
   data-charttitles="[]"
   data-measurementunit=""
+  data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
+  data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
   data-startvalues="[]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
+  data-graphtargetlines="null"
+  data-graphseriesbreaks="null"
   data-indicatordownloads="null"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;SERIES&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;SERIES&quot;},{&quot;name&quot;:&quot;REF_AREA&quot;,&quot;type&quot;:&quot;number&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;]},&quot;title&quot;:&quot;REF_AREA&quot;},{&quot;name&quot;:&quot;UNIT_MEASURE&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;UNIT_MEASURE&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
   
-  <span role="status" class="sr-only" id="indicator-data-view-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
   <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
     <div id="serieses"></div>
 <div id="units"></div>
@@ -604,30 +576,69 @@ var translations = {
 
   <p class="async-loading" data-img="/site/assets/img/loading-small.gif"></p>
 
-  <div class="async-loaded spacer medium" style="display:none;">
+  <div class="async-loaded mt-4" style="display:none;">
 
     <div style="display: none;">
-  <span id="table-alternative">ट्याबुलर डाटा वैकल्पिकको लागि तालिका ट्याब हेर्नुहोस्।</span>
-</div>
-<ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
-  <li role="presentation" class="nav-item active">
-    <a class="nav-link" data-toggle="tab" id="tab-chartview" href="#chartview" aria-controls="chartview" role="tab" data-on="click"
+    <span id="table-alternative">ट्याबुलर डाटा वैकल्पिकको लागि तालिका ट्याब हेर्नुहोस्।</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Chart tab"
- aria-describedby="table-alternative">चार्ट</a>
-  </li>
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" id="tab-tableview" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
+
+        
+      >चार्ट</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Table tab"
->तालिका</a>
-  </li></ul>
 
-    <div class="tab-content data-view">
-  <div role="tabpanel" class="tab-pane active" id="chartview">
+        
+      >तालिका</button>
+    </li>
     
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
 
     <div id="dataset-size-warning" style="display:none" role="alert">
       <i class="fa fa-bolt"><span class="sr-only">चेतावनी:</span></i>
@@ -642,229 +653,14 @@ data-event-label="Change to Table tab"
           <h4 id="chart-heading" class="chart-title">आत्महत्या मृत्यु दर</h4>
           <div id="chart" class="plot-container">
             
-<canvas
+              <canvas
     role="img"
     aria-labelledby="chart-heading"
     aria-describedby="table-alternative chart-annotations"
     tabindex="0"
  ></canvas>
 
-<script>
-// Add a chart alteration to support the chart_graph_limits metadata field.
-opensdg.chartConfigAlter(function(config, info) {
-  if (info.graphLimits && info.graphLimits.length > 0) {
-    var overrides = {
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              min: info.graphLimits.minimum,
-              max: info.graphLimits.maximum,
-            }
-          }]
-        }
-      }
-    }
-    // Add these overrides onto the normal config.
-    $.extend(true, config, overrides);
-  }
-});
-</script>
-
-<span style="display: none;" id="chart-annotations" role="status"></span>
-<script>
-opensdg.annotationPresets = {
-    common: {
-        // This "common" preset is applied to all annotations automatically.
-        borderColor: '#505a5f',
-        type: 'line',
-        label: {
-            backgroundColor: 'black',
-            fontColor: 'white',
-        },
-        // This "highContrast" overrides colors when in high-contrast mode.
-        highContrast: {
-            label: {
-                backgroundColor: 'white',
-                fontColor: 'black'
-            }
-        },
-        // This callback is used to generate a generic description for screenreaders.
-        // This can be overridden to be a more specific string, eg:
-        //
-        //     description: 'Chart annotation showing a 2030 target of 15%'
-        //
-        description: function() {
-            var descriptionParts = [translations.indicator.chart_annotation];
-            if (this.label && this.label.content) {
-                descriptionParts.push(translations.t(this.label.content));
-            }
-            else {
-                // If there is no label, just specify whether it is a box or line.
-                if (this.type == 'line') {
-                    descriptionParts.push(this.mode + ' line');
-                }
-                if (this.type == 'box') {
-                    descriptionParts.push('box');
-                }
-            }
-            if (typeof this.value !== 'undefined') {
-                descriptionParts.push(this.value);
-            }
-            return descriptionParts.join(': ');
-        },
-    },
-    target_line: {
-        mode: 'horizontal',
-        borderDash: [5, 5],
-        label: {
-            position: 'right',
-            content: translations.indicator.annotation_2030_target,
-        },
-    },
-};
-
-// Add a chart alteration to support the chart_annotations metadata field.
-opensdg.chartConfigAlter(function(config, info) {
-    if (info.graphAnnotations && info.graphAnnotations.length > 0) {
-        // Apply some helpers/fixes to the annotations.
-        var annotations = info.graphAnnotations.map(function(annotation) {
-            // Apply the "common" preset.
-            if (opensdg.annotationPresets.common) {
-                annotation = $.extend(true, {}, opensdg.annotationPresets.common, annotation);
-            }
-            // Apply any specified presets.
-            if (annotation.preset) {
-                var preset = annotation.preset;
-                if (opensdg.annotationPresets[preset]) {
-                    annotation = $.extend(true, {}, opensdg.annotationPresets[preset], annotation);
-                }
-            }
-            // Default to horizontal lines.
-            if (!annotation.mode && annotation.type === 'line') {
-                annotation.mode = 'horizontal';
-            }
-            // Provide the obscure scaleID properties on user's behalf.
-            if (!annotation.scaleID && annotation.type === 'line') {
-                if (annotation.mode === 'horizontal') {
-                    annotation.scaleID = 'y-axis-0';
-                }
-                if (annotation.mode === 'vertical') {
-                    annotation.scaleID = 'x-axis-0';
-                }
-            }
-            if (!annotation.xScaleID && annotation.type === 'box') {
-                annotation.xScaleID = 'x-axis-0';
-            }
-            if (!annotation.yScaleID && annotation.type === 'box') {
-                annotation.yScaleID = 'y-axis-0';
-            }
-            // Provide the "enabled" label property on the user's behalf.
-            if (annotation.label && annotation.label.content) {
-                annotation.label.enabled = true;
-            }
-            // Translate any label content.
-            if (annotation.label && annotation.label.content) {
-                annotation.label.content = translations.t(annotation.label.content);
-            }
-            // Save some original values for later used when contrast mode is switched.
-            if (typeof annotation.defaultContrast === 'undefined') {
-                annotation.defaultContrast = {};
-                if (annotation.borderColor) {
-                    annotation.defaultContrast.borderColor = annotation.borderColor;
-                }
-                if (annotation.backgroundColor) {
-                    annotation.defaultContrast.backgroundColor = annotation.backgroundColor;
-                }
-                if (annotation.label) {
-                    annotation.defaultContrast.label = {};
-                    if (annotation.label.fontColor) {
-                        annotation.defaultContrast.label.fontColor = annotation.label.fontColor;
-                    }
-                    if (annotation.label.backgroundColor) {
-                        annotation.defaultContrast.label.backgroundColor = annotation.label.backgroundColor;
-                    }
-                }
-            }
-            return annotation;
-        });
-        if (annotations.length > 0) {
-            var overrides = {
-                options: {
-                    annotation: {
-                        drawTime: 'afterDatasetsDraw',
-                        annotations: annotations
-                    }
-                }
-            };
-            // Add these overrides onto the normal config.
-            $.extend(true, config, overrides);
-
-            // Update the chart annotations element.
-            var descriptions = annotations.map(function(annotation) {
-                var description = '';
-                if (annotation.description) {
-                    if (typeof annotation.description === 'function') {
-                        description = annotation.description.call(annotation);
-                    }
-                    else {
-                        description = translations.t(annotation.description);
-                    }
-                }
-                return description;
-            }).filter(function(description) { return description != ''; });
-
-            var currentDescription = $('#chart-annotations').text();
-            var newDescription = descriptions.join('. ');
-            if (currentDescription != newDescription) {
-                $('#chart-annotations').text(newDescription);
-            }
-        }
-    }
-    else if (config.options && config.options.annotation) {
-        delete config.options.annotation;
-    }
-});
-</script>
-
-<script>
-// For line charts, add the vertical line hover functionality.
-opensdg.chartConfigAlter(function(config, info) {
-    var overrides = {
-        options: {
-            tooltips: {
-                intersect: false,
-                axis: 'x'
-            },
-        },
-        plugins: [{
-            beforeDatasetsDraw: function(chart) {
-                if (chart.tooltip._active && chart.tooltip._active.length) {
-                    var activePoint = chart.tooltip._active[0],
-                        ctx = chart.ctx,
-                        x = activePoint.tooltipPosition().x,
-                        topY = chart.scales['y-axis-0'].top,
-                        bottomY = chart.scales['y-axis-0'].bottom;
-
-                    // draw line
-                    ctx.save();
-                    ctx.beginPath();
-                    ctx.moveTo(x, topY);
-                    ctx.lineTo(x, bottomY);
-                    ctx.lineWidth = 2;
-                    ctx.strokeStyle = '#757575';
-                    ctx.setLineDash([5, 2]);
-                    ctx.stroke();
-                    ctx.restore();
-                }
-            }
-        }],
-    };
-    // Add these overrides onto the normal config, and return it.
-    $.extend(true, config, overrides);
-});
-</script>
-
+            
           </div>
           <div id="plotLegend"></div>
           
@@ -878,10 +674,35 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
 
+        <dt class="data-controlled-footer-field unit-from-data">मापनको एकाइ:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
         
 
         
 
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >फुटनोट:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >अन्तिम पटक अपडेट गरिएको डाटा:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
         
     <dl>
 </div>
@@ -891,18 +712,22 @@ opensdg.chartConfigAlter(function(config, info) {
       <div id="chartSelectionDownload" class="clearfix">
         <button id="btnSave" title="छवि को रूपमा चार्ट डाउनलोड गर्नुहोस्" class='btn btn-primary btn-download'>
           चार्ट चित्रलाई डाउनलोड गर्नुहोस्
-        </button>
-      </div>
+        </button><!-- 
+   --></div>
     </div>
 
 
 
-  </div>
-  <div role="tabpanel" class="tab-pane" id="tableview">
-    <div style="display: none;">
-      <span id="column-sort-info">यस स्तम्भ द्वारा क्रमबद्ध गर्न क्लिक गर्नुहोस्</span>
-    </div>
-    <div id="selectionsTable"></div>
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">यस स्तम्भ द्वारा क्रमबद्ध गर्न क्लिक गर्नुहोस्</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
 
 
 
@@ -914,84 +739,99 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
 
+        <dt class="data-controlled-footer-field unit-from-data">मापनको एकाइ:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
         
 
         
 
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >फुटनोट:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >अन्तिम पटक अपडेट गरिएको डाटा:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
         
     <dl>
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
 
-  </div>
-  <div role="tabpanel" class="tab-pane" id="embeddedmapview" class="embedded-map">
-    <div class="row">
-  <div class="col-xs-12">
+        </div>
+      
     
-    
-    
-    <div class="embedded-map" id="embeddedmapframe">
-    
-  </div>
-</div>
-
   </div>
   
-</div>
-
 
   </div>
 
 </section>
 
   
-  <ul class="nav nav-tabs spacer medium" role="tablist">
-
-  <li role="presentation" class="nav-item active">
-  <a class="nav-link" data-toggle="tab" id="tab-national" href="#national" aria-controls="national" role="tab" data-on="click"
+  <div class="mt-4">
+<ul class="nav nav-tabs" role="tablist">
+    
+        <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to National Metadata tab"
->राष्ट्रिय मेटाडाटा</a>
+>राष्ट्रिय मेटाडाटा</button>
 </li>
 
 <li role="presentation" class="nav-item">
-  <a class="nav-link" data-toggle="tab" id="tab-global" href="#global" aria-controls="global" role="tab" data-on="click"
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Global Metadata tab"
->ग्लोबल मेटाडाटा</a>
+>ग्लोबल मेटाडाटा</button>
 </li>
 
 <li role="presentation" class="nav-item">
-  <a class="nav-link" data-toggle="tab" id="tab-sources" href="#sources" aria-controls="sources" role="tab" data-on="click"
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
->स्रोतहरू</a>
+>स्रोतहरू</button>
 </li>
-
-
   
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Edit</a>
-  </li>
-  
+    
+    
+        <li role="presentation" class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Edit</a>
+        </li>
+    
 </ul>
 
 <div class="tab-content">
-  
-    <div role="tabpanel" class="tab-pane active" id="national">
-  <!-- National Metadata -->
-  <div >
-    <article>
-      <p>
-        
-        
-        यस तालिकाले वैश्विक SDG सूचकको नजिकको% देश_नाम तथ्या .्कबाट वास्तविक सूचकको लागि मेटाडेटा प्रदान गर्दछ। कृपया नोट गर्नुहोस् कि जब ग्लोबल एसडीजी सूचक% %_ देशिय सांख्यिकीय तथ्या from्कबाट पूर्ण रूपमा उपलब्ध हुन्छ, तब यस तालिकालाई राष्ट्रिय विधि र अन्य% देश_जेष्ट-विशिष्ट मेटाडेटा जानकारीका बारे जानकारी लिनुपर्दछ।
-      </p>
-      <table class="table">
+    
+        <div role="tabpanel" class="tab-pane active" id="national">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                
+                
+                यस तालिकाले वैश्विक SDG सूचकको नजिकको% देश_नाम तथ्या .्कबाट वास्तविक सूचकको लागि मेटाडेटा प्रदान गर्दछ। कृपया नोट गर्नुहोस् कि जब ग्लोबल एसडीजी सूचक% %_ देशिय सांख्यिकीय तथ्या from्कबाट पूर्ण रूपमा उपलब्ध हुन्छ, तब यस तालिकालाई राष्ट्रिय विधि र अन्य% देश_जेष्ट-विशिष्ट मेटाडेटा जानकारीका बारे जानकारी लिनुपर्दछ।
+            </p>
+            <table class="table">
   
   
   
@@ -1271,15 +1111,15 @@ data-event-label="Change to Sources tab"
   
 </table>
 
-    </article>
-  </div>
+        </article>
+    </div>
 </div>
 <div role="tabpanel" class="tab-pane" id="global">
-  <!-- Global Metadata -->
-  <div>
-    <article>
-      <p>यस तालिकाले एसडीजी संकेतकहरूका लागि मेटाडेटामा जानकारी प्रदान गर्दछ जुन संयुक्त राष्ट्र संघीय तथ्या Commission्क आयोगले परिभाषित गरेको थियो। [१०]] पूर्ण ग्लोबल मेटाडेटा [१ 180०] संयुक्त राष्ट्र संघीय तथ्या Division्क प्रभाग द्वारा प्रदान गरिएको हो।</p>
-      <table class="table">
+    <!-- Global Metadata -->
+    <div>
+        <article>
+            <p>यस तालिकाले एसडीजी संकेतकहरूका लागि मेटाडेटामा जानकारी प्रदान गर्दछ जुन संयुक्त राष्ट्र संघीय तथ्या Commission्क आयोगले परिभाषित गरेको थियो। [१०]] पूर्ण ग्लोबल मेटाडेटा [१ 180०] संयुक्त राष्ट्र संघीय तथ्या Division्क प्रभाग द्वारा प्रदान गरिएको हो।</p>
+            <table class="table">
   
       
         
@@ -1530,34 +1370,33 @@ data-event-label="Change to Sources tab"
   
 </table>
 
-    </article>
-  </div>
+        </article>
+    </div>
 </div>
 <div role="tabpanel" class="tab-pane" id="sources">
-  <!-- Count the non-empty sources (up to 5) -->
+    <!-- Count the non-empty sources (up to 5) -->
 
 
 
 
 
 </div>
-
-  
-  
-  <div role="tabpanel" class="tab-pane" id="edit">
-    <div class="edit-container">
-  
-  
-
+    
+    
+        <div role="tabpanel" class="tab-pane" id="edit">
+            <div class="edit-container">
   
   
 
+  
+  
 
-  <a class="btn btn-primary" href="http://prose.io/#open-sdg-nepal/data/edit/develop/data/indicator_3-4-2.csv">डाटा सम्पादन गर्नुहोस्</a>
+
+  <a class="btn btn-primary" href="https://github.com/open-sdg-nepal/data/tree/develop/data">डाटा सम्पादन गर्नुहोस्</a>
   
 
   
-  <a class="btn btn-primary" href="http://prose.io/#open-sdg-nepal/data/edit/develop/meta/3-4-2.md">मेटाडाटा सम्पादन गर्नुहोस्</a>
+  <a class="btn btn-primary" href="https://github.com/open-sdg-nepal/data/tree/develop/meta">मेटाडाटा सम्पादन गर्नुहोस्</a>
   
 
   
@@ -1566,151 +1405,100 @@ data-event-label="Change to Sources tab"
 
 </div>
 
-  </div>
+        </div>
+    
+</div>
   
 </div>
-
-
   </div>
 </div>
 
 </div>
+
 
 <footer role="contentinfo">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div id="footerLinks">
-          <ul>
-            <li><a href="https://open-sdg.org">ओपन एसडीजीको प्रयोगमा निर्मित</a></li>
-            
-              <li>
-                
-                  <a href="mailto:my-email-address@example.com" target="_blank">हामीलाई सम्पर्क गर्नुहोस्</a>
-                
-                </li>
-              <li>
-                
-                  <a href="https://twitter.com/MyTwitterAccount" target="_blank">ट्विटर</a>
-                
-                </li>
-              <li>
-                
-                  <a href="https://facebook.com/MyFacebookAccount" target="_blank">फेसबुक</a>
-                
-                </li>
-              <li>
-                <a href="/site/ne/about/cookies-and-privacy/">कुकिज</a>
-                
-                </li>
-              
-            
-            
-            <li><a href="/site/ne/config">Configuration</a></li>
-            </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="footerLinks">
+                    <ul>
+                        <li>
+                            <a href="https://open-sdg.org">ओपन एसडीजीको प्रयोगमा निर्मित</a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a href="mailto:my-email-address@example.com" target="_blank">हामीलाई सम्पर्क गर्नुहोस्</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">ट्विटर</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">फेसबुक</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/site/ne/about/cookies-and-privacy/">कुकिज</a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/site/ne/config">Configuration</a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
         </div>
-      </div>
+        
     </div>
-  </div>
 </footer>
 
-<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
-<!-- <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA"></script> -->
-<!-- Google Analytics -->
-
-<!-- /.container </div> -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-<script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js" integrity="sha512-9hzM/Gfa9KP1hSBlq3/zyNF/dfbcjAYwUTBWYX+xi8fzfAPHL3ILwS1ci0CTVeuXTGkRAWgRMZZwtSNV7P+nfw==" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+
+
+
+
+
 <script>translations['general'] = translations['general'] || {};
     translations['general']['hide'] = 'लुकाउनुहोस्';</script>
 
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/site/assets/js/sdg.js?v=20220616212742'></script>
+<script src='/site/assets/js/sdg.js?v=20220616213154'></script>
 
 <script>
-$(function() {
-    if($('#indicatorData').length) {
-      var domData = $('#indicatorData').data();
-
-      if (domData.showdata) {
-
-        $('.async-loading').each(function(i, obj) {
-            $(obj).append($('<img />').attr('src', $(obj).data('img')).attr('alt', translations.indicator.loading));
-        });
-
-        var remoteUrl = '/comb/' + domData.id + '.json';
-        if (opensdg.remoteDataBaseUrl !== '/') {
-          remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
-        }
-
-        $.ajax({
-          url: remoteUrl,
-          success: function(res) {
-
-            $('.async-loading').remove();
-            $('.async-loaded').show();
-
-            var model = new indicatorModel({
-              data: res.data,
-              edgesData: res.edges,
-              showMap: domData.showmap,
-              country: domData.country,
-              indicatorId: domData.indicatorid,
-              shortIndicatorId: domData.id,
-              chartTitle: domData.charttitle,
-              chartTitles: domData.charttitles,
-              measurementUnit: domData.measurementunit,
-              showData: domData.showdata,
-              graphType: domData.graphtype,
-              startValues: domData.startvalues,
-              graphLimits: domData.graphlimits,
-              stackedDisaggregation: domData.stackeddisaggregation,
-              graphAnnotations: domData.graphannotations,
-              indicatorDownloads: domData.indicatordownloads,
-              compositeBreakdownLabel: domData.compositebreakdownlabel,
-              precision: domData.precision,
-            }),
-            view  = new indicatorView(model, {
-              rootElement: '#indicatorData',
-              legendElement: '#plotLegend',
-              decimalSeparator: '',
-              maxChartHeight: 420,
-              tableColumnDefs: [
-                { maxCharCount: 25 }, // nowrap
-                { maxCharCount: 35, width: 200 },
-                { maxCharCount: Infinity, width: 250 }
-              ]
-            }),
-            controller = new indicatorController(model, view);
-            controller.initialise();
-          }
-        });
-      }
-    }
-
-    var switcher = new accessibilitySwitcher();
-
-
-});
+    new indicatorInit();
+    new accessibilitySwitcher();
 </script>
-
-
 
 
 </body>
