@@ -41,10 +41,6 @@ var opensdg = {
   language: 'ne',
 };
 
-// For backwards compatibility, some of these might need to be global.
-// @TODO: Remove these eventually.
-var remoteDataBaseUrl = opensdg.remoteDataBaseUrl;
-
 </script>
 
         <script>
@@ -123,25 +119,18 @@ var translations = {
         <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        
-
-
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="/site/assets/img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/site/assets/img/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/site/assets/img/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/site/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/site/assets/img/favicons/favicon.ico" />
 
 
         
-        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220705110726">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220705111732">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -152,6 +141,10 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
 
+        <!--[if IE]>
+        <link rel="stylesheet" href="/site/assets/css/ie.css">
+        <![endif]-->
+
         
 
     </head>
@@ -160,11 +153,13 @@ layout-indicator
 ">
 <!-- <div class="container"> -->
 
-
-
 <script>translations['header'] = {"alpha":"अल्फा","default_contrast":"पूर्वनिर्धारित कन्ट्रास्ट","disable_high_contrast":"उच्च कन्ट्रास्ट असक्षम गर्नुहोस्","disclaimer":"यो एक विकास वेबसाइट हो। हामी तपाईंको [] 47] प्रतिक्रिया [] 87] लाई स्वागत गर्दछौं।","enable_high_contrast":"उच्च कन्ट्रास्ट सक्षम गर्नुहोस्","high_contrast":"उच्च कन्ट्रास्ट","internet_explorer_message":"हामीले पत्ता लगायौं कि तपाईंले यो वेबसाइट भ्रमण गर्न इन्टरनेट एक्सप्लोरर प्रयोग गर्दै हुनुहुन्छ। इन्टरनेट एक्सप्लोरर अब माइक्रोसफ्ट द्वारा चरणबद्ध हुँदैछ। नतिजाको रूपमा, यो वेबसाइटले इन्टरनेट एक्सप्लोररको कुनै पनि संस्करणलाई समर्थन गर्दैन। यस साइटमा केही सुविधाहरू काम गर्दैनन्। तपाईंले एज, क्रोम, फायरफक्स, वा सफारी जस्ता आधुनिक ब्राउजर प्रयोग गर्नुपर्छ। यदि तपाईंलाई फरक ब्राउजर स्थापना वा पहुँच गर्न कठिनाइ छ भने, कृपया आफ्नो IT समर्थन टोलीलाई सम्पर्क गर्नुहोस्।","internet_explorer_message_title":"यो इन्टरनेट ब्राउजर अब समर्थित छैन","skip_link":"मुख्य सामग्रीमा स्किप गर्नुहोस्","tag_line":"१ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न","toggle_menu":"मेनू टगल। मेनू विस्तार गर्न वा संकुचन गर्न क्लिक गर्नुहोस्।","toggle_search":"टगल खोज्नुहोस्। खोजी पट्टी विस्तार गर्न वा ध्वस्त पार्न क्लिक गर्नुहोस्।"};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">मुख्य सामग्रीमा स्किप गर्नुहोस्</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">यो इन्टरनेट ब्राउजर अब समर्थित छैन</h2>
+    <p class="internet-explorer-message-body">हामीले पत्ता लगायौं कि तपाईंले यो वेबसाइट भ्रमण गर्न इन्टरनेट एक्सप्लोरर प्रयोग गर्दै हुनुहुन्छ। इन्टरनेट एक्सप्लोरर अब माइक्रोसफ्ट द्वारा चरणबद्ध हुँदैछ। नतिजाको रूपमा, यो वेबसाइटले इन्टरनेट एक्सप्लोररको कुनै पनि संस्करणलाई समर्थन गर्दैन। यस साइटमा केही सुविधाहरू काम गर्दैनन्। तपाईंले एज, क्रोम, फायरफक्स, वा सफारी जस्ता आधुनिक ब्राउजर प्रयोग गर्नुपर्छ। यदि तपाईंलाई फरक ब्राउजर स्थापना वा पहुँच गर्न कठिनाइ छ भने, कृपया आफ्नो IT समर्थन टोलीलाई सम्पर्क गर्नुहोस्।</p>
+</div>
 <div id="disclaimer">
     
 <div class="container">
@@ -240,7 +235,15 @@ layout-indicator
 </div>
 
 
-<a title="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्" aria-label="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्"
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/site/11-6-1/">
+                English
+            </a>
+        </li></ul>
+</div></span><a title="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्" aria-label="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -255,16 +258,11 @@ data-event-label="high"
 
 
 
-
-
 <script type="text/template" id="item_template">
   <% _.each(fields, function(fieldItem) { %>
     <div class="variable-selector
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed <% }%>
       <% if (typeof childFields !== 'undefined' && childFields.indexOf(fieldItem.field) !== -1) { %> child <% }%>
-      <% // @deprecated start %>
-      <% if (typeof childFields === 'undefined' && allowedFields.indexOf(fieldItem.field) == -1) { %> child <% }%>
-      <% // @deprecated end %>
       "
       data-field="<%=fieldItem.field%>"
     >
@@ -338,41 +336,49 @@ data-event-label="high"
 
 <div class="container">
   
-<ol class="breadcrumb">
-  
-  <li><a href="/site/ne/">गृह</a></li>
-  <li><a href="/site/ne/11" title="शहरहरू र मानव बस्तीहरूलाई समावेशी, सुरक्षित, लचिलो र दिगो बनाउनुहोस्">लक्ष्य 11</a></li>
-  <li class="active">सूचक 11.6.1</li>
-  
-</ol>
+<nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item">
+            <a href="/site/ne/">गृह</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/site/ne/11" title="शहरहरू र मानव बस्तीहरूलाई समावेशी, सुरक्षित, लचिलो र दिगो बनाउनुहोस्">लक्ष्य 11</a>
+        </li>
+        <li class="breadcrumb-item active">सूचक 11.6.1</li>
+        
+    </ol>
+</nav>
 
 
   
 </div>
 <div class="heading goal-banner indicator goal-11">
-  <div class="container">
-    <div class="row">
-      
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-        <a href="/site/ne/11" title="यस लक्ष्यको सूचक सूची हेर्नुहोस्">
-          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/11.png" alt="दिगो शहरहरू र समुदायहरू - लक्ष्य 11" id="goal-11" class="goal-icon-image goal-icon-image-"/>
-        </a>
-      </div>
-      <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
-      
-        <div>
-          <h1>
+    <div class="container">
+        <div class="row">
             
-            सूचक 11.6.1
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <a href="/site/ne/11" title="यस लक्ष्यको सूचक सूची हेर्नुहोस्">
+                    <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/11.png"
+                        alt="दिगो शहरहरू र समुदायहरू - लक्ष्य 11"
+                        id="goal-11"
+                        class="goal-icon-image goal-icon-image-" />
+                </a>
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 indicator-details">
             
-            <span class="lead-copy">सहरी ठोस फोहोरको अनुपात नियमित रूपमा स collected्कलन गरियो र सहरी ठोस फोहोरबाट पर्याप्त अन्तिम डिस्चार्जसहित सहरहरूद्वारा उत्पन्न गरियो</span>
-          </h1>
+                <div>
+                    <h1>
+                        
+                        सूचक 11.6.1
+                        
+                        <span class="lead-copy">सहरी ठोस फोहोरको अनुपात नियमित रूपमा स collected्कलन गरियो र सहरी ठोस फोहोरबाट पर्याप्त अन्तिम डिस्चार्जसहित सहरहरूद्वारा उत्पन्न गरियो</span>
+                    </h1>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
-
 <div id="main-content" class="container goal-11" role="main">
   
 
@@ -415,52 +421,53 @@ data-event-label="high"
   
   <div id="indicator-main" class="indicator-main col-md-12">
   
-  <ul class="nav nav-tabs spacer medium" role="tablist">
-
-  <li role="presentation" class="nav-item active">
-  <a class="nav-link" data-toggle="tab" id="tab-national" href="#national" aria-controls="national" role="tab" data-on="click"
+  <div class="mt-4">
+<ul class="nav nav-tabs" role="tablist">
+    
+        <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to National Metadata tab"
->राष्ट्रिय मेटाडाटा</a>
+>राष्ट्रिय मेटाडाटा</button>
 </li>
 
 <li role="presentation" class="nav-item">
-  <a class="nav-link" data-toggle="tab" id="tab-global" href="#global" aria-controls="global" role="tab" data-on="click"
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Global Metadata tab"
->ग्लोबल मेटाडाटा</a>
+>ग्लोबल मेटाडाटा</button>
 </li>
 
 <li role="presentation" class="nav-item">
-  <a class="nav-link" data-toggle="tab" id="tab-sources" href="#sources" aria-controls="sources" role="tab" data-on="click"
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
->स्रोतहरू</a>
+>स्रोतहरू</button>
 </li>
-
-
   
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Edit</a>
-  </li>
-  
+    
+    
+        <li role="presentation" class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Edit</a>
+        </li>
+    
 </ul>
 
 <div class="tab-content">
-  
-    <div role="tabpanel" class="tab-pane active" id="national">
-  <!-- National Metadata -->
-  <div >
-    <article>
-      <p>
-        
-        
-        यस तालिकाले वैश्विक SDG सूचकको नजिकको% देश_नाम तथ्या .्कबाट वास्तविक सूचकको लागि मेटाडेटा प्रदान गर्दछ। कृपया नोट गर्नुहोस् कि जब ग्लोबल एसडीजी सूचक% %_ देशिय सांख्यिकीय तथ्या from्कबाट पूर्ण रूपमा उपलब्ध हुन्छ, तब यस तालिकालाई राष्ट्रिय विधि र अन्य% देश_जेष्ट-विशिष्ट मेटाडेटा जानकारीका बारे जानकारी लिनुपर्दछ।
-      </p>
-      <table class="table">
+    
+        <div role="tabpanel" class="tab-pane active" id="national">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                
+                
+                यस तालिकाले वैश्विक SDG सूचकको नजिकको% देश_नाम तथ्या .्कबाट वास्तविक सूचकको लागि मेटाडेटा प्रदान गर्दछ। कृपया नोट गर्नुहोस् कि जब ग्लोबल एसडीजी सूचक% %_ देशिय सांख्यिकीय तथ्या from्कबाट पूर्ण रूपमा उपलब्ध हुन्छ, तब यस तालिकालाई राष्ट्रिय विधि र अन्य% देश_जेष्ट-विशिष्ट मेटाडेटा जानकारीका बारे जानकारी लिनुपर्दछ।
+            </p>
+            <table class="table">
   
   
   
@@ -715,15 +722,15 @@ data-event-label="Change to Sources tab"
   
 </table>
 
-    </article>
-  </div>
+        </article>
+    </div>
 </div>
 <div role="tabpanel" class="tab-pane" id="global">
-  <!-- Global Metadata -->
-  <div>
-    <article>
-      <p>यस तालिकाले एसडीजी संकेतकहरूका लागि मेटाडेटामा जानकारी प्रदान गर्दछ जुन संयुक्त राष्ट्र संघीय तथ्या Commission्क आयोगले परिभाषित गरेको थियो। [१०]] पूर्ण ग्लोबल मेटाडेटा [१ 180०] संयुक्त राष्ट्र संघीय तथ्या Division्क प्रभाग द्वारा प्रदान गरिएको हो।</p>
-      <table class="table">
+    <!-- Global Metadata -->
+    <div>
+        <article>
+            <p>यस तालिकाले एसडीजी संकेतकहरूका लागि मेटाडेटामा जानकारी प्रदान गर्दछ जुन संयुक्त राष्ट्र संघीय तथ्या Commission्क आयोगले परिभाषित गरेको थियो। [१०]] पूर्ण ग्लोबल मेटाडेटा [१ 180०] संयुक्त राष्ट्र संघीय तथ्या Division्क प्रभाग द्वारा प्रदान गरिएको हो।</p>
+            <table class="table">
   
       
         
@@ -974,22 +981,21 @@ data-event-label="Change to Sources tab"
   
 </table>
 
-    </article>
-  </div>
+        </article>
+    </div>
 </div>
 <div role="tabpanel" class="tab-pane" id="sources">
-  <!-- Count the non-empty sources (up to 5) -->
+    <!-- Count the non-empty sources (up to 5) -->
 
 
 
 
 
 </div>
-
-  
-  
-  <div role="tabpanel" class="tab-pane" id="edit">
-    <div class="edit-container">
+    
+    
+        <div role="tabpanel" class="tab-pane" id="edit">
+            <div class="edit-container">
   
   
 
@@ -1010,16 +1016,16 @@ data-event-label="Change to Sources tab"
 
 </div>
 
-  </div>
+        </div>
+    
+</div>
   
 </div>
-
-
   </div>
 </div>
 
+  <a href="#top">शीर्षमा फिर्ता</a>
 </div>
-
 
 <footer role="contentinfo">
     <div class="container">
@@ -1065,21 +1071,15 @@ data-event-label="Change to Sources tab"
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
-
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
@@ -1098,7 +1098,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/site/assets/js/sdg.js?v=20220705110726'></script>
+<script src='/site/assets/js/sdg.js?v=20220705111732'></script>
 
 <script>
     new indicatorInit();
@@ -1108,4 +1108,3 @@ data-event-label="Change to Sources tab"
 
 </body>
 </html>
-

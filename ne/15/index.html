@@ -41,10 +41,6 @@ var opensdg = {
   language: 'ne',
 };
 
-// For backwards compatibility, some of these might need to be global.
-// @TODO: Remove these eventually.
-var remoteDataBaseUrl = opensdg.remoteDataBaseUrl;
-
 </script>
 
         <script>
@@ -118,25 +114,18 @@ var translations = {
         <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        
-
-
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="/site/assets/img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/site/assets/img/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/site/assets/img/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/site/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/site/assets/img/favicons/favicon.ico" />
 
 
         
-        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220705110726">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220705111732">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,6 +136,10 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
 
+        <!--[if IE]>
+        <link rel="stylesheet" href="/site/assets/css/ie.css">
+        <![endif]-->
+
         
 
     </head>
@@ -155,11 +148,13 @@ layout-goal
 ">
 <!-- <div class="container"> -->
 
-
-
 <script>translations['header'] = {"alpha":"अल्फा","default_contrast":"पूर्वनिर्धारित कन्ट्रास्ट","disable_high_contrast":"उच्च कन्ट्रास्ट असक्षम गर्नुहोस्","disclaimer":"यो एक विकास वेबसाइट हो। हामी तपाईंको [] 47] प्रतिक्रिया [] 87] लाई स्वागत गर्दछौं।","enable_high_contrast":"उच्च कन्ट्रास्ट सक्षम गर्नुहोस्","high_contrast":"उच्च कन्ट्रास्ट","internet_explorer_message":"हामीले पत्ता लगायौं कि तपाईंले यो वेबसाइट भ्रमण गर्न इन्टरनेट एक्सप्लोरर प्रयोग गर्दै हुनुहुन्छ। इन्टरनेट एक्सप्लोरर अब माइक्रोसफ्ट द्वारा चरणबद्ध हुँदैछ। नतिजाको रूपमा, यो वेबसाइटले इन्टरनेट एक्सप्लोररको कुनै पनि संस्करणलाई समर्थन गर्दैन। यस साइटमा केही सुविधाहरू काम गर्दैनन्। तपाईंले एज, क्रोम, फायरफक्स, वा सफारी जस्ता आधुनिक ब्राउजर प्रयोग गर्नुपर्छ। यदि तपाईंलाई फरक ब्राउजर स्थापना वा पहुँच गर्न कठिनाइ छ भने, कृपया आफ्नो IT समर्थन टोलीलाई सम्पर्क गर्नुहोस्।","internet_explorer_message_title":"यो इन्टरनेट ब्राउजर अब समर्थित छैन","skip_link":"मुख्य सामग्रीमा स्किप गर्नुहोस्","tag_line":"१ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न","toggle_menu":"मेनू टगल। मेनू विस्तार गर्न वा संकुचन गर्न क्लिक गर्नुहोस्।","toggle_search":"टगल खोज्नुहोस्। खोजी पट्टी विस्तार गर्न वा ध्वस्त पार्न क्लिक गर्नुहोस्।"};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">मुख्य सामग्रीमा स्किप गर्नुहोस्</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">यो इन्टरनेट ब्राउजर अब समर्थित छैन</h2>
+    <p class="internet-explorer-message-body">हामीले पत्ता लगायौं कि तपाईंले यो वेबसाइट भ्रमण गर्न इन्टरनेट एक्सप्लोरर प्रयोग गर्दै हुनुहुन्छ। इन्टरनेट एक्सप्लोरर अब माइक्रोसफ्ट द्वारा चरणबद्ध हुँदैछ। नतिजाको रूपमा, यो वेबसाइटले इन्टरनेट एक्सप्लोररको कुनै पनि संस्करणलाई समर्थन गर्दैन। यस साइटमा केही सुविधाहरू काम गर्दैनन्। तपाईंले एज, क्रोम, फायरफक्स, वा सफारी जस्ता आधुनिक ब्राउजर प्रयोग गर्नुपर्छ। यदि तपाईंलाई फरक ब्राउजर स्थापना वा पहुँच गर्न कठिनाइ छ भने, कृपया आफ्नो IT समर्थन टोलीलाई सम्पर्क गर्नुहोस्।</p>
+</div>
 <div id="disclaimer">
     
 <div class="container">
@@ -235,7 +230,15 @@ layout-goal
 </div>
 
 
-<a title="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्" aria-label="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्"
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/site/15/">
+                English
+            </a>
+        </li></ul>
+</div></span><a title="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्" aria-label="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -250,55 +253,81 @@ data-event-label="high"
 
 
 
-
-
 <div class="container">
-  <ol class="breadcrumb">
-  
-  <li><a href="/site/ne/">गृह</a></li>
-  <li class="active">लक्ष्य 15</li>
-  
-</ol>
-
+  <nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item" >
+            <a href="/site/ne/">गृह</a>
+        </li>
+        <li class="breadcrumb-item active">लक्ष्य 15</li>
+        
+    </ol>
+</nav>
   
 </div>
 
 <div class="heading goal-banner goal-15">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/15.png" alt="भूमिमा जीवन - लक्ष्य 15" id="goal-15" class="goal-icon-image goal-icon-image-" />
-      </div>
-      <div class="col-xs-8 col-md-9 col-lg-10">
-        <h1>
-          <span class="hidden-sm hidden-md hidden-lg">लक्ष्य 15: </span>स्थलीय इकोसिस्टमको दिगो प्रयोगको संरक्षण, पुनःस्थापना र प्रबर्धन गर्न, वनको जथाभावी प्रबन्ध गर्नुहोस्, लडाई मरुभूमिकरण, र रोक्नुहोस् र भूमि विफलता र रोक्नुहोस् जैवविविधता नोक्सान
-        </h1>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/15.png" alt="भूमिमा जीवन - लक्ष्य 15" id="goal-15" class="goal-icon-image goal-icon-image-" />
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 goal-details">
+                <h1>स्थलीय इकोसिस्टमको दिगो प्रयोगको संरक्षण, पुनःस्थापना र प्रबर्धन गर्न, वनको जथाभावी प्रबन्ध गर्नुहोस्, लडाई मरुभूमिकरण, र रोक्नुहोस् र भूमि विफलता र रोक्नुहोस् जैवविविधता नोक्सान</h1>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
-<div id="main-content" class="container goal-indicators goal-15" role="main">
+<div id="main-content" class="container" role="main">
 
   
 
 
 
-  
-  
+  <div class="container g-0">
+    <h2 class="goal-page-heading">लक्ष्य र सूचकहरू</h2>
 
     
     
-    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.1</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०२० सम्ममा, अन्तर्राष्ट्रिय सम्झौताहरू अन्तर्गत दायित्वहरू अनुरूप भौगोलिक र भित्री ताजा पानी इकोसिस्टम र उनीहरूका सेवाहरूको संरक्षण, पुनर्स्थापना र दिगो प्रयोग सुनिश्चित गर्नुहोस्।</span>
+          </div>
+      </div>
+        
 
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
           
-          <a href="/site/ne/15-1-1">
-            <span class="indicator-card-number">
-              15.1.1
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.1.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-1-1">कुल जग्गा क्षेत्रको अनुपातको रूपमा वन क्षेत्र</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -307,31 +336,38 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            कुल जग्गा क्षेत्रको अनुपातको रूपमा वन क्षेत्र
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-1-2">
-            <span class="indicator-card-number">
-              15.1.2
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.1.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-1-2">स्थलीय र ताजा पानी जैव विविधताका लागि महत्वपूर्ण साइटहरूको अनुपात जुन सुरक्षित क्षेत्रहरू द्वारा सुरक्षित गरिएको छ, ईकोसिस्टम प्रकार द्वारा</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -340,31 +376,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            स्थलीय र ताजा पानी जैव विविधताका लागि महत्वपूर्ण साइटहरूको अनुपात जुन सुरक्षित क्षेत्रहरू द्वारा सुरक्षित गरिएको छ, ईकोसिस्टम प्रकार द्वारा
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.2</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०२० सम्ममा सबै प्रकारका जंगलहरूको दिगो व्यवस्थापनको कार्यान्वयनलाई प्रबर्धन गर्नुहोस्, वन फँडानी रोक्नुहोस्, क्षतिग्रस्त जंगलहरू पुनर्स्थापना गर्नुहोस् र विश्वव्यापी रूपमा रोपाई र वन फँडानी बढाइनेछ।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-2-1">
-            <span class="indicator-card-number">
-              15.2.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.2.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-2-1">दिगो वन व्यवस्थापन तर्फ प्रगति</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -373,31 +430,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            दिगो वन व्यवस्थापन तर्फ प्रगति
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.3</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०30० सम्ममा, लडाई मरुभूमिकरण, गिरावट गरिएको जमिन र माटोलाई पुनर्स्थापना गर्नुहोस्, जग्गा सहित मरुभूमि, खडेरी र बाढीले असर पार्दछ, र भूमि अवरोध तटस्थ संसार हासिल गर्न कोसिस गर्दछ।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-3-1">
-            <span class="indicator-card-number">
-              15.3.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.3.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-3-1">जमिनको अनुपात जुन कुल जग्गा क्षेत्र माथि गिरावट आएको छ</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -406,31 +484,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            जमिनको अनुपात जुन कुल जग्गा क्षेत्र माथि गिरावट आएको छ
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.4</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०30० सम्म, दिगो विकासको लागि आवश्यक पर्ने सुविधाहरू प्रदान गर्न उनीहरूको क्षमता अभिवृद्धि गर्न उनीहरूको जैवविविधता सहित माउन्टेन इकोसिस्टमको संरक्षण सुनिश्चित गर्नुहोस्।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    </div>
-    
-
-    
-    
-    
-
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-4-1">
-            <span class="indicator-card-number">
-              15.4.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.4.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-4-1">पहाड जैव विविधताका लागि महत्वपूर्ण साइटहरूको संरक्षित क्षेत्रहरू द्वारा कभरेज</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -439,31 +538,38 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            पहाड जैव विविधताका लागि महत्वपूर्ण साइटहरूको संरक्षित क्षेत्रहरू द्वारा कभरेज
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-4-2">
-            <span class="indicator-card-number">
-              15.4.2
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.4.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-4-2">माउन्टेन ग्रीन कभर इंडेक्स</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -472,31 +578,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            माउन्टेन ग्रीन कभर इंडेक्स
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.5</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">प्राकृतिक बासस्थानको गिरावट कम गर्न, जैवविविधताको नोक्सान रोक्न र, २०२० सम्म, खतरा भएका प्रजातिहरूको विलुप्त हुनबाट बचाउन तत्काल र महत्त्वपूर्ण कार्यहरू गर्नुहोस्।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-5-1">
-            <span class="indicator-card-number">
-              15.5.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.5.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-5-1">रातो सूची सूचकांक</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -505,31 +632,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            रातो सूची सूचकांक
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.6</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">आनुवंशिक संसाधनहरूको उपयोगबाट हुने फाइदाहरूको उचित र न्यायसंगत साझेदारीलाई बढावा दिनुहोस् र अन्तर्राष्ट्रिय रूपमा सहमत भएमा त्यस्ता स्रोतहरूमा उपयुक्त पहुँचलाई प्रोत्साहित गर्नुहोस्।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-6-1">
-            <span class="indicator-card-number">
-              15.6.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.6.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-6-1">देशहरूको संख्या जसले बेफाइदाको उचित र न्यायसंगत साझेदारी सुनिश्चित गर्न विधायिका, प्रशासनिक र नीति फ्रेमवर्क अपनाएको छ</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -538,31 +686,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            देशहरूको संख्या जसले बेफाइदाको उचित र न्यायसंगत साझेदारी सुनिश्चित गर्न विधायिका, प्रशासनिक र नीति फ्रेमवर्क अपनाएको छ
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.7</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">वनस्पति र जीवजन्तुको सुरक्षित प्रजातिहरूको अवैध शिकार र बेचबिखन अन्त्य गर्न अविलम्ब कदम चाल्नुहोस् र दुबै अवैध वन्यजन्तु उत्पादनहरूको माग र आपूर्तिलाई सम्बोधन गर्नुहोस्।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    </div>
-    
-
-    
-    
-    
-
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-7-1">
-            <span class="indicator-card-number">
-              15.7.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.7.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-7-1">ट्रेड वाइल्डलाइफको अनुपात कि अवैध वा अवैध रूपमा बेचिएको थियो</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -571,31 +740,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            ट्रेड वाइल्डलाइफको अनुपात कि अवैध वा अवैध रूपमा बेचिएको थियो
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.8</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०२० सम्ममा परिचयलाई रोक्नको लागि उपायहरू पेश गर्नुहोस् र जमिन र पानी इकोसिस्टममा आक्रामक विदेशी प्रजातिहरूको प्रभावलाई घटाउने र प्राथमिकताका प्रजातिहरू नियन्त्रण वा उन्मूलन कार्यलाई कम गर्नुहोस्।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-8-1">
-            <span class="indicator-card-number">
-              15.8.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.8.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-8-1">देशहरूको सान्दर्भिक राष्ट्रिय कानून अपनाउने र आक्रमक विदेशी प्रजातिहरूको रोकथाम वा नियन्त्रणलाई पर्याप्त रिसोर्स गर्दै</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -604,31 +794,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            देशहरूको सान्दर्भिक राष्ट्रिय कानून अपनाउने र आक्रमक विदेशी प्रजातिहरूको रोकथाम वा नियन्त्रणलाई पर्याप्त रिसोर्स गर्दै
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.9</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०२० सम्ममा इकोसिस्टम र जैवविविधता मानहरूलाई राष्ट्रिय र स्थानीय योजना, विकास प्रक्रिया, गरिबी न्यूनीकरण रणनीति र खातामा एकीकृत गर्नुहोस्।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-9-1">
-            <span class="indicator-card-number">
-              15.9.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.9.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-9-1">जैविक विविधता २०११–२०२० को रणनीतिक योजनाको आइची जैवविविधता लक्ष्य २ को आधारमा स्थापित राष्ट्रिय लक्ष्यतर्फको प्रगति।</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -637,31 +848,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            जैविक विविधता २०११–२०२० को रणनीतिक योजनाको आइची जैवविविधता लक्ष्य २ को आधारमा स्थापित राष्ट्रिय लक्ष्यतर्फको प्रगति।
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.a</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">जैव विविधता र इकोसिस्टमहरूको संरक्षण र दिगो प्रयोगका लागि सबै स्रोतहरूबाट वित्तीय स्रोतहरू परिचालन र उल्लेखनीय रूपमा वृद्धि गर्नुहोस्</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-a-1">
-            <span class="indicator-card-number">
-              15.a.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.a.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-a-1">आधिकारिक विकास सहायता र जैविक विविधता र इकोसिस्टमको दिगो उपयोग संरक्षण र सार्वजनिक खर्च</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -670,31 +902,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            आधिकारिक विकास सहायता र जैविक विविधता र इकोसिस्टमको दिगो उपयोग संरक्षण र सार्वजनिक खर्च
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.b</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">दिगो वन व्यवस्थापनको वित्त पोषण गर्न सबै स्रोतबाट र सबै तहबाट महत्वपूर्ण स्रोत परिचालन गर्ने र संरक्षण र पुन: वन जस्ता लगायतको व्यवस्थापनलाई अगाडि बढाउन विकासोन्मुख देशहरुलाई पर्याप्त प्रोत्साहन प्रदान गर्ने।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    </div>
-    
-
-    
-    
-    
-
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-b-1">
-            <span class="indicator-card-number">
-              15.b.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.b.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-b-1">आधिकारिक विकास सहायता र जैविक विविधता र इकोसिस्टमको दिगो उपयोग संरक्षण र सार्वजनिक खर्च</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -703,31 +956,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            आधिकारिक विकास सहायता र जैविक विविधता र इकोसिस्टमको दिगो उपयोग संरक्षण र सार्वजनिक खर्च
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 15.c</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">दिगो आजीविका अवसरहरू पछ्याउनको लागि स्थानीय समुदायहरूको क्षमता बढाउँदै संरक्षित प्रजातिहरूको अवैध शिकार र बेचबिखनको विरूद्ध लड्नका लागि विश्वव्यापी समर्थन बढाउने।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/15-c-1">
-            <span class="indicator-card-number">
-              15.c.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 15.c.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/15-c-1">ट्रेड वाइल्डलाइफको अनुपात कि अवैध वा अवैध रूपमा बेचिएको थियो</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -736,23 +1010,18 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            ट्रेड वाइल्डलाइफको अनुपात कि अवैध वा अवैध रूपमा बेचिएको थियो
-          </a>
-          
+        </li></ul>
 
 
-
-
-
-          
-        </div>
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
     
-    
-	 	
-		
-			</div>
-		
+  </div>
+  <a href="#top">शीर्षमा फिर्ता</a>
 </div>
 
 
@@ -800,16 +1069,12 @@ data-event-label="high"
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
 
@@ -829,7 +1094,7 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/site/assets/js/sdg.js?v=20220705110726'></script>
+<script src='/site/assets/js/sdg.js?v=20220705111732'></script>
 
 <script>
     new indicatorInit();
@@ -839,4 +1104,3 @@ data-event-label="high"
 
 </body>
 </html>
-

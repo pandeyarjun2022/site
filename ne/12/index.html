@@ -41,10 +41,6 @@ var opensdg = {
   language: 'ne',
 };
 
-// For backwards compatibility, some of these might need to be global.
-// @TODO: Remove these eventually.
-var remoteDataBaseUrl = opensdg.remoteDataBaseUrl;
-
 </script>
 
         <script>
@@ -118,25 +114,18 @@ var translations = {
         <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        
-
-
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="/site/assets/img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/site/assets/img/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/site/assets/img/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/site/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/site/assets/img/favicons/favicon.ico" />
 
 
         
-        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220705110726">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220705111732">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,6 +136,10 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
 
+        <!--[if IE]>
+        <link rel="stylesheet" href="/site/assets/css/ie.css">
+        <![endif]-->
+
         
 
     </head>
@@ -155,11 +148,13 @@ layout-goal
 ">
 <!-- <div class="container"> -->
 
-
-
 <script>translations['header'] = {"alpha":"अल्फा","default_contrast":"पूर्वनिर्धारित कन्ट्रास्ट","disable_high_contrast":"उच्च कन्ट्रास्ट असक्षम गर्नुहोस्","disclaimer":"यो एक विकास वेबसाइट हो। हामी तपाईंको [] 47] प्रतिक्रिया [] 87] लाई स्वागत गर्दछौं।","enable_high_contrast":"उच्च कन्ट्रास्ट सक्षम गर्नुहोस्","high_contrast":"उच्च कन्ट्रास्ट","internet_explorer_message":"हामीले पत्ता लगायौं कि तपाईंले यो वेबसाइट भ्रमण गर्न इन्टरनेट एक्सप्लोरर प्रयोग गर्दै हुनुहुन्छ। इन्टरनेट एक्सप्लोरर अब माइक्रोसफ्ट द्वारा चरणबद्ध हुँदैछ। नतिजाको रूपमा, यो वेबसाइटले इन्टरनेट एक्सप्लोररको कुनै पनि संस्करणलाई समर्थन गर्दैन। यस साइटमा केही सुविधाहरू काम गर्दैनन्। तपाईंले एज, क्रोम, फायरफक्स, वा सफारी जस्ता आधुनिक ब्राउजर प्रयोग गर्नुपर्छ। यदि तपाईंलाई फरक ब्राउजर स्थापना वा पहुँच गर्न कठिनाइ छ भने, कृपया आफ्नो IT समर्थन टोलीलाई सम्पर्क गर्नुहोस्।","internet_explorer_message_title":"यो इन्टरनेट ब्राउजर अब समर्थित छैन","skip_link":"मुख्य सामग्रीमा स्किप गर्नुहोस्","tag_line":"१ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न","toggle_menu":"मेनू टगल। मेनू विस्तार गर्न वा संकुचन गर्न क्लिक गर्नुहोस्।","toggle_search":"टगल खोज्नुहोस्। खोजी पट्टी विस्तार गर्न वा ध्वस्त पार्न क्लिक गर्नुहोस्।"};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">मुख्य सामग्रीमा स्किप गर्नुहोस्</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">यो इन्टरनेट ब्राउजर अब समर्थित छैन</h2>
+    <p class="internet-explorer-message-body">हामीले पत्ता लगायौं कि तपाईंले यो वेबसाइट भ्रमण गर्न इन्टरनेट एक्सप्लोरर प्रयोग गर्दै हुनुहुन्छ। इन्टरनेट एक्सप्लोरर अब माइक्रोसफ्ट द्वारा चरणबद्ध हुँदैछ। नतिजाको रूपमा, यो वेबसाइटले इन्टरनेट एक्सप्लोररको कुनै पनि संस्करणलाई समर्थन गर्दैन। यस साइटमा केही सुविधाहरू काम गर्दैनन्। तपाईंले एज, क्रोम, फायरफक्स, वा सफारी जस्ता आधुनिक ब्राउजर प्रयोग गर्नुपर्छ। यदि तपाईंलाई फरक ब्राउजर स्थापना वा पहुँच गर्न कठिनाइ छ भने, कृपया आफ्नो IT समर्थन टोलीलाई सम्पर्क गर्नुहोस्।</p>
+</div>
 <div id="disclaimer">
     
 <div class="container">
@@ -235,7 +230,15 @@ layout-goal
 </div>
 
 
-<a title="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्" aria-label="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्"
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/site/12/">
+                English
+            </a>
+        </li></ul>
+</div></span><a title="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्" aria-label="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -250,55 +253,81 @@ data-event-label="high"
 
 
 
-
-
 <div class="container">
-  <ol class="breadcrumb">
-  
-  <li><a href="/site/ne/">गृह</a></li>
-  <li class="active">लक्ष्य 12</li>
-  
-</ol>
-
+  <nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item" >
+            <a href="/site/ne/">गृह</a>
+        </li>
+        <li class="breadcrumb-item active">लक्ष्य 12</li>
+        
+    </ol>
+</nav>
   
 </div>
 
 <div class="heading goal-banner goal-12">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/12.png" alt="जिम्मेवार खपत र उत्पादन - लक्ष्य 12" id="goal-12" class="goal-icon-image goal-icon-image-" />
-      </div>
-      <div class="col-xs-8 col-md-9 col-lg-10">
-        <h1>
-          <span class="hidden-sm hidden-md hidden-lg">लक्ष्य 12: </span>दिगो उपभोग र उत्पादन बान्की सुनिश्चित गर्नुहोस्
-        </h1>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/12.png" alt="जिम्मेवार खपत र उत्पादन - लक्ष्य 12" id="goal-12" class="goal-icon-image goal-icon-image-" />
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 goal-details">
+                <h1>दिगो उपभोग र उत्पादन बान्की सुनिश्चित गर्नुहोस्</h1>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
-<div id="main-content" class="container goal-indicators goal-12" role="main">
+<div id="main-content" class="container" role="main">
 
   
 
 
 
-  
-  
+  <div class="container g-0">
+    <h2 class="goal-page-heading">लक्ष्य र सूचकहरू</h2>
 
     
     
-    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.1</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">विकासशील देशहरूको विकास र क्षमताहरूलाई ध्यानमा राख्दै विकासोन्मुख देशहरूले नेतृत्व लिने सबै देशहरूले दिगो उपभोग र उत्पादन बान्कीमा १० बर्षे बर्ष कार्यक्रमको कार्यान्वयन गर्ने।</span>
+          </div>
+      </div>
+        
 
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
           
-          <a href="/site/ne/12-1-1">
-            <span class="indicator-card-number">
-              12.1.1
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.1.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-1-1">दिगो उपभोग र उत्पादन (SCP) राष्ट्रिय कार्य योजनाहरू वा SCP मुख्य आधारमा राष्ट्रिय नीतिहरूमा प्राथमिकता वा लक्ष्यको रूपमा राष्ट्रहरूको संख्या</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -307,31 +336,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            दिगो उपभोग र उत्पादन (SCP) राष्ट्रिय कार्य योजनाहरू वा SCP मुख्य आधारमा राष्ट्रिय नीतिहरूमा प्राथमिकता वा लक्ष्यको रूपमा राष्ट्रहरूको संख्या
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.2</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०30० सम्ममा दिगो व्यवस्थापन र प्राकृतिक स्रोतहरूको दक्ष उपयोग हासिल गर्नुहोस्</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-2-1">
-            <span class="indicator-card-number">
-              12.2.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.2.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-2-1">सामग्री फुटप्रिन्ट, प्रति व्यक्ति भौतिक फुटप्रिन्ट, र प्रति GDP भौतिक पदचिन्ह</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -340,31 +390,38 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            सामग्री फुटप्रिन्ट, प्रति व्यक्ति भौतिक फुटप्रिन्ट, र प्रति GDP भौतिक पदचिन्ह
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-2-2">
-            <span class="indicator-card-number">
-              12.2.2
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.2.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-2-2">घरेलु सामग्री उपभोग, प्रति व्यक्ति घरेलु सामग्री खपत, र प्रति जीडीपी घरेलु सामग्री खपत</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -373,31 +430,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            घरेलु सामग्री उपभोग, प्रति व्यक्ति घरेलु सामग्री खपत, र प्रति जीडीपी घरेलु सामग्री खपत
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.3</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०30० सम्म, खुदरा र उपभोक्ता स्तरमा प्रति व्यक्ति ग्लोबल फूड अपशिष्ट र आधा उत्पादन घाटा सहित उत्पादन र आपूर्ति श्रृंखलाहरूमा खाद्यान्न घाटा घटाउने</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-3-1">
-            <span class="indicator-card-number">
-              12.3.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.3.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-3-1">ग्लोबल खाना घाटा सूचकांक</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -406,31 +484,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            ग्लोबल खाना घाटा सूचकांक
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.4</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०२० सम्ममा, रसायनिक वातावरण र वातावरणीय वातावरणीय ध्वनि व्यवस्थापन प्राप्त गर्नुहोस् आफ्नो जीवन चक्र भर, सहमत अन्तर्राष्ट्रिय फ्रेमवर्कका अनुसार, र मानव स्वास्थ्य र वातावरणमा पर्ने उनीहरूका प्रतिकूल प्रभावहरूलाई कम गर्नका लागि हवा, पानी र माटोमा उनीहरूको विमोचनलाई उल्लेखनीय रूपमा कम गर्नुहोस्।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    </div>
-    
-
-    
-    
-    
-
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-4-1">
-            <span class="indicator-card-number">
-              12.4.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.4.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-4-1">खतरनाक फोहोर र अन्य रसायनहरूमा अन्तर्राष्ट्रिय बहुपक्षीय वातावरणीय सम्झौतामा दलहरूको संख्या जुन प्रत्येक सान्दर्भिक सम्झौताले आवश्यक अनुसार जानकारी प्रसारित गर्न आफ्ना प्रतिबद्धता र दायित्वहरू पूरा गर्दछ।</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -439,31 +538,38 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            खतरनाक फोहोर र अन्य रसायनहरूमा अन्तर्राष्ट्रिय बहुपक्षीय वातावरणीय सम्झौतामा दलहरूको संख्या जुन प्रत्येक सान्दर्भिक सम्झौताले आवश्यक अनुसार जानकारी प्रसारित गर्न आफ्ना प्रतिबद्धता र दायित्वहरू पूरा गर्दछ।
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-4-2">
-            <span class="indicator-card-number">
-              12.4.2
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.4.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-4-2">खतरनाक फोहोर प्रति व्यक्ति उत्पन्न र खतरनाक फोहोरको अनुपात उपचारको प्रकार द्वारा</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -472,31 +578,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            खतरनाक फोहोर प्रति व्यक्ति उत्पन्न र खतरनाक फोहोरको अनुपात उपचारको प्रकार द्वारा
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.5</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०30० सम्ममा रोकथाम, कटौती, रिसाइक्लि re र पुनः प्रयोगको माध्यमबाट अपशिष्ट उत्पादन पर्याप्त रूपमा कम गर्नुहोस्</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-5-1">
-            <span class="indicator-card-number">
-              12.5.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.5.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-5-1">राष्ट्रिय रिसाइक्लि rate दर, सामग्रीहरूको टनहरू रिसाइकल गरियो</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -505,31 +632,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            राष्ट्रिय रिसाइक्लि rate दर, सामग्रीहरूको टनहरू रिसाइकल गरियो
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.6</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">कम्पनीहरूलाई प्रोत्साहित गर्नुहोस्, विशेष गरी ठूला र ट्रान्सनेशनल कम्पनीहरूलाई दिगो अभ्यासहरू अपनाउन र टिकाऊ जानकारी एकीकृत गर्न उनीहरूको रिपोर्टि cycle चक्रमा।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-6-1">
-            <span class="indicator-card-number">
-              12.6.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.6.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-6-1">स्थिरता रिपोर्ट प्रकाशित गर्ने कम्पनीहरूको संख्या</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -538,31 +686,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            स्थिरता रिपोर्ट प्रकाशित गर्ने कम्पनीहरूको संख्या
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.7</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">राष्ट्रिय नीति र प्राथमिकताहरूको आधारमा दिगो रहेका सार्वजनिक खरीद अभ्यासहरूको प्रबर्धन गर्नुहोस्</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    </div>
-    
-
-    
-    
-    
-
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-7-1">
-            <span class="indicator-card-number">
-              12.7.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.7.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-7-1">दिगो सार्वजनिक खरीद नीतिहरू र कार्य योजनाहरू लागू गर्ने देशहरूको संख्या</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -571,31 +740,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            दिगो सार्वजनिक खरीद नीतिहरू र कार्य योजनाहरू लागू गर्ने देशहरूको संख्या
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.8</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">२०30० सम्म, यो निश्चित गर्नुहोस् कि सबै ठाउँमा मानिसहरूसँग प्रासंगिक जानकारी र जागरूकता दिगो विकास र जीवनशैली प्रकृति अनुरूप छ</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-8-1">
-            <span class="indicator-card-number">
-              12.8.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.8.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-8-1">(I) वैश्विक नागरिकता शिक्षा र (ii) दिगो विकासको लागि शिक्षा (जलवायु परिवर्तन शिक्षा सहित) लाई (क) राष्ट्रिय शिक्षा नीतिमा मुख्य आधार मानिन्छ। (b) पाठ्यक्रम; (ग) शिक्षक शिक्षा; र (d) विद्यार्थी मूल्यांकन</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -604,31 +794,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            (I) वैश्विक नागरिकता शिक्षा र (ii) दिगो विकासको लागि शिक्षा (जलवायु परिवर्तन शिक्षा सहित) लाई (क) राष्ट्रिय शिक्षा नीतिमा मुख्य आधार मानिन्छ। (b) पाठ्यक्रम; (ग) शिक्षक शिक्षा; र (d) विद्यार्थी मूल्यांकन
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.a</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">विकासशील देशहरूलाई उनीहरूको वैज्ञानिक र प्राविधिक क्षमतालाई सुदृढीकरण गर्न खपत र उत्पादनको अधिक दिगो पैटर्नहरूतर्फ समर्थन गर्नुहोस्</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-a-1">
-            <span class="indicator-card-number">
-              12.a.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.a.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-a-1">दिगो खपत र उत्पादन र वातावरणीय ध्वनि प्रविधिहरूको लागि अनुसन्धान र विकासमा विकासशील देशहरूलाई सहयोगको मात्रा</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -637,31 +848,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            दिगो खपत र उत्पादन र वातावरणीय ध्वनि प्रविधिहरूको लागि अनुसन्धान र विकासमा विकासशील देशहरूलाई सहयोगको मात्रा
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.b</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">टिकाऊ पर्यटनको लागि दिगो विकास प्रभावहरू अनुगमन गर्न उपकरणहरू विकास र कार्यान्वयन गर्नुहोस् जसले रोजगारी सिर्जना गर्दछ र स्थानीय संस्कृति र उत्पादनहरू लाई बढावा दिन्छ</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-b-1">
-            <span class="indicator-card-number">
-              12.b.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.b.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-b-1">स्थायी पर्यटन रणनीति वा नीतिहरूको संख्या र कार्यान्वयन कार्य सहमति अनुगमन अनुगमन र मूल्यांकन उपकरणहरूको संख्या</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -670,31 +902,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            स्थायी पर्यटन रणनीति वा नीतिहरूको संख्या र कार्यान्वयन कार्य सहमति अनुगमन अनुगमन र मूल्यांकन उपकरणहरूको संख्या
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 12.c</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">राष्ट्रिय परिस्थिति अनुरूप करको पुनर्गठन र ती हानिकारक सब्सिडीहरू, जहाँ उनीहरू अवस्थित छन् त्यहाँका पर्यावरणीय प्रभावहरू प्रतिबिम्बित गर्न, विशिष्ट आवश्यकताहरूलाई ध्यानमा राखी समावेश गर्दै राष्ट्रिय परिस्थिति अनुरूप बजार विकृतिहरू हटाएर बेकारका उपभोगलाई प्रोत्साहित गर्ने अयोग्य जीवाश्म ईन्धन अनुदानहरूको युक्तिसंगत गर्नुहोस्। विकासोन्मुख देशहरूको अवस्था र उनीहरूको विकासमा सम्भावित प्रतिकूल प्रभावहरूलाई न्यून पार्दै गरिब र प्रभावित समुदायहरूलाई सुरक्षा प्रदान गर्दछ</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    </div>
-    
-
-    
-    
-    
-
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/12-c-1">
-            <span class="indicator-card-number">
-              12.c.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 12.c.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/12-c-1">जीडीसीको प्रति इकाई (उत्पादन र खपत) जीवाश्म ईन्धन अनुदानको मात्रा र जीवाश्म ईन्धनहरूमा कुल राष्ट्रिय खर्चको अनुपातको रूपमा</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -703,23 +956,18 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            जीडीसीको प्रति इकाई (उत्पादन र खपत) जीवाश्म ईन्धन अनुदानको मात्रा र जीवाश्म ईन्धनहरूमा कुल राष्ट्रिय खर्चको अनुपातको रूपमा
-          </a>
-          
+        </li></ul>
 
 
-
-
-
-          
-        </div>
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
     
-    
-	 	
-		
-			</div>
-		
+  </div>
+  <a href="#top">शीर्षमा फिर्ता</a>
 </div>
 
 
@@ -767,16 +1015,12 @@ data-event-label="high"
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
 
@@ -796,7 +1040,7 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/site/assets/js/sdg.js?v=20220705110726'></script>
+<script src='/site/assets/js/sdg.js?v=20220705111732'></script>
 
 <script>
     new indicatorInit();
@@ -806,4 +1050,3 @@ data-event-label="high"
 
 </body>
 </html>
-

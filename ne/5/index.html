@@ -41,10 +41,6 @@ var opensdg = {
   language: 'ne',
 };
 
-// For backwards compatibility, some of these might need to be global.
-// @TODO: Remove these eventually.
-var remoteDataBaseUrl = opensdg.remoteDataBaseUrl;
-
 </script>
 
         <script>
@@ -118,25 +114,18 @@ var translations = {
         <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        
-
-
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="/site/assets/img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/site/assets/img/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/site/assets/img/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/site/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/site/assets/img/favicons/favicon.ico" />
 
 
         
-        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220705110726">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220705111732">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,6 +136,10 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
 
+        <!--[if IE]>
+        <link rel="stylesheet" href="/site/assets/css/ie.css">
+        <![endif]-->
+
         
 
     </head>
@@ -155,11 +148,13 @@ layout-goal
 ">
 <!-- <div class="container"> -->
 
-
-
 <script>translations['header'] = {"alpha":"अल्फा","default_contrast":"पूर्वनिर्धारित कन्ट्रास्ट","disable_high_contrast":"उच्च कन्ट्रास्ट असक्षम गर्नुहोस्","disclaimer":"यो एक विकास वेबसाइट हो। हामी तपाईंको [] 47] प्रतिक्रिया [] 87] लाई स्वागत गर्दछौं।","enable_high_contrast":"उच्च कन्ट्रास्ट सक्षम गर्नुहोस्","high_contrast":"उच्च कन्ट्रास्ट","internet_explorer_message":"हामीले पत्ता लगायौं कि तपाईंले यो वेबसाइट भ्रमण गर्न इन्टरनेट एक्सप्लोरर प्रयोग गर्दै हुनुहुन्छ। इन्टरनेट एक्सप्लोरर अब माइक्रोसफ्ट द्वारा चरणबद्ध हुँदैछ। नतिजाको रूपमा, यो वेबसाइटले इन्टरनेट एक्सप्लोररको कुनै पनि संस्करणलाई समर्थन गर्दैन। यस साइटमा केही सुविधाहरू काम गर्दैनन्। तपाईंले एज, क्रोम, फायरफक्स, वा सफारी जस्ता आधुनिक ब्राउजर प्रयोग गर्नुपर्छ। यदि तपाईंलाई फरक ब्राउजर स्थापना वा पहुँच गर्न कठिनाइ छ भने, कृपया आफ्नो IT समर्थन टोलीलाई सम्पर्क गर्नुहोस्।","internet_explorer_message_title":"यो इन्टरनेट ब्राउजर अब समर्थित छैन","skip_link":"मुख्य सामग्रीमा स्किप गर्नुहोस्","tag_line":"१ World लक्ष्यहरू हाम्रो विश्व परिवर्तन गर्न","toggle_menu":"मेनू टगल। मेनू विस्तार गर्न वा संकुचन गर्न क्लिक गर्नुहोस्।","toggle_search":"टगल खोज्नुहोस्। खोजी पट्टी विस्तार गर्न वा ध्वस्त पार्न क्लिक गर्नुहोस्।"};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">मुख्य सामग्रीमा स्किप गर्नुहोस्</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">यो इन्टरनेट ब्राउजर अब समर्थित छैन</h2>
+    <p class="internet-explorer-message-body">हामीले पत्ता लगायौं कि तपाईंले यो वेबसाइट भ्रमण गर्न इन्टरनेट एक्सप्लोरर प्रयोग गर्दै हुनुहुन्छ। इन्टरनेट एक्सप्लोरर अब माइक्रोसफ्ट द्वारा चरणबद्ध हुँदैछ। नतिजाको रूपमा, यो वेबसाइटले इन्टरनेट एक्सप्लोररको कुनै पनि संस्करणलाई समर्थन गर्दैन। यस साइटमा केही सुविधाहरू काम गर्दैनन्। तपाईंले एज, क्रोम, फायरफक्स, वा सफारी जस्ता आधुनिक ब्राउजर प्रयोग गर्नुपर्छ। यदि तपाईंलाई फरक ब्राउजर स्थापना वा पहुँच गर्न कठिनाइ छ भने, कृपया आफ्नो IT समर्थन टोलीलाई सम्पर्क गर्नुहोस्।</p>
+</div>
 <div id="disclaimer">
     
 <div class="container">
@@ -235,7 +230,15 @@ layout-goal
 </div>
 
 
-<a title="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्" aria-label="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्"
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/site/5/">
+                English
+            </a>
+        </li></ul>
+</div></span><a title="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्" aria-label="उच्च कन्ट्रास्ट सक्षम गर्नुहोस्"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -250,55 +253,81 @@ data-event-label="high"
 
 
 
-
-
 <div class="container">
-  <ol class="breadcrumb">
-  
-  <li><a href="/site/ne/">गृह</a></li>
-  <li class="active">लक्ष्य 5</li>
-  
-</ol>
-
+  <nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item" >
+            <a href="/site/ne/">गृह</a>
+        </li>
+        <li class="breadcrumb-item active">लक्ष्य 5</li>
+        
+    </ol>
+</nav>
   
 </div>
 
 <div class="heading goal-banner goal-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/5.png" alt="लैङ्गिक समानता - लक्ष्य 5" id="goal-5" class="goal-icon-image goal-icon-image-" />
-      </div>
-      <div class="col-xs-8 col-md-9 col-lg-10">
-        <h1>
-          <span class="hidden-sm hidden-md hidden-lg">लक्ष्य 5: </span>लैंगिक समानता प्राप्त गर्नुहोस् र सबै महिला र केटीहरूलाई सशक्त बनाउनुहोस्
-        </h1>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/5.png" alt="लैङ्गिक समानता - लक्ष्य 5" id="goal-5" class="goal-icon-image goal-icon-image-" />
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 goal-details">
+                <h1>लैंगिक समानता प्राप्त गर्नुहोस् र सबै महिला र केटीहरूलाई सशक्त बनाउनुहोस्</h1>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
-<div id="main-content" class="container goal-indicators goal-5" role="main">
+<div id="main-content" class="container" role="main">
 
   
 
 
 
-  
-  
+  <div class="container g-0">
+    <h2 class="goal-page-heading">लक्ष्य र सूचकहरू</h2>
 
     
     
-    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 5.1</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">सबै ठाउँमा सबै महिला र केटीहरूको बिभिन्न भेदभावको अन्त्य गर्नुहोस्</span>
+          </div>
+      </div>
+        
 
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
           
-          <a href="/site/ne/5-1-1">
-            <span class="indicator-card-number">
-              5.1.1
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.1.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-1-1">यौन कानूनी आधारमा समानता र गैर भेदभावलाई बढावा दिन, लागु गर्न र अनुगमन गर्न कानूनी फ्रेमवर्क स्थानमा छन् वा छैन</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -307,31 +336,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            यौन कानूनी आधारमा समानता र गैर भेदभावलाई बढावा दिन, लागु गर्न र अनुगमन गर्न कानूनी फ्रेमवर्क स्थानमा छन् वा छैन
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 5.2</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">सार्वजनिक र निजी क्षेत्रहरूमा बेचबिखन र यौन र अन्य प्रकारको शोषण सहित सबै महिला र बालिका बिरूद्ध सबै प्रकारका हिंसा हटाउनुहोस्।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-2-1">
-            <span class="indicator-card-number">
-              5.2.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.2.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-2-1">१ ever बर्ष भन्दा बढि उमेरका साझेदार महिला र केटीहरूको अनुपात पिछले वा १२ महिनामा हिंसाको रूपमा र उमेर द्वारा हालको वा पूर्व घनिष्ठ साथीले शारीरिक, यौन वा मनोवैज्ञानिक हिंसाको सिकार भएको थियो।</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -340,31 +390,38 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            १ ever बर्ष भन्दा बढि उमेरका साझेदार महिला र केटीहरूको अनुपात पिछले वा १२ महिनामा हिंसाको रूपमा र उमेर द्वारा हालको वा पूर्व घनिष्ठ साथीले शारीरिक, यौन वा मनोवैज्ञानिक हिंसाको सिकार भएको थियो।
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-2-2">
-            <span class="indicator-card-number">
-              5.2.2
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.2.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-2-2">१ 15 बर्ष भन्दा माथिका महिला र केटीहरूको अनुपात १ older बर्ष भन्दा बढि उमेर र घटनाको ठाउँमा अघिल्लो १२ महिनामा एक घनिष्ठ साझेदार बाहेक अन्य व्यक्तिद्वारा यौन हिंसाको सिकार हुन्छ।</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -373,31 +430,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            १ 15 बर्ष भन्दा माथिका महिला र केटीहरूको अनुपात १ older बर्ष भन्दा बढि उमेर र घटनाको ठाउँमा अघिल्लो १२ महिनामा एक घनिष्ठ साझेदार बाहेक अन्य व्यक्तिद्वारा यौन हिंसाको सिकार हुन्छ।
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 5.3</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">सबै हानिकारक अभ्यासहरू हटाउनुहोस्, जस्तै बाल, प्रारम्भिक र जबरजस्ती विवाह र महिला जननांग विकृति</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-3-1">
-            <span class="indicator-card-number">
-              5.3.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.3.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-3-1">२०-२– वर्ष उमेरका महिलाहरूको अनुपात जो विवाहित थिए वा १ union वर्ष उमेर भन्दा पहिले र उमेर १ before भन्दा अघि एक संघमा थिए</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -406,31 +484,38 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            २०-२– वर्ष उमेरका महिलाहरूको अनुपात जो विवाहित थिए वा १ union वर्ष उमेर भन्दा पहिले र उमेर १ before भन्दा अघि एक संघमा थिए
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    </div>
-    
-
-    
-    
-    
-
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-3-2">
-            <span class="indicator-card-number">
-              5.3.2
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.3.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-3-2">१ gen-–– वर्ष उमेरका केटीहरू र महिलाहरूको अनुपात जो उमेर अनुसार महिला जननांग विकृति / काटिएको छ</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -439,31 +524,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            १ gen-–– वर्ष उमेरका केटीहरू र महिलाहरूको अनुपात जो उमेर अनुसार महिला जननांग विकृति / काटिएको छ
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 5.4</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">सार्वजनिक सेवा, पूर्वाधार र सामाजिक सुरक्षा नीतिहरूको प्रावधान र परिवार र परिवार भित्र साझा जिम्मेवारिको पदोन्नति को माध्यमबाट राष्ट्रिय रूपमा उपयुक्तको रूपमा पहिचान र मूल्य तिर्ने देखभाल र घरेलु कार्यको मान्यता दिनुहोस्।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-4-1">
-            <span class="indicator-card-number">
-              5.4.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.4.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-4-1">सेक्सन, उमेर र स्थान द्वारा, भुक्तानी गरिएको घरेलु र देखभाल कार्यमा खर्च गरिएको समयको अनुपात</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -472,31 +578,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            सेक्सन, उमेर र स्थान द्वारा, भुक्तानी गरिएको घरेलु र देखभाल कार्यमा खर्च गरिएको समयको अनुपात
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 5.5</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">राजनीतिक, आर्थिक र सार्वजनिक जीवनमा निर्णय लिने सबै तहमा महिलाको पूर्ण र प्रभावकारी सहभागिता र नेतृत्वको लागि समान अवसर सुनिश्चित गर्नुहोस्</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-5-1">
-            <span class="indicator-card-number">
-              5.5.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.5.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-5-1">(क) राष्ट्रिय संसद र (ख) स्थानीय सरकारमा महिलाले राखेका सिटहरूको अनुपात</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -505,31 +632,38 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            (क) राष्ट्रिय संसद र (ख) स्थानीय सरकारमा महिलाले राखेका सिटहरूको अनुपात
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-5-2">
-            <span class="indicator-card-number">
-              5.5.2
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.5.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-5-2">व्यवस्थापकीय पदहरूमा महिलाहरूको अनुपात</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -538,31 +672,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            व्यवस्थापकीय पदहरूमा महिलाहरूको अनुपात
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 5.6</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">जनसंख्या र विकास सम्बन्धी अन्तर्राष्ट्रिय सम्मेलनको कार्य कार्यक्रमको कार्यक्रम र बेइजि Pla प्लेटफर्म अफ एक्शन र उनीहरूको समीक्षा सम्मेलनको नतीजा कागजातहरूको अनुरूप सहमति भए अनुसार यौन र प्रजनन स्वास्थ्य र प्रजनन अधिकारमा विश्वव्यापी पहुँच सुनिश्चित गर्नुहोस्।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    </div>
-    
-
-    
-    
-    
-
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-6-1">
-            <span class="indicator-card-number">
-              5.6.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.6.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-6-1">यौन सम्बन्ध, गर्भनिरोधक प्रयोग र प्रजनन स्वास्थ्य सेवाको बारेमा आफ्नै सूचित निर्णय गर्ने १–-–– वर्ष उमेर महिलाको अनुपात</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -571,31 +726,38 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            यौन सम्बन्ध, गर्भनिरोधक प्रयोग र प्रजनन स्वास्थ्य सेवाको बारेमा आफ्नै सूचित निर्णय गर्ने १–-–– वर्ष उमेर महिलाको अनुपात
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-6-2">
-            <span class="indicator-card-number">
-              5.6.2
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.6.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-6-2">कानून र नियमहरूको साथ देशहरूको संख्या जसले यौन र प्रजनन स्वास्थ्य सेवा, सूचना र शिक्षामा १ 15 बर्ष भन्दा माथिका महिला र पुरुषहरूको पूर्ण र समान पहुँचको ग्यारेन्टी गर्दछ।</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -604,31 +766,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            कानून र नियमहरूको साथ देशहरूको संख्या जसले यौन र प्रजनन स्वास्थ्य सेवा, सूचना र शिक्षामा १ 15 बर्ष भन्दा माथिका महिला र पुरुषहरूको पूर्ण र समान पहुँचको ग्यारेन्टी गर्दछ।
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 5.a</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">राष्ट्रिय कानून बमोजिम महिलालाई आर्थिक अधिकारको समान अधिकार, भूमि र सम्पत्तीका अन्य प्रकार, वित्तीय सेवा, सम्पदा र प्राकृतिक स्रोतमा स्वामित्व र नियन्त्रणमा पहुँच पुर्‍याउन सुधार गर्ने।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-a-1">
-            <span class="indicator-card-number">
-              5.a.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.a.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-a-1">(क) कुल जग्गाको स्वामित्व वा कृषि जग्गामा सुरक्षित अधिकार सहित कुल जनसंख्याको अनुपात, सेक्स द्वारा; र (ख) कार्यकालको प्रकारले कृषि भूमिका मालिक वा अधिकारदाता बीचमा महिलाहरूको अंश</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -637,31 +820,38 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            (क) कुल जग्गाको स्वामित्व वा कृषि जग्गामा सुरक्षित अधिकार सहित कुल जनसंख्याको अनुपात, सेक्स द्वारा; र (ख) कार्यकालको प्रकारले कृषि भूमिका मालिक वा अधिकारदाता बीचमा महिलाहरूको अंश
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-a-2">
-            <span class="indicator-card-number">
-              5.a.2
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.a.2</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-a-2">देशहरूको अनुपात जहाँ कानूनी रूपरेखा (परम्परागत कानून सहित) महिलाको जग्गा स्वामित्व र / वा नियन्त्रणको समान अधिकारको ग्यारेन्टी गर्दछ</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -670,31 +860,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            देशहरूको अनुपात जहाँ कानूनी रूपरेखा (परम्परागत कानून सहित) महिलाको जग्गा स्वामित्व र / वा नियन्त्रणको समान अधिकारको ग्यारेन्टी गर्दछ
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 5.b</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">महिला सशक्तिकरणको प्रबर्द्धनका लागि विशेष सूचना र सञ्चार प्रविधिमा सक्षम टेक्नोलोजीको प्रयोग अभिवृद्धि गर्नुहोस्</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    </div>
-    
-
-    
-    
-    
-
-    <div class="indicator-cards row no-gutters">
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-b-1">
-            <span class="indicator-card-number">
-              5.b.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.b.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-b-1">सेक्सन द्वारा मोबाइल टेलिफोन स्वामित्व पाएका व्यक्तिहरूको अनुपात</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -703,31 +914,52 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            सेक्सन द्वारा मोबाइल टेलिफोन स्वामित्व पाएका व्यक्तिहरूको अनुपात
-          </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">लक्ष्य</span> 5.c</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">लैंगिक समानता र सबै तहमा सबै महिला र बालिकाको सशक्तिकरणको लागि आवाज नीतिहरू लागू गर्न र लागू गर्न सक्ने कानून लागू र सुदृढीकरण।</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
           
 
-
-
-
-
+          <div class="row align-items-start goal-indicator">
           
-        </div>
-    
-    
-
-    
-    
-    
-
-    
-        <div class="col-md-6 col-lg-3  goal-indicator">
-          
-          <a href="/site/ne/5-c-1">
-            <span class="indicator-card-number">
-              5.c.1
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">सूचक</span> 5.c.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
               
+              <span class="indicator-name"><a href="/site/ne/5-c-1">लै gender्गिक समानता र महिला सशक्तिकरणको लागि सार्वजनिक विनियोजन ट्र्याक गर्न र प्रणाली बनाउनका लागि देशहरूको अनुपात</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="ट्यागहरू"><li class="list-inline-item">
+        <span class="visually-hidden">सूचक स्थिति</span>
+        
 
 
 
@@ -736,23 +968,18 @@ data-event-label="high"
 </span>
 
 
-            </span>
-            लै gender्गिक समानता र महिला सशक्तिकरणको लागि सार्वजनिक विनियोजन ट्र्याक गर्न र प्रणाली बनाउनका लागि देशहरूको अनुपात
-          </a>
-          
+        </li></ul>
 
 
-
-
-
-          
-        </div>
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
     
-    
-	 	
-		
-			</div>
-		
+  </div>
+  <a href="#top">शीर्षमा फिर्ता</a>
 </div>
 
 
@@ -800,16 +1027,12 @@ data-event-label="high"
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
 
@@ -829,7 +1052,7 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/site/assets/js/sdg.js?v=20220705110726'></script>
+<script src='/site/assets/js/sdg.js?v=20220705111732'></script>
 
 <script>
     new indicatorInit();
@@ -839,4 +1062,3 @@ data-event-label="high"
 
 </body>
 </html>
-
