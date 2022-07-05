@@ -141,7 +141,7 @@ var translations = {
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220705105542">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220705110726">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -156,7 +156,7 @@ var translations = {
 
     </head>
 <body class="language-ne
-layout-indicator-bootstrap5
+layout-indicator
 ">
 <!-- <div class="container"> -->
 
@@ -338,49 +338,41 @@ data-event-label="high"
 
 <div class="container">
   
-<nav>
-    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
-        
-        <li class="breadcrumb-item">
-            <a href="/site/ne/">गृह</a>
-        </li>
-        <li class="breadcrumb-item">
-            <a href="/site/ne/10" title="देशहरू भित्र र बीचमा असमानता कम गर्नुहोस्">लक्ष्य 10</a>
-        </li>
-        <li class="breadcrumb-item active">सूचक 10.b.1</li>
-        
-    </ol>
-</nav>
+<ol class="breadcrumb">
+  
+  <li><a href="/site/ne/">गृह</a></li>
+  <li><a href="/site/ne/10" title="देशहरू भित्र र बीचमा असमानता कम गर्नुहोस्">लक्ष्य 10</a></li>
+  <li class="active">सूचक 10.b.1</li>
+  
+</ol>
 
 
   
 </div>
 <div class="heading goal-banner indicator goal-10">
-    <div class="container">
-        <div class="row">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+        <a href="/site/ne/10" title="यस लक्ष्यको सूचक सूची हेर्नुहोस्">
+          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/10.png" alt="असमानता कम भयो - लक्ष्य 10" id="goal-10" class="goal-icon-image goal-icon-image-"/>
+        </a>
+      </div>
+      <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
+      
+        <div>
+          <h1>
             
-            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-                <a href="/site/ne/10" title="यस लक्ष्यको सूचक सूची हेर्नुहोस्">
-                    <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ne/10.png"
-                        alt="असमानता कम भयो - लक्ष्य 10"
-                        id="goal-10"
-                        class="goal-icon-image goal-icon-image-" />
-                </a>
-            </div>
-            <div class="col-8 col-md-9 col-lg-10 indicator-details">
+            सूचक 10.b.1
             
-                <div>
-                    <h1>
-                        
-                        सूचक 10.b.1
-                        
-                        <span class="lead-copy">विकासकर्ताहरूको लागि कुल स्रोत प्रवाह, प्राप्तकर्ता र दाता देशहरू र प्रकारको प्रवाह (उदाहरणका लागि सरकारी विकास सहायता, विदेशी प्रत्यक्ष लगानी र अन्य प्रवाहहरू)</span>
-                    </h1>
-                </div>
-            </div>
+            <span class="lead-copy">विकासकर्ताहरूको लागि कुल स्रोत प्रवाह, प्राप्तकर्ता र दाता देशहरू र प्रकारको प्रवाह (उदाहरणका लागि सरकारी विकास सहायता, विदेशी प्रत्यक्ष लगानी र अन्य प्रवाहहरू)</span>
+          </h1>
         </div>
+      </div>
     </div>
+  </div>
 </div>
+
 <div id="main-content" class="container goal-10" role="main">
   
 
@@ -423,53 +415,52 @@ data-event-label="high"
   
   <div id="indicator-main" class="indicator-main col-md-12">
   
-  <div class="mt-4">
-<ul class="nav nav-tabs" role="tablist">
-    
-        <li role="presentation" class="nav-item">
-    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
+  <ul class="nav nav-tabs spacer medium" role="tablist">
+
+  <li role="presentation" class="nav-item active">
+  <a class="nav-link" data-toggle="tab" id="tab-national" href="#national" aria-controls="national" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to National Metadata tab"
->राष्ट्रिय मेटाडाटा</button>
+>राष्ट्रिय मेटाडाटा</a>
 </li>
 
 <li role="presentation" class="nav-item">
-    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
+  <a class="nav-link" data-toggle="tab" id="tab-global" href="#global" aria-controls="global" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Global Metadata tab"
->ग्लोबल मेटाडाटा</button>
+>ग्लोबल मेटाडाटा</a>
 </li>
 
 <li role="presentation" class="nav-item">
-    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
+  <a class="nav-link" data-toggle="tab" id="tab-sources" href="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
->स्रोतहरू</button>
+>स्रोतहरू</a>
 </li>
+
+
   
-    
-    
-        <li role="presentation" class="nav-item">
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Edit</a>
-        </li>
-    
+  <li role="presentation" class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Edit</a>
+  </li>
+  
 </ul>
 
 <div class="tab-content">
-    
-        <div role="tabpanel" class="tab-pane active" id="national">
-    <!-- National Metadata -->
-    <div>
-        <article>
-            <p>
-                
-                
-                यस तालिकाले वैश्विक SDG सूचकको नजिकको% देश_नाम तथ्या .्कबाट वास्तविक सूचकको लागि मेटाडेटा प्रदान गर्दछ। कृपया नोट गर्नुहोस् कि जब ग्लोबल एसडीजी सूचक% %_ देशिय सांख्यिकीय तथ्या from्कबाट पूर्ण रूपमा उपलब्ध हुन्छ, तब यस तालिकालाई राष्ट्रिय विधि र अन्य% देश_जेष्ट-विशिष्ट मेटाडेटा जानकारीका बारे जानकारी लिनुपर्दछ।
-            </p>
-            <table class="table">
+  
+    <div role="tabpanel" class="tab-pane active" id="national">
+  <!-- National Metadata -->
+  <div >
+    <article>
+      <p>
+        
+        
+        यस तालिकाले वैश्विक SDG सूचकको नजिकको% देश_नाम तथ्या .्कबाट वास्तविक सूचकको लागि मेटाडेटा प्रदान गर्दछ। कृपया नोट गर्नुहोस् कि जब ग्लोबल एसडीजी सूचक% %_ देशिय सांख्यिकीय तथ्या from्कबाट पूर्ण रूपमा उपलब्ध हुन्छ, तब यस तालिकालाई राष्ट्रिय विधि र अन्य% देश_जेष्ट-विशिष्ट मेटाडेटा जानकारीका बारे जानकारी लिनुपर्दछ।
+      </p>
+      <table class="table">
   
   
   
@@ -724,15 +715,15 @@ data-event-label="Change to Sources tab"
   
 </table>
 
-        </article>
-    </div>
+    </article>
+  </div>
 </div>
 <div role="tabpanel" class="tab-pane" id="global">
-    <!-- Global Metadata -->
-    <div>
-        <article>
-            <p>यस तालिकाले एसडीजी संकेतकहरूका लागि मेटाडेटामा जानकारी प्रदान गर्दछ जुन संयुक्त राष्ट्र संघीय तथ्या Commission्क आयोगले परिभाषित गरेको थियो। [१०]] पूर्ण ग्लोबल मेटाडेटा [१ 180०] संयुक्त राष्ट्र संघीय तथ्या Division्क प्रभाग द्वारा प्रदान गरिएको हो।</p>
-            <table class="table">
+  <!-- Global Metadata -->
+  <div>
+    <article>
+      <p>यस तालिकाले एसडीजी संकेतकहरूका लागि मेटाडेटामा जानकारी प्रदान गर्दछ जुन संयुक्त राष्ट्र संघीय तथ्या Commission्क आयोगले परिभाषित गरेको थियो। [१०]] पूर्ण ग्लोबल मेटाडेटा [१ 180०] संयुक्त राष्ट्र संघीय तथ्या Division्क प्रभाग द्वारा प्रदान गरिएको हो।</p>
+      <table class="table">
   
       
         
@@ -983,21 +974,22 @@ data-event-label="Change to Sources tab"
   
 </table>
 
-        </article>
-    </div>
+    </article>
+  </div>
 </div>
 <div role="tabpanel" class="tab-pane" id="sources">
-    <!-- Count the non-empty sources (up to 5) -->
+  <!-- Count the non-empty sources (up to 5) -->
 
 
 
 
 
 </div>
-    
-    
-        <div role="tabpanel" class="tab-pane" id="edit">
-            <div class="edit-container">
+
+  
+  
+  <div role="tabpanel" class="tab-pane" id="edit">
+    <div class="edit-container">
   
   
 
@@ -1018,11 +1010,11 @@ data-event-label="Change to Sources tab"
 
 </div>
 
-        </div>
-    
-</div>
+  </div>
   
 </div>
+
+
   </div>
 </div>
 
@@ -1106,7 +1098,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'खोज';</script>
 
-<script src='/site/assets/js/sdg.js?v=20220705105542'></script>
+<script src='/site/assets/js/sdg.js?v=20220705110726'></script>
 
 <script>
     new indicatorInit();
